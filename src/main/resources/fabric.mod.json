@@ -1,0 +1,45 @@
+{
+	"schemaVersion": 1,
+	"id": "seakings",
+	"version": "${version}",
+	"name": "Sea Kings",
+	"description": "Bringing One Piece to a Cubed World",
+	"authors": [
+		"Foi1y",
+		"_Red02",
+		"Contributors",
+		"Ezrys",
+		"BigBadBoys",
+		"NotAstr0"
+	],
+	"contact": {
+		"homepage": "https://discord.gg/tAGs47y93B",
+		"sources": "https://ko-fi.com/foily"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/seakings/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.foi1y.seakings.SeaKingsMod"
+		],
+		"fabric-datagen": [
+			"net.foi1y.seakings.SeaKingsModDataGenerator"
+		],
+		"client": [
+			"net.foi1y.seakings.SeaKingsModClient"
+		]
+	},
+	"mixins": [
+		"seakings.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
