@@ -3,6 +3,7 @@ package net.foi1y.seakings;
 import net.fabricmc.api.ModInitializer;
 
 import net.foi1y.seakings.block.ModBlocks;
+import net.foi1y.seakings.item.ModItemGroup;
 import net.foi1y.seakings.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,6 +17,7 @@ public class SeaKingsMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroup.registerItemGroups();
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
