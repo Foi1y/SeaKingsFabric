@@ -1,8 +1,14 @@
 {
   "item.seakings.donut": "Donut",
   "item.seakings.blue_donut": "Blue Donut",
+  "item.seakings.cutlass": "Cutlass",
 
 
   "block.seakings.seaprisonstone": "Sea Prison Stone",
-    "block.seakings.rawseaprisonstone": "Raw Sea Prison Stone"
+  "block.seakings.rawseaprisonstone": "Raw Sea Prison Stone",
+  "block.seakings.marinebarrel": "Marine Barrel",
+
+  "itemgroup.misc_group": "Misc Tab",
+  "itemgroup.fruits_group": "Devil Fruits Tab",
+  "itemgroup.weapons_group": "Weapons Tab"
 }
