@@ -20,6 +20,7 @@ public class ModItemGroup {
 
                     entries.add(ModBlocks.RAWSEAPRISONSTONE);
                     entries.add(ModBlocks.SEAPRISONSTONE);
+                    entries.add(ModBlocks.MARINEBARREL);
 
                     }).build());
 
@@ -37,6 +38,16 @@ public class ModItemGroup {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.weapons_group"))
                     .icon(() -> new ItemStack(ModItems.CUTLASS)).entries((displayContext, entries) -> {
                         entries.add(ModItems.CUTLASS);
+                    }).build());
+
+    public static final ItemGroup ARMOR_GROUO = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(SeaKingsMod.MOD_ID, "armor_group"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.weapons_group"))
+                    .icon(() -> new ItemStack(ModItems.MARINEHELMET)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.MARINEHELMET);
+                        entries.add(ModItems.MARINECHESTPLATE);
+                        entries.add(ModItems.MARINELEGGINGS);
+                        entries.add(ModItems.MARINEBOOTS);
                     }).build());
 
     public static void registerItemGroups(){
