@@ -10,9 +10,9 @@
   "seakings.itemgroup.misc_group": "Sea Kings",
   "seakings.itemgroup.foods_group": "Sea Kings Food",
   "seakings.itemgroup.weapons_group": "Sea Kings Weapons",
-  "seakings.itemgroup.armor_group": "Sea Kings Armor",
+  "seakings.itemgroup.armor_group": "Sea Kings Armour",
 
   "seakings.midnightconfig.title": "Sea Kings Settings",
-  "seakings.midnightconfig.comment_1": "Sea Kings Config",
+  "seakings.midnightconfig.comment_1": "Sea Kings Configurations",
   "seakings.midnightconfig.showTooltips": "Show Item Tooltips"
 }

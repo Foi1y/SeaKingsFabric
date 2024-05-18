@@ -1,9 +1,12 @@
 package net.foi1y.seakings.client.models;
 
+import net.fabricmc.api.*;
+
 import net.minecraft.client.model.*;
 import net.minecraft.client.render.entity.model.BipedEntityModel;
 import net.minecraft.entity.LivingEntity;
 
+@Environment(EnvType.CLIENT)
 public class CloakSleeved extends BipedEntityModel<LivingEntity> {
 
 	public CloakSleeved(ModelPart root) {

@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 public class ModItemGroup {
     public static final ItemGroup MISC_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(SeaKingsMod.MOD_ID, "misc_group"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.misc_group"))
+            FabricItemGroup.builder().displayName(Text.translatable("seakings.itemgroup.misc_group"))
                     .icon(() -> new ItemStack(ModItems.DONUT)).entries((displayContext, entries) -> {
                     entries.add(ModItems.BLUE_DONUT);
                     entries.add(ModItems.DONUT);
@@ -25,8 +25,8 @@ public class ModItemGroup {
                     }).build());
 
     public static final ItemGroup FRUITS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(SeaKingsMod.MOD_ID, "fruits_group"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.fruits_group"))
+            new Identifier(SeaKingsMod.MOD_ID, "foods_group"),
+            FabricItemGroup.builder().displayName(Text.translatable("seakings.itemgroup.foods_group"))
                     .icon(() -> new ItemStack(ModItems.DONUT)).entries((displayContext, entries) -> {
                         entries.add(ModItems.BLUE_DONUT);
                         entries.add(ModItems.DONUT);
@@ -35,14 +35,14 @@ public class ModItemGroup {
 
     public static final ItemGroup WEAPONS_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(SeaKingsMod.MOD_ID, "weapons_group"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.weapons_group"))
+            FabricItemGroup.builder().displayName(Text.translatable("seakings.itemgroup.weapons_group"))
                     .icon(() -> new ItemStack(ModItems.CUTLASS)).entries((displayContext, entries) -> {
                         entries.add(ModItems.CUTLASS);
                     }).build());
 
     public static final ItemGroup ARMOR_GROUO = Registry.register(Registries.ITEM_GROUP,
             new Identifier(SeaKingsMod.MOD_ID, "armor_group"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.weapons_group"))
+            FabricItemGroup.builder().displayName(Text.translatable("seakings.itemgroup.armor_group"))
                     .icon(() -> new ItemStack(ModItems.MARINEHELMET)).entries((displayContext, entries) -> {
                         entries.add(ModItems.MARINEHELMET);
                         entries.add(ModItems.MARINECHESTPLATE);
