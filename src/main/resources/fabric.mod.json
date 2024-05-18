@@ -12,9 +12,13 @@
 		"BigBadBoys",
 		"NotAstr0"
 	],
+	"contributors": [
+		"Mavity The Madity"
+	],
 	"contact": {
-		"homepage": "https://discord.gg/tAGs47y93B",
-		"sources": "https://ko-fi.com/foily"
+		"homepage": "https://github.com/Foi1y/SeaKingsFabric",
+		"issues": "https://github.com/Foi1y/SeaKingsFabric/issues",
+		"sources": "https://github.com/Foi1y/SeaKingsFabric"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/seakings/icon.png",
@@ -39,7 +43,12 @@
 		"java": ">=17",
 		"fabric-api": "*"
 	},
-	"suggests": {
-		"another-mod": "*"
+	"custom": {
+		"modmenu": {
+			"update_checker": false,
+			"links": {
+				"modmenu.discord": "https://discord.gg/tAGs47y93B"
+			}
+		}
 	}
 }
