@@ -3,7 +3,7 @@
 	"id": "seakings",
 	"version": "${version}",
 	"name": "Sea Kings",
-	"description": "Bringing One Piece to a Cubed World",
+	"description": "Bringing One Piece to a Cubed World.",
 	"authors": [
 		"Foi1y",
 		"_Red02"
@@ -26,18 +26,21 @@
 		"main": [
 			"net.foi1y.seakings.SeaKingsMod"
 		],
+		"client": [
+			"net.foi1y.seakings.SeaKingsModClient"
+		],
 		"fabric-datagen": [
 			"net.foi1y.seakings.SeaKingsModDataGenerator"
 		],
-		"client": [
-			"net.foi1y.seakings.SeaKingsModClient"
+		"server": [
+			"net.foi1y.seakings.SeaKingsModServer"
 		]
 	},
 	"mixins": [
 		"seakings.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.15.10",
+		"fabricloader": ">=0.15.7",
 		"minecraft": "~1.20.1",
 		"java": ">=17",
 		"fabric-api": "*",
