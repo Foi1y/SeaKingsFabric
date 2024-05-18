@@ -1,6 +1,7 @@
 package net.foi1y.seakings;
 
 import eu.midnightdust.lib.config.MidnightConfig;
+
 import net.fabricmc.api.ModInitializer;
 
 import net.foi1y.seakings.block.ModBlocks;
