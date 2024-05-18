@@ -1,21 +1,16 @@
 package net.foi1y.seakings.item;
 
 import net.foi1y.seakings.SeaKingsMod;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.ArmorMaterial;
-import net.minecraft.item.ArmorMaterials;
+
+import net.minecraft.item.*;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.sound.SoundEvent;
-import net.minecraft.sound.SoundEvents;
-import net.minecraft.util.Lazy;
-import net.minecraft.util.StringIdentifiable;
-import net.minecraft.util.Util;
+import net.minecraft.sound.*;
+import net.minecraft.util.*;
 
 import java.util.EnumMap;
 import java.util.function.Supplier;
 
-public enum ModArmorMaterials implements ArmorMaterial
-{
+public enum ModArmorMaterials implements ArmorMaterial {
 
     SK_ARMOR("sk_armor", 15,Util.make(new EnumMap(ArmorItem.Type.class), map -> {
     map.put(ArmorItem.Type.BOOTS, 2);

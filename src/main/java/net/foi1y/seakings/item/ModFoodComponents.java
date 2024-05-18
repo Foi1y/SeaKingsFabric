@@ -1,7 +1,6 @@
 package net.foi1y.seakings.item;
 
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.effect.*;
 import net.minecraft.item.FoodComponent;
 
 public class ModFoodComponents {

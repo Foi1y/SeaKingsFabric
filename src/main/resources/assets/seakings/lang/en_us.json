@@ -10,5 +10,9 @@
 
   "itemgroup.misc_group": "Misc Tab",
   "itemgroup.fruits_group": "Devil Fruits Tab",
-  "itemgroup.weapons_group": "Weapons Tab"
+  "itemgroup.weapons_group": "Weapons Tab",
+
+  "seakings.midnightconfig.title": "Sea Kings Settings",
+  "seakings.midnightconfig.comment_1": "Sea Kings Config",
+  "seakings.midnightconfig.showTooltips": "Show Item Tooltips"
 }

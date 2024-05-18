@@ -1,14 +1,14 @@
 package net.foi1y.seakings.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.itemgroup.v1.*;
+
 import net.foi1y.seakings.SeaKingsMod;
 import net.foi1y.seakings.block.ModBlocks;
 import net.foi1y.seakings.item.custom.DevilFruitItem;
+
 import net.minecraft.item.*;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
+import net.minecraft.registry.*;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
@@ -56,7 +56,7 @@ public class ModItems {
     }
 
     public static void registerModItems(){
-        SeaKingsMod.LOGGER.info("Registering Mod Items for " + SeaKingsMod.MOD_ID);
+        SeaKingsMod.LOGGER.info(SeaKingsMod.NAME + " has registered its items.");
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItems::itemGroupIngredients);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(ModItems::naturalGroupIngredients);
