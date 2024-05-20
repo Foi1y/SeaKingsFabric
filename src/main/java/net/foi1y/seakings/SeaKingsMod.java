@@ -8,6 +8,7 @@ import net.foi1y.seakings.block.ModBlocks;
 import net.foi1y.seakings.config.SeaKingsConfig;
 import net.foi1y.seakings.item.*;
 
+import net.minecraft.item.Item;
 import org.slf4j.*;
 
 public class SeaKingsMod implements ModInitializer {
@@ -17,6 +18,8 @@ public class SeaKingsMod implements ModInitializer {
 	public static final String NAME = "Sea Kings";
 
     public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
+	public static Item  CLOAK;
+
 
 	@Override
 	public void onInitialize() {

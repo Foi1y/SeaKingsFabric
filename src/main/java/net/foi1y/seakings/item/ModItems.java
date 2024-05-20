@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.*;
 
 import net.foi1y.seakings.SeaKingsMod;
 import net.foi1y.seakings.block.ModBlocks;
+import net.foi1y.seakings.item.custom.BasicCloak;
 import net.foi1y.seakings.item.custom.DevilFruitItem;
 
 import net.minecraft.item.*;
@@ -26,6 +27,8 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item MARINEBOOTS = registerItem("marineboots",
             new ArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+    public static final Item BASIC_CLOAK = registerItem("basiccloak",
+            new BasicCloak(new Item.Settings().maxCount(1)));
 
     public static final Item GOMU = registerItem("gomu",
             new DevilFruitItem(new FabricItemSettings().food(ModFoodComponents.DEVILFRUIT)));
@@ -52,7 +55,7 @@ public class ModItems {
     private static void combatGroupIngredients(FabricItemGroupEntries entries) {
         // Combat Tab
         entries.add(CUTLASS);
-
+        entries.add(BASIC_CLOAK);
     }
 
     public static void registerModItems(){
