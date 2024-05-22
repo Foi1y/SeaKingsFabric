@@ -18,11 +18,12 @@ public class SeaKingsModClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         TrinketRendererRegistry.registerRenderer(ModItems.BASIC_CLOAK, (TrinketRenderer) ModItems.BASIC_CLOAK);
+
         keyBinding = KeyBindingHelper.registerKeyBinding(new KeyBinding(
-                "key.seakings.spook", // The translation key of the keybinding's name
+                "key.seakings.menu", // The translation key of the keybinding's name
                 InputUtil.Type.KEYSYM, // The type of the keybinding, KEYSYM for keyboard, MOUSE for mouse.
                 GLFW.GLFW_KEY_R, // The keycode of the key
-                "category.seakings.test" // The translation key of the keybinding's category.
+                "category.seakings.keys" // The translation key of the keybinding's category.
         ));
 
         ClientTickEvents.END_CLIENT_TICK.register(client -> {

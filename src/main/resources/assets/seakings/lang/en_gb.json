@@ -8,6 +8,11 @@
   "block.seakings.rawseaprisonstone": "Raw Sea Prison Stone",
   "block.seakings.marinebarrel": "Marine Barrel",
 
+  "item.seakings.zorohelmet": "Zoro's Earrings",
+  "item.seakings.zorochestplate": "Zoro's Shirt",
+  "item.seakings.zoroleggings": "Zoro's Pants",
+  "item.seakings.zoroboots": "Zoro's Boots",
+
   "seakings.itemgroup.misc_group": "Sea Kings",
   "seakings.itemgroup.foods_group": "Sea Kings Food",
   "seakings.itemgroup.weapons_group": "Sea Kings Weapons",
@@ -15,5 +20,8 @@
 
   "seakings.midnightconfig.title": "Sea Kings Settings",
   "seakings.midnightconfig.comment_1": "Sea Kings Configurations",
-  "seakings.midnightconfig.showTooltips": "Show Item Tooltips"
+  "seakings.midnightconfig.showTooltips": "Show Item Tooltips",
+
+  "category.seakings.keys": "Sea Kings Keybinds",
+  "key.seakings.menu": "Open Menu"
 }

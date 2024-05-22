@@ -7,6 +7,7 @@ import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.narration.NarrationMessageBuilder;
 import net.minecraft.client.gui.tooltip.Tooltip;
 import net.minecraft.client.gui.widget.ButtonWidget;
+import net.minecraft.client.gui.widget.ElementListWidget;
 import net.minecraft.client.gui.widget.ScrollableWidget;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.text.Text;
@@ -42,22 +43,20 @@ public class MenuScreen extends Screen {
         scrollableWidget = new ScrollableWidget(5, 5, width - 200, height - 100, Text.literal("Your Text Here")) {
             @Override
             protected int getContentsHeight() {
-                return 0;
+                return 1;
             }
 
             @Override
             protected double getDeltaYPerScroll() {
-                return 0;
+                return 1;
             }
 
             @Override
             protected void renderContents(DrawContext context, int mouseX, int mouseY, float delta) {
-
             }
 
             @Override
             protected void appendClickableNarrations(NarrationMessageBuilder builder) {
-
             }
         };
         this.addDrawableChild(scrollableWidget);

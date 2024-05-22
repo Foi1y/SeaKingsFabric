@@ -40,14 +40,14 @@ public class ModItemGroup {
                         entries.add(ModItems.CUTLASS);
                     }).build());
 
-    public static final ItemGroup ARMOR_GROUO = Registry.register(Registries.ITEM_GROUP,
+    public static final ItemGroup ARMOR_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(SeaKingsMod.MOD_ID, "armor_group"),
             FabricItemGroup.builder().displayName(Text.translatable("seakings.itemgroup.armor_group"))
-                    .icon(() -> new ItemStack(ModItems.MARINEHELMET)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.MARINEHELMET);
-                        entries.add(ModItems.MARINECHESTPLATE);
-                        entries.add(ModItems.MARINELEGGINGS);
-                        entries.add(ModItems.MARINEBOOTS);
+                    .icon(() -> new ItemStack(ModItems.ZOROHELMET)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.ZOROHELMET);
+                        entries.add(ModItems.ZOROCHESTPLATE);
+                        entries.add(ModItems.ZOROLEGGINGS);
+                        entries.add(ModItems.ZOROBOOTS);
                     }).build());
 
     public static void registerItemGroups(){

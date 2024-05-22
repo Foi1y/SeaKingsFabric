@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.*;
 
 import net.foi1y.seakings.SeaKingsMod;
 import net.foi1y.seakings.block.ModBlocks;
+import net.foi1y.seakings.item.custom.ArmorItems.ZoroArmorItem;
 import net.foi1y.seakings.item.custom.BasicCloak;
 import net.foi1y.seakings.item.custom.DevilFruitItem;
 
@@ -19,14 +20,14 @@ public class ModItems {
             new Item(new FabricItemSettings()));
     public static final Item CUTLASS = registerItem("cutlass",
             new Item(new FabricItemSettings()));
-    public static final Item MARINEHELMET = registerItem("marinehelmet",
-            new ArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.HELMET, new FabricItemSettings()));
-    public static final Item MARINECHESTPLATE = registerItem("marinechestplate",
-            new ArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
-    public static final Item MARINELEGGINGS = registerItem("marineleggings",
-            new ArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
-    public static final Item MARINEBOOTS = registerItem("marineboots",
-            new ArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+    public static final Item ZOROHELMET = registerItem("zorohelmet",
+            new ZoroArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item ZOROCHESTPLATE = registerItem("zorochestplate",
+            new ZoroArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item ZOROLEGGINGS = registerItem("zoroleggings",
+            new ZoroArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item ZOROBOOTS = registerItem("zoroboots",
+            new ZoroArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.BOOTS, new FabricItemSettings()));
     public static final Item BASIC_CLOAK = registerItem("basiccloak",
             new BasicCloak(new Item.Settings().maxCount(1)));
 
