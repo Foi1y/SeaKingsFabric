@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.*;
 
 import net.foi1y.seakings.SeaKingsMod;
 import net.foi1y.seakings.block.ModBlocks;
+import net.foi1y.seakings.item.custom.ArmorItems.RogerFAArmorItem;
 import net.foi1y.seakings.item.custom.ArmorItems.ZoroArmorItem;
 import net.foi1y.seakings.item.custom.BasicCloak;
 import net.foi1y.seakings.item.custom.DevilFruitItem;
@@ -28,6 +29,8 @@ public class ModItems {
             new ZoroArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item ZOROBOOTS = registerItem("zoroboots",
             new ZoroArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+    public static final Item ROGERHELMET = registerItem("rogerhelmet",
+            new RogerFAArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item BASIC_CLOAK = registerItem("basiccloak",
             new BasicCloak(new Item.Settings().maxCount(1)));
 

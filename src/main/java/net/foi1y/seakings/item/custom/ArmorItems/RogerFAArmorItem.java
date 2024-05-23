@@ -18,11 +18,11 @@ import software.bernie.geckolib.util.GeckoLibUtil;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
-public final class ZoroArmorItem extends ArmorItem implements GeoItem {
+public final class RogerFAArmorItem extends ArmorItem implements GeoItem {
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
     private final Supplier<Object> renderProvider = GeoItem.makeRenderer(this);
 
-    public ZoroArmorItem(ArmorMaterial armorMaterial, ArmorItem.Type type, Settings properties){
+    public RogerFAArmorItem(ArmorMaterial armorMaterial, Type type, Settings properties){
         super(armorMaterial, type, properties);
     }
 
@@ -33,7 +33,7 @@ public final class ZoroArmorItem extends ArmorItem implements GeoItem {
 
             public GeoArmorRenderer<?> getHumanoidArmorModel(LivingEntity livingEntity, ItemStack itemStack, EquipmentSlot equipmentSlot, BipedEntityModel<LivingEntity> original) {
                 if(this.renderer == null)
-                    this.renderer = new ZoroArmorRenderer();
+                    this.renderer = new RogerFAArmorRenderer();
 
                 this.renderer.prepForRender(livingEntity, itemStack, equipmentSlot, original);
                 return this.renderer;
