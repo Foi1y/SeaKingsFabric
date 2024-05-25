@@ -1,21 +1,30 @@
 {
   "item.seakings.donut": "Donut",
   "item.seakings.blue_donut": "Blue Donut",
+
+  "item.seakings.whitecloak": "White Cloak",
+  "item.seakings.bluecloak": "Blue Cloak",
+
   "item.seakings.cutlass": "Cutlass",
-  "item.seakings.basiccloak": "Basic Cloak",
+  "item.seakings.wado_ichimonji": "Wado Ichimonji",
+  "item.seakings.katanabase": "Katana",
 
   "block.seakings.seaprisonstone": "Sea Prison Stone",
   "block.seakings.rawseaprisonstone": "Raw Sea Prison Stone",
   "block.seakings.marinebarrel": "Marine Barrel",
 
-  "item.seakings.zorohelmet": "Zoro's Earrings",
-  "item.seakings.zorochestplate": "Zoro's Shirt",
-  "item.seakings.zoroleggings": "Zoro's Pants",
-  "item.seakings.zoroboots": "Zoro's Boots",
-  "item.seakings.rogerhelmet": "Roger's Mustache",
-  "item.seakings.rogerchestplate": "Roger's Coat",
-  "item.seakings.rogerleggings": "Roger's Pants",
-  "item.seakings.rogerboots": "Roger's Boots",
+  "item.seakings.zorohelmet": "Zoros Earrings",
+  "item.seakings.zorochestplate": "Zoros Shirt",
+  "item.seakings.zoroleggings": "Zoros Pants",
+  "item.seakings.zoroboots": "Zoros Boots",
+  "item.seakings.rogerhelmet": "Rogers Mustache",
+  "item.seakings.rogerchestplate": "Rogers Coat",
+  "item.seakings.rogerleggings": "Rogers Pants",
+  "item.seakings.rogerboots": "Rogers Boots",
+  "item.seakings.straw_hat": "Straw Hat",
+  "item.seakings.preluffychestplate": "Luffys Vest",
+  "item.seakings.preluffyleggings": "Luffys Shorts",
+  "item.seakings.preluffyboots": "Luffys Sandles",
 
 
   "seakings.itemgroup.misc_group": "Sea Kings",
