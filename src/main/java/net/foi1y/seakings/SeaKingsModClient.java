@@ -6,8 +6,11 @@ import dev.emi.trinkets.api.client.TrinketRendererRegistry;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
+import net.foi1y.seakings.client.screens.ExampleGUI;
+import net.foi1y.seakings.client.screens.ExampleScreen;
 import net.foi1y.seakings.client.screens.MenuScreen;
 import net.foi1y.seakings.item.ModItems;
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
 import net.minecraft.text.Text;
@@ -30,7 +33,7 @@ public class SeaKingsModClient implements ClientModInitializer {
             while (keyBinding.wasPressed()) {
                 assert client.player != null;
                 client.player.sendMessage(Text.literal("Key 1 was pressed!"), false);
-                client.setScreen(new MenuScreen(keyBinding));
+                MinecraftClient.getInstance().setScreen(new ExampleScreen(new ExampleGUI(keyBinding)));
             }
         });
     }

@@ -13,6 +13,8 @@ public class DevilFruitItem extends Item {
     public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
         if (this.isFood()) {
             boolean fruit = true;
+            String fruitname = "gomu";
+            System.out.println(fruitname);
             return user.eatFood(world, stack);
         }
         return stack;

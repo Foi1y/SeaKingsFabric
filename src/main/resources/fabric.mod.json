@@ -45,7 +45,8 @@
 		"java": ">=17",
 		"fabric-api": "*",
 		"trinkets": "*",
-		"fabric-key-binding-api-v1": "*"
+		"fabric-key-binding-api-v1": "*",
+		"geckolib": "*"
 	},
 	"recommends": {
 		"modmenu": "*",
