@@ -66,6 +66,13 @@ public class ModItemGroup {
                         entries.add(ModItems.PRELUFFYBOOTS);
 
                         entries.add(ModItems.BLUE_CLOAK);
+
+                        entries.add(ModItems.MARINEUNIFORM_HELMET);
+                        entries.add(ModItems.MARINEUNIFORM_CHESTPLATE);
+                        entries.add(ModItems.MARINEUNIFORM_LEGGINGS);
+                        entries.add(ModItems.MARINEUNIFORM_BOOTS);
+
+                        entries.add(ModItems.BLACK_CLOAK);
                     }).build());
     public static void registerItemGroups(){
         SeaKingsMod.LOGGER.info(SeaKingsMod.NAME + " has registered its itemgroups.");

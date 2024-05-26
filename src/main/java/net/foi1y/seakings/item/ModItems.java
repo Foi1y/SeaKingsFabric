@@ -5,11 +5,13 @@ import net.fabricmc.fabric.api.itemgroup.v1.*;
 
 import net.foi1y.seakings.SeaKingsMod;
 import net.foi1y.seakings.block.ModBlocks;
+import net.foi1y.seakings.item.custom.ArmorItems.MarineUniformArmorItem;
 import net.foi1y.seakings.item.custom.ArmorItems.PreLuffyArmorItem;
 import net.foi1y.seakings.item.custom.ArmorItems.RogerFAArmorItem;
 import net.foi1y.seakings.item.custom.ArmorItems.ZoroArmorItem;
-import net.foi1y.seakings.item.custom.BlueCloak;
-import net.foi1y.seakings.item.custom.WhiteCloak;
+import net.foi1y.seakings.item.custom.trinkets.basiccloaks.BlackCloak;
+import net.foi1y.seakings.item.custom.trinkets.basiccloaks.BlueCloak;
+import net.foi1y.seakings.item.custom.trinkets.basiccloaks.WhiteCloak;
 import net.foi1y.seakings.item.custom.DevilFruitItem;
 
 import net.minecraft.item.*;
@@ -53,10 +55,20 @@ public class ModItems {
             new PreLuffyArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.LEGGINGS, new FabricItemSettings().maxCount(1)));
     public static final Item PRELUFFYBOOTS = registerItem("preluffyboots",
             new PreLuffyArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.BOOTS, new FabricItemSettings().maxCount(1)));
+    public static final Item MARINEUNIFORM_HELMET = registerItem("marineuniform_helmet",
+            new MarineUniformArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.HELMET, new FabricItemSettings().maxCount(1)));
+    public static final Item MARINEUNIFORM_CHESTPLATE = registerItem("marineuniform_chestplate",
+            new MarineUniformArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().maxCount(1)));
+    public static final Item MARINEUNIFORM_LEGGINGS = registerItem("marineuniform_leggings",
+            new MarineUniformArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.LEGGINGS, new FabricItemSettings().maxCount(1)));
+    public static final Item MARINEUNIFORM_BOOTS = registerItem("marineuniform_boots",
+            new MarineUniformArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.BOOTS, new FabricItemSettings().maxCount(1)));
     public static final Item WHITE_CLOAK = registerItem("whitecloak",
             new WhiteCloak(new Item.Settings().maxCount(1)));
     public static final Item BLUE_CLOAK = registerItem("bluecloak",
             new BlueCloak(new Item.Settings().maxCount(1)));
+    public static final Item BLACK_CLOAK = registerItem("blackcloak",
+            new BlackCloak(new Item.Settings().maxCount(1)));
 
     public static final Item GOMU = registerItem("gomu",
             new DevilFruitItem(new FabricItemSettings().food(ModFoodComponents.DEVILFRUIT)));
