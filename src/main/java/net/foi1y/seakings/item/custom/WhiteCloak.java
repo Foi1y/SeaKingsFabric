@@ -17,11 +17,11 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 
-public class BasicCloak extends TrinketItem implements TrinketRenderer {
-    private static final Identifier TEXTURE = new Identifier(SeaKingsMod.MOD_ID, "textures/entity/trinket/basecloak.png");
+public class WhiteCloak extends TrinketItem implements TrinketRenderer {
+    private static final Identifier TEXTURE = new Identifier(SeaKingsMod.MOD_ID, "textures/entity/trinket/whitecloak.png");
     private BipedEntityModel<LivingEntity> model;
 
-    public BasicCloak(Settings settings) {
+    public WhiteCloak(Settings settings) {
         super(settings);
     }
 

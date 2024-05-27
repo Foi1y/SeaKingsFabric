@@ -40,6 +40,8 @@ public class ModItemGroup {
             FabricItemGroup.builder().displayName(Text.translatable("seakings.itemgroup.weapons_group"))
                     .icon(() -> new ItemStack(ModItems.CUTLASS)).entries((displayContext, entries) -> {
                         entries.add(ModItems.CUTLASS);
+                        entries.add(ModItems.KATANABASE);
+                        entries.add(ModItems.WADO_ICHIMONJI);
                     }).build());
 
     public static final ItemGroup ARMOR_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -51,10 +53,19 @@ public class ModItemGroup {
                         entries.add(ModItems.ZOROLEGGINGS);
                         entries.add(ModItems.ZOROBOOTS);
 
+                        entries.add(ModItems.WHITE_CLOAK);
+
                         entries.add(ModItems.ROGERHELMET);
                         entries.add(ModItems.ROGERCHESTPLATE);
                         entries.add(ModItems.ROGERLEGGINGS);
                         entries.add(ModItems.ROGERBOOTS);
+
+                        entries.add(ModItems.STRAW_HAT);
+                        entries.add(ModItems.PRELUFFYCHESTPLATE);
+                        entries.add(ModItems.PRELUFFYLEGGINGS);
+                        entries.add(ModItems.PRELUFFYBOOTS);
+
+                        entries.add(ModItems.BLUE_CLOAK);
                     }).build());
     public static void registerItemGroups(){
         SeaKingsMod.LOGGER.info(SeaKingsMod.NAME + " has registered its itemgroups.");
