@@ -48,7 +48,8 @@ public class SeaKingsModClient implements ClientModInitializer {
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             while (showWheel.isPressed()) {
                 assert client.player != null;
-                client.player.sendMessage(Text.literal("Filler text"),true);
+                client.player.sendMessage(Text.literal("Filler text"),false);
+
 
             }
         });
