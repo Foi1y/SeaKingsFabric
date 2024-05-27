@@ -8,6 +8,7 @@ import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.foi1y.seakings.client.screens.ExampleGUI;
 import net.foi1y.seakings.client.screens.ExampleScreen;
+import net.foi1y.seakings.client.screens.theWheelOfDoom;
 import net.foi1y.seakings.item.ModItems;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.option.KeyBinding;
@@ -49,7 +50,7 @@ public class SeaKingsModClient implements ClientModInitializer {
             while (showWheel.isPressed()) {
                 assert client.player != null;
                 client.player.sendMessage(Text.literal("Filler text"),false);
-
+                MinecraftClient.getInstance().setScreen(new ExampleScreen(new theWheelOfDoom(showWheel)));
 
             }
         });

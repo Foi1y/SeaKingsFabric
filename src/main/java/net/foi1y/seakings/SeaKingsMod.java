@@ -23,7 +23,7 @@ public class SeaKingsMod implements ModInitializer {
 	public static final String NAME = "Sea Kings";
 
     public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
-	private static final Identifier INITIAL_SYNC = new Identifier("INITIAL_SYNC");
+	//private static final Identifier INITIAL_SYNC = new Identifier("INITIAL_SYNC");
 	public static Item  CLOAK;
 	public static final Identifier hasFruit = new Identifier(MOD_ID,"has_fruit");
 	public static final Identifier abilityLayout = new Identifier(MOD_ID,"ability_layout");
@@ -42,6 +42,7 @@ public class SeaKingsMod implements ModInitializer {
 		MidnightConfig.init(SeaKingsMod.MOD_ID, SeaKingsConfig.class);
 
 		//player persistent data stuff
+		/*
 		ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> {
 			PlayerData playerState = StateSaverAndLoader.getPlayerState(handler.getPlayer());
 			PacketByteBuf data = PacketByteBufs.create();
@@ -49,6 +50,6 @@ public class SeaKingsMod implements ModInitializer {
 			server.execute(() -> {
 				ServerPlayNetworking.send(handler.getPlayer(), INITIAL_SYNC, data);
 			});
-		});
+		});*/
 	}
 }
