@@ -1,4 +1,4 @@
-package net.foi1y.seakings.item.custom;
+package net.foi1y.seakings.item.custom.trinkets.basiccloaks;
 
 import dev.emi.trinkets.api.SlotReference;
 import dev.emi.trinkets.api.TrinketItem;
@@ -17,11 +17,11 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 
-public class BlueCloak extends TrinketItem implements TrinketRenderer {
-    private static final Identifier TEXTURE = new Identifier(SeaKingsMod.MOD_ID, "textures/entity/trinket/bluecloak.png");
+public class BlackCloak extends TrinketItem implements TrinketRenderer {
+    private static final Identifier TEXTURE = new Identifier(SeaKingsMod.MOD_ID, "textures/entity/trinket/blackcloak.png");
     private BipedEntityModel<LivingEntity> model;
 
-    public BlueCloak(Settings settings) {
+    public BlackCloak(Settings settings) {
         super(settings);
     }
 

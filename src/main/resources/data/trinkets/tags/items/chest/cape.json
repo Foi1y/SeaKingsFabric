@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "seakings:whitecloak",
-    "seakings:bluecloak"
+    "seakings:bluecloak",
+    "seakings:blackcloak"
   ]
 }

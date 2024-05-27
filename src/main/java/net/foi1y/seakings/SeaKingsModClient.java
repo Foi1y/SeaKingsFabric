@@ -22,6 +22,7 @@ public class SeaKingsModClient implements ClientModInitializer {
     public void onInitializeClient() {
         TrinketRendererRegistry.registerRenderer(ModItems.WHITE_CLOAK, (TrinketRenderer) ModItems.WHITE_CLOAK);
         TrinketRendererRegistry.registerRenderer(ModItems.BLUE_CLOAK, (TrinketRenderer) ModItems.BLUE_CLOAK);
+        TrinketRendererRegistry.registerRenderer(ModItems.BLACK_CLOAK, (TrinketRenderer) ModItems.BLACK_CLOAK);
 
         openMenu = KeyBindingHelper.registerKeyBinding(new KeyBinding(
                 "key.seakings.menu", // The translation key of the keybinding's name
