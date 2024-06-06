@@ -1,6 +1,5 @@
 package net.foi1y.seakings;
 
-
 import dev.emi.trinkets.api.client.TrinketRenderer;
 import dev.emi.trinkets.api.client.TrinketRendererRegistry;
 import net.fabricmc.api.ClientModInitializer;
@@ -8,7 +7,6 @@ import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.foi1y.seakings.client.screens.ExampleGUI;
 import net.foi1y.seakings.client.screens.ExampleScreen;
-import net.foi1y.seakings.client.screens.theWheelOfDoom;
 import net.foi1y.seakings.item.ModItems;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.option.KeyBinding;
@@ -46,13 +44,6 @@ public class SeaKingsModClient implements ClientModInitializer {
                 MinecraftClient.getInstance().setScreen(new ExampleScreen(new ExampleGUI(openMenu)));
             }
         });
-        ClientTickEvents.END_CLIENT_TICK.register(client -> {
-            while (showWheel.isPressed()) {
-                assert client.player != null;
-                client.player.sendMessage(Text.literal("Filler text"),false);
-                MinecraftClient.getInstance().setScreen(new ExampleScreen(new theWheelOfDoom(showWheel)));
 
-            }
-        });
     }
 }
