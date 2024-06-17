@@ -1,0 +1,14 @@
+/team add marine "Marine"
+/team modify marine prefix "Marine "
+
+/team add marine "Pirate"
+/team modify marine prefix "Pirate "
+
+/team add marine "Revolutionary"
+/team modify marine prefix "Revolutionary "
+
+/team add marine "Bounty Hunter"
+/team modify marine prefix "Bounty Hunter "
+
+/scoreboard objectives add Bounty dummy "[Bounty]"
+/scoreboard objectives add StyleMastery dummy "[Style Mastery]"
