@@ -23,27 +23,14 @@ public class SeaKingsModClient implements ClientModInitializer {
         TrinketRendererRegistry.registerRenderer(ModItems.BLUE_CLOAK, (TrinketRenderer) ModItems.BLUE_CLOAK);
         TrinketRendererRegistry.registerRenderer(ModItems.BLACK_CLOAK, (TrinketRenderer) ModItems.BLACK_CLOAK);
 
+
+
         openMenu = KeyBindingHelper.registerKeyBinding(new KeyBinding(
-                "key.seakings.menu", // The translation key of the keybinding's name
+                "Wheel Of Doom", // The translation key of the keybinding's name
                 InputUtil.Type.KEYSYM, // The type of the keybinding, KEYSYM for keyboard, MOUSE for mouse.
                 GLFW.GLFW_KEY_R, // The keycode of the key
                 "category.seakings.keys" // The translation key of the keybinding's category.
         ));
-
-        showWheel = KeyBindingHelper.registerKeyBinding(new KeyBinding(
-                "key.seakings.wheel",
-                InputUtil.Type.KEYSYM,
-                GLFW.GLFW_KEY_GRAVE_ACCENT,
-                "category.seakings.keys"
-        ));
-
-        ClientTickEvents.END_CLIENT_TICK.register(client -> {
-            while (openMenu.wasPressed()) {
-                assert client.player != null;
-                client.player.sendMessage(Text.literal("Key 1 was pressed!"), false);
-                MinecraftClient.getInstance().setScreen(new ExampleScreen(new ExampleGUI(openMenu)));
-            }
-        });
 
     }
 }

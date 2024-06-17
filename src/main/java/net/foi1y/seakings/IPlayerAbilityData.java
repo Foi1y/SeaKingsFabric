@@ -11,4 +11,6 @@ public interface IPlayerAbilityData {
     void addAbility(Ability ability);
     void removeAbility(Ability ability);
     Ability[] getAbilities();
+    void setAlignment(String alignment);
+    String getAlignment();
 }
