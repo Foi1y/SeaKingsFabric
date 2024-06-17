@@ -28,7 +28,7 @@ public abstract class Ability {
 // Example of specific ability classes
 class TatsuMaki extends Ability {
     public TatsuMaki() {
-        super("Tatsu Maki", 100,new Identifier("seakings"));
+        super("Tatsu Maki", 100,new Identifier("seakings","this must be changed"));
     }
 
     @Override
@@ -39,7 +39,7 @@ class TatsuMaki extends Ability {
 
 class IttoryuIai extends Ability {
     public IttoryuIai() {
-        super("Ittoryu Iai", 100,new Identifier("seakings"));
+        super("Ittoryu Iai", 100,new Identifier("seakings","change this"));
     }
 
     @Override
@@ -49,7 +49,7 @@ class IttoryuIai extends Ability {
 }
 class Sanjuroku_Pound_Ho extends Ability {
     public Sanjuroku_Pound_Ho() {
-        super("Sanjuroku_Pound_Ho", 100,new Identifier("seakings"));
+        super("Sanjuroku_Pound_Ho", 100,new Identifier("seakings","resources/assets/seakings/textures/Gui/icons/Sanjuroku_Pound_HO.png"));
     }
 
     @Override
@@ -59,7 +59,7 @@ class Sanjuroku_Pound_Ho extends Ability {
 }
 class Hiryu_Kaen extends Ability {
     public Hiryu_Kaen() {
-        super("Hiryu_Kaen", 100,new Identifier("seakings"));
+        super("Hiryu_Kaen", 100,new Identifier("seakings","resources/assets/seakings/textures/Gui/icons/Hiryu_Kaeen.png"));
     }
 
     @Override
@@ -69,7 +69,7 @@ class Hiryu_Kaen extends Ability {
 }
 class Yakkodori extends Ability {
     public Yakkodori() {
-        super("Yakkodori", 100,new Identifier("seakings"));
+        super("Yakkodori", 100,new Identifier("seakings","resources/assets/seakings/textures/Gui/icons/yakkodori.png"));
     }
 
     @Override
@@ -79,7 +79,7 @@ class Yakkodori extends Ability {
 }
 class Pound_Ho extends Ability {
     public Pound_Ho() {
-        super("Pound_Ho", 100,new Identifier("seakings"));
+        super("Pound_Ho", 100,new Identifier("seakings","change this"));
     }
 
     @Override
@@ -89,7 +89,7 @@ class Pound_Ho extends Ability {
 }
 class Daishinkan extends Ability {
     public Daishinkan() {
-        super("Daishinkan", 100,new Identifier("seakings"));
+        super("Daishinkan", 100,new Identifier("seakings","resources/assets/seakings/textures/Gui/icons/Daishinkan.png"));
     }
 
     @Override
@@ -99,7 +99,7 @@ class Daishinkan extends Ability {
 }
 class Taka_Nami extends Ability {
     public Taka_Nami() {
-        super("Taka_Nami", 100,new Identifier("seakings"));
+        super("Taka_Nami", 100,new Identifier("seakings","resources/assets/seakings/textures/Gui/icons/Taka_Nami.png"));
     }
 
     @Override
@@ -109,7 +109,7 @@ class Taka_Nami extends Ability {
 }
 class Sai_Kuru extends Ability {
     public Sai_Kuru() {
-        super("Sai_Kuru", 100,new Identifier("seakings"));
+        super("Sai_Kuru", 100,new Identifier("seakings","resources/assets/seakings/textures/Gui/icons/Sai_Kuru.png"));
     }
 
     @Override
@@ -119,7 +119,7 @@ class Sai_Kuru extends Ability {
 }
 class Nitoryu_Iai extends Ability {
     public Nitoryu_Iai() {
-        super("Nitoryu_Iai", 100,new Identifier("seakings"));
+        super("Nitoryu_Iai", 100,new Identifier("seakings","change this"));
     }
 
     @Override
@@ -129,7 +129,7 @@ class Nitoryu_Iai extends Ability {
 }
 class Nanajuni_Pound_Ho extends Ability {
     public Nanajuni_Pound_Ho() {
-        super("Nanajuni_Pound_Ho", 100,new Identifier("seakings"));
+        super("Nanajuni_Pound_Ho", 100,new Identifier("seakings","resources/assets/seakings/textures/Gui/icons/Nanjuni_Pound_Ho.png"));
     }
 
     @Override
@@ -139,7 +139,7 @@ class Nanajuni_Pound_Ho extends Ability {
 }
 class Otoro extends Ability {
     public Otoro() {
-        super("Otoro", 100,new Identifier("seakings"));
+        super("Otoro", 100,new Identifier("seakings","change this"));
     }
 
     @Override
@@ -149,7 +149,7 @@ class Otoro extends Ability {
 }
 class Oni_Giri extends Ability {
     public Oni_Giri() {
-        super("Oni_Giri", 100,new Identifier("seakings"));
+        super("Oni_Giri", 100,new Identifier("seakings","resources/assets/seakings/textures/Gui/icons/OniGiri.png"));
     }
 
     @Override
@@ -169,7 +169,7 @@ class Tora_Gari extends Ability {
 }
 class Yaki_Oni_Giri extends Ability {
     public Yaki_Oni_Giri() {
-        super("Yaki_Oni_Giri", 100,new Identifier("seakings"));
+        super("Yaki_Oni_Giri", 100,new Identifier("seakings","resources/assets/seakings/textures/Gui/icons/Yaki_oni_giri.png"));
     }
 
     @Override
@@ -179,7 +179,7 @@ class Yaki_Oni_Giri extends Ability {
 }
 class Toro_Nagashi extends Ability {
     public Toro_Nagashi() {
-        super("Toro_Nagashi", 100,new Identifier("seakings"));
+        super("Toro_Nagashi", 100,new Identifier("seakings","change this"));
     }
 
     @Override
@@ -189,7 +189,7 @@ class Toro_Nagashi extends Ability {
 }
 class Santoryu_Ogi extends Ability {
     public Santoryu_Ogi() {
-        super("Santoryu_Ogi", 100,new Identifier("seakings"));
+        super("Santoryu_Ogi", 100,new Identifier("seakings","change this"));
     }
 
     @Override
