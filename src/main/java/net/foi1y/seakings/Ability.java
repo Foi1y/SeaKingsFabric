@@ -1,20 +1,23 @@
 package net.foi1y.seakings;
 
 import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.util.Identifier;
 
 public abstract class Ability {
     private final String name;
     private final int cooldown;
+    private final Identifier icon;
 
-    public Ability(String name, int cooldown) {
+    public Ability(String name, int cooldown, Identifier icon) {
         this.name = name;
         this.cooldown = cooldown;
+        this.icon = icon;
     }
 
     public String getName() {
         return name;
     }
-
+    public Identifier getIcon(){return icon;}
     public int getCooldown() {
         return cooldown;
     }
@@ -25,7 +28,7 @@ public abstract class Ability {
 // Example of specific ability classes
 class TatsuMaki extends Ability {
     public TatsuMaki() {
-        super("Tatsu Maki", 100);
+        super("Tatsu Maki", 100,new Identifier("seakings"));
     }
 
     @Override
@@ -36,7 +39,7 @@ class TatsuMaki extends Ability {
 
 class IttoryuIai extends Ability {
     public IttoryuIai() {
-        super("Ittoryu Iai", 100);
+        super("Ittoryu Iai", 100,new Identifier("seakings"));
     }
 
     @Override
@@ -46,7 +49,7 @@ class IttoryuIai extends Ability {
 }
 class Sanjuroku_Pound_Ho extends Ability {
     public Sanjuroku_Pound_Ho() {
-        super("Sanjuroku_Pound_Ho", 100);
+        super("Sanjuroku_Pound_Ho", 100,new Identifier("seakings"));
     }
 
     @Override
@@ -56,7 +59,7 @@ class Sanjuroku_Pound_Ho extends Ability {
 }
 class Hiryu_Kaen extends Ability {
     public Hiryu_Kaen() {
-        super("Hiryu_Kaen", 100);
+        super("Hiryu_Kaen", 100,new Identifier("seakings"));
     }
 
     @Override
@@ -66,7 +69,7 @@ class Hiryu_Kaen extends Ability {
 }
 class Yakkodori extends Ability {
     public Yakkodori() {
-        super("Yakkodori", 100);
+        super("Yakkodori", 100,new Identifier("seakings"));
     }
 
     @Override
@@ -76,7 +79,7 @@ class Yakkodori extends Ability {
 }
 class Pound_Ho extends Ability {
     public Pound_Ho() {
-        super("Pound_Ho", 100);
+        super("Pound_Ho", 100,new Identifier("seakings"));
     }
 
     @Override
@@ -86,7 +89,7 @@ class Pound_Ho extends Ability {
 }
 class Daishinkan extends Ability {
     public Daishinkan() {
-        super("Daishinkan", 100);
+        super("Daishinkan", 100,new Identifier("seakings"));
     }
 
     @Override
@@ -96,7 +99,7 @@ class Daishinkan extends Ability {
 }
 class Taka_Nami extends Ability {
     public Taka_Nami() {
-        super("Taka_Nami", 100);
+        super("Taka_Nami", 100,new Identifier("seakings"));
     }
 
     @Override
@@ -106,7 +109,7 @@ class Taka_Nami extends Ability {
 }
 class Sai_Kuru extends Ability {
     public Sai_Kuru() {
-        super("Sai_Kuru", 100);
+        super("Sai_Kuru", 100,new Identifier("seakings"));
     }
 
     @Override
@@ -116,7 +119,7 @@ class Sai_Kuru extends Ability {
 }
 class Nitoryu_Iai extends Ability {
     public Nitoryu_Iai() {
-        super("Nitoryu_Iai", 100);
+        super("Nitoryu_Iai", 100,new Identifier("seakings"));
     }
 
     @Override
@@ -126,7 +129,7 @@ class Nitoryu_Iai extends Ability {
 }
 class Nanajuni_Pound_Ho extends Ability {
     public Nanajuni_Pound_Ho() {
-        super("Nanajuni_Pound_Ho", 100);
+        super("Nanajuni_Pound_Ho", 100,new Identifier("seakings"));
     }
 
     @Override
@@ -136,7 +139,7 @@ class Nanajuni_Pound_Ho extends Ability {
 }
 class Otoro extends Ability {
     public Otoro() {
-        super("Otoro", 100);
+        super("Otoro", 100,new Identifier("seakings"));
     }
 
     @Override
@@ -146,7 +149,7 @@ class Otoro extends Ability {
 }
 class Oni_Giri extends Ability {
     public Oni_Giri() {
-        super("Oni_Giri", 100);
+        super("Oni_Giri", 100,new Identifier("seakings"));
     }
 
     @Override
@@ -156,7 +159,7 @@ class Oni_Giri extends Ability {
 }
 class Tora_Gari extends Ability {
     public Tora_Gari() {
-        super("Tora_Gari", 100);
+        super("Tora_Gari", 100,new Identifier("seakings"));
     }
 
     @Override
@@ -166,7 +169,7 @@ class Tora_Gari extends Ability {
 }
 class Yaki_Oni_Giri extends Ability {
     public Yaki_Oni_Giri() {
-        super("Yaki_Oni_Giri", 100);
+        super("Yaki_Oni_Giri", 100,new Identifier("seakings"));
     }
 
     @Override
@@ -176,7 +179,7 @@ class Yaki_Oni_Giri extends Ability {
 }
 class Toro_Nagashi extends Ability {
     public Toro_Nagashi() {
-        super("Toro_Nagashi", 100);
+        super("Toro_Nagashi", 100,new Identifier("seakings"));
     }
 
     @Override
@@ -186,7 +189,7 @@ class Toro_Nagashi extends Ability {
 }
 class Santoryu_Ogi extends Ability {
     public Santoryu_Ogi() {
-        super("Santoryu_Ogi", 100);
+        super("Santoryu_Ogi", 100,new Identifier("seakings"));
     }
 
     @Override
