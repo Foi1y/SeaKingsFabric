@@ -16,6 +16,8 @@ public class PlayerEntityMixin implements IPlayerAbilityData {
     private Ability activeAbility;
     @Unique
     private int abilityCooldown;
+    @Unique
+    private String playerAlignment;
 
     @Override
     public Ability getActiveAbility() {
@@ -59,5 +61,15 @@ public class PlayerEntityMixin implements IPlayerAbilityData {
     @Override
     public Ability[] getAbilities() {
         return abilities.toArray(new Ability[0]);
+    }
+
+    @Override
+    public void setAlignment(String alignment) {
+        playerAlignment = alignment;
+    }
+
+    @Override
+    public String getAlignment() {
+        return playerAlignment;
     }
 }

@@ -41,15 +41,5 @@ public class SeaKingsMod implements ModInitializer {
 		// Config
 		MidnightConfig.init(SeaKingsMod.MOD_ID, SeaKingsConfig.class);
 
-		//player persistent data stuff
-		/*
-		ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> {
-			PlayerData playerState = StateSaverAndLoader.getPlayerState(handler.getPlayer());
-			PacketByteBuf data = PacketByteBufs.create();
-			data.writeIntArray(playerState.abilityLayout);
-			server.execute(() -> {
-				ServerPlayNetworking.send(handler.getPlayer(), INITIAL_SYNC, data);
-			});
-		});*/
 	}
 }
