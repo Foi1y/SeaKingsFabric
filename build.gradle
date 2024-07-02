@@ -1,7 +1,22 @@
+buildscript {
+	repositories {
+		maven { url = 'https://files.minecraftforge.net/maven' }
+		maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
+		mavenCentral()
+	}
+	dependencies {
+		classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
+		classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
+	}
+}
+
 plugins {
 	id 'fabric-loom' version '1.6-SNAPSHOT'
 	id 'maven-publish'
 }
+
+apply plugin: 'eclipse'
+apply plugin: 'maven-publish'
 
 version = project.mod_version
 group = project.maven_group
@@ -23,6 +38,14 @@ repositories {
 	maven { url = "https://api.modrinth.com/maven" }
 	maven { url = "https://maven.terraformersmc.com/releases/" }
 	maven { url = "https://maven.ladysnake.org/releases" }
+	maven { url = "https://mvn.devos.one/releases/" }
+	maven {
+		name = "Curse Maven"
+		url "https://cursemaven.com"
+		content {
+			includeGroup "curse.maven"
+		}
+	}
 	maven {
 		name = 'GeckoLib'
 		url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
@@ -55,6 +78,12 @@ dependencies {
 	}
 	modImplementation("software.bernie.geckolib:geckolib-fabric-${minecraft_version}:${geckolib_version}")
 	implementation("com.eliotlash.mclib:mclib:20")
+	modImplementation "curse.maven:lodestone-616457:5490519"
+	//Required Mods for Lodestone
+	modImplementation("dev.onyxstudios.cardinal-components-api:cardinal-components-base:${project.cca_version}")
+	modImplementation("dev.onyxstudios.cardinal-components-api:cardinal-components-entity:${project.cca_version}")
+	modImplementation("dev.onyxstudios.cardinal-components-api:cardinal-components-world:${project.cca_version}")
+	modImplementation "curse.maven:porting-lib-696251:5273147"
 
 	// Trinkets
 	modImplementation "dev.emi:trinkets:${project.trinkets_version}"

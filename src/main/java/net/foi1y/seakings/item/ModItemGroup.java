@@ -1,12 +1,10 @@
 package net.foi1y.seakings.item;
 
-import com.terraformersmc.modmenu.util.mod.Mod;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 
 import net.foi1y.seakings.SeaKingsMod;
 import net.foi1y.seakings.block.ModBlocks;
 
-import net.foi1y.seakings.item.custom.ArmorItems.ZoroArmorItem;
 import net.minecraft.item.*;
 import net.minecraft.registry.*;
 import net.minecraft.text.Text;

@@ -1,0 +1,24 @@
+{
+  "targets": [
+    "minecraft:main"
+  ],
+  "passes": [
+    {
+      "name": "tint",
+      "intarget": "minecraft:main",
+      "outtarget": "minecraft:main",
+      "auxtargets": [
+        {
+          "name": "color",
+          "id": "minecraft:main"
+        }
+      ],
+      "uniforms": [
+        {
+          "name": "Color",
+          "values": [1.0, 0.0, 0.0, 1.0]
+        }
+      ]
+    }
+  ]
+}
