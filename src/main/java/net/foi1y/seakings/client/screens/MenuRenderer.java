@@ -13,5 +13,5 @@ public abstract class MenuRenderer extends Screen {
         super(title);
     }
 
-    public abstract void render(MatrixStack matrices, int mouseX, int mouseY, float delta);
+    public abstract void renderBackground(MatrixStack matrices, int mouseX, int mouseY, float delta);
 }
