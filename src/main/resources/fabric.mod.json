@@ -6,21 +6,22 @@
 	"description": "Bringing One Piece to a Cubed World.",
 	"authors": [
 		"Foi1y",
-		"_Red02"
+		"_Red02",
+		"Cyclic007"
 	],
 	"contributors": [
 		"Ezrys",
 		"BigBadBoys",
 		"NotAstr0",
 		"Mavity The Madity",
-		"Cyclic007"
+
 	],
 	"contact": {
 		"homepage": "https://github.com/Foi1y/SeaKingsFabric",
 		"issues": "https://github.com/Foi1y/SeaKingsFabric/issues",
 		"sources": "https://github.com/Foi1y/SeaKingsFabric"
 	},
-	"license": "CC0-1.0",
+	"license": "All Rights reserved",
 	"icon": "assets/seakings/icon.png",
 	"environment": "*",
 	"entrypoints": {
