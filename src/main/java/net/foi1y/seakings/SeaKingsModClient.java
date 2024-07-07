@@ -5,8 +5,6 @@ import dev.emi.trinkets.api.client.TrinketRendererRegistry;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
-import net.foi1y.seakings.client.screens.ExampleGUI;
-import net.foi1y.seakings.client.screens.ExampleScreen;
 import net.foi1y.seakings.item.ModItems;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.option.KeyBinding;

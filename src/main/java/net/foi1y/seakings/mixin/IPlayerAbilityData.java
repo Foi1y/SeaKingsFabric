@@ -1,4 +1,6 @@
-package net.foi1y.seakings;
+package net.foi1y.seakings.mixin;
+
+import net.foi1y.seakings.Ability;
 
 public interface IPlayerAbilityData {
     Ability getActiveAbility();

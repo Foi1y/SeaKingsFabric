@@ -1,6 +1,5 @@
-package net.foi1y.seakings;
+package net.foi1y.seakings.mixin;
 import net.foi1y.seakings.Ability;
-import net.foi1y.seakings.IPlayerAbilityData;
 import net.minecraft.entity.player.PlayerEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
