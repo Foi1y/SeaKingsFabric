@@ -48,7 +48,7 @@
 		"fabric-api": "*",
 		"trinkets": "*",
 		"fabric-key-binding-api-v1": "*",
-		"geckolib": "*",
+		"geckolib": "*"
 
 	},
 
