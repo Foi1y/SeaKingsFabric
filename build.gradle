@@ -39,6 +39,7 @@ repositories {
 	maven { url = "https://maven.terraformersmc.com/releases/" }
 	maven { url = "https://maven.ladysnake.org/releases" }
 	maven { url = "https://mvn.devos.one/releases/" }
+
 	maven {
 		name = "Curse Maven"
 		url "https://cursemaven.com"
@@ -78,12 +79,6 @@ dependencies {
 	}
 	modImplementation("software.bernie.geckolib:geckolib-fabric-${minecraft_version}:${geckolib_version}")
 	implementation("com.eliotlash.mclib:mclib:20")
-	modImplementation "curse.maven:lodestone-616457:5490519"
-	//Required Mods for Lodestone
-	modImplementation("dev.onyxstudios.cardinal-components-api:cardinal-components-base:${project.cca_version}")
-	modImplementation("dev.onyxstudios.cardinal-components-api:cardinal-components-entity:${project.cca_version}")
-	modImplementation("dev.onyxstudios.cardinal-components-api:cardinal-components-world:${project.cca_version}")
-	modImplementation("io.github.fabricators_of_create.Porting-Lib:${project.porting_lib_version}+${project.minecraft_version}")
 
 	// Trinkets
 	modImplementation "dev.emi:trinkets:${project.trinkets_version}"
