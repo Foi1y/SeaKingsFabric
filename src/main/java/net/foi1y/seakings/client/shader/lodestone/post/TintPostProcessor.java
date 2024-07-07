@@ -7,6 +7,9 @@ import team.lodestar.lodestone.systems.postprocess.PostProcessor;
 
 public class TintPostProcessor extends PostProcessor {
     public static final TintPostProcessor INSTANCE = new TintPostProcessor();
+    static {
+        INSTANCE.setActive(false);
+    }
     @Override
     public Identifier getPostChainLocation() {
         return new Identifier(SeaKingsMod.MOD_ID, "tint_post");
