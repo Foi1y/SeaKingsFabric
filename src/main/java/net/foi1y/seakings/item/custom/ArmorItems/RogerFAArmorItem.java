@@ -1,7 +1,6 @@
 package net.foi1y.seakings.item.custom.ArmorItems;
 
-import net.foi1y.seakings.entity.client.armor.RogerFAArmorRenderer;
-import net.foi1y.seakings.entity.client.armor.ZoroArmorRenderer;
+import net.foi1y.seakings.entity.client.armor.Renders.RogerFAArmorRenderer;
 import net.minecraft.client.render.entity.model.BipedEntityModel;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;

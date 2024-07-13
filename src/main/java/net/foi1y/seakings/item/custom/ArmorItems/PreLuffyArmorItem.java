@@ -1,13 +1,16 @@
 package net.foi1y.seakings.item.custom.ArmorItems;
 
-import net.foi1y.seakings.entity.client.armor.PreLuffyArmorRenderer;
-import net.foi1y.seakings.entity.client.armor.ZoroArmorRenderer;
+import net.foi1y.seakings.entity.client.armor.Renders.PreLuffyArmorRenderer;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.client.render.entity.model.BipedEntityModel;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
+import net.minecraft.text.LiteralTextContent;
+import net.minecraft.text.Text;
+import net.minecraft.world.World;
 import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.animatable.client.RenderProvider;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
@@ -15,6 +18,7 @@ import software.bernie.geckolib.core.animation.AnimatableManager;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
+import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
@@ -58,3 +62,5 @@ public final class PreLuffyArmorItem extends ArmorItem implements GeoItem {
 
 
 }
+
+

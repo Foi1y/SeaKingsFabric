@@ -8,8 +8,7 @@ import net.foi1y.seakings.block.ModBlocks;
 import net.foi1y.seakings.item.custom.ArmorItems.MarineUniformArmorItem;
 import net.foi1y.seakings.item.custom.ArmorItems.PreLuffyArmorItem;
 import net.foi1y.seakings.item.custom.ArmorItems.RogerFAArmorItem;
-import net.foi1y.seakings.item.custom.ArmorItems.ZoroArmorItem;
-import net.foi1y.seakings.item.custom.trinkets.basiccloaks.BlackCloak;
+import net.foi1y.seakings.item.custom.ArmorItems.PreFAZoroArmorItem;
 import net.foi1y.seakings.item.custom.trinkets.basiccloaks.BlueCloak;
 import net.foi1y.seakings.item.custom.trinkets.basiccloaks.WhiteCloak;
 import net.foi1y.seakings.item.custom.DevilFruitItem;
@@ -31,14 +30,14 @@ public class ModItems {
     public static final Item WADO_ICHIMONJI = registerItem("wado_ichimonji",
             new SwordItem(ModToolMaterial.KATANA, 2, -2.5f, new FabricItemSettings().maxCount(1)));
 
-    public static final Item ZOROHELMET = registerItem("zorohelmet",
-            new ZoroArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.HELMET, new FabricItemSettings().maxCount(1)));
-    public static final Item ZOROCHESTPLATE = registerItem("zorochestplate",
-            new ZoroArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().maxCount(1)));
-    public static final Item ZOROLEGGINGS = registerItem("zoroleggings",
-            new ZoroArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.LEGGINGS, new FabricItemSettings().maxCount(1)));
-    public static final Item ZOROBOOTS = registerItem("zoroboots",
-            new ZoroArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.BOOTS, new FabricItemSettings().maxCount(1)));
+    public static final Item ZOROHELMET = registerItem("prezorohelmet",
+            new PreFAZoroArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.HELMET, new FabricItemSettings().maxCount(1)));
+    public static final Item ZOROCHESTPLATE = registerItem("prezorochestplate",
+            new PreFAZoroArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().maxCount(1)));
+    public static final Item ZOROLEGGINGS = registerItem("prezoroleggings",
+            new PreFAZoroArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.LEGGINGS, new FabricItemSettings().maxCount(1)));
+    public static final Item ZOROBOOTS = registerItem("prezoroboots",
+            new PreFAZoroArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.BOOTS, new FabricItemSettings().maxCount(1)));
     public static final Item ROGERHELMET = registerItem("rogerhelmet",
             new RogerFAArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.HELMET, new FabricItemSettings().maxCount(1)));
     public static final Item ROGERCHESTPLATE = registerItem("rogerchestplate",
@@ -63,12 +62,12 @@ public class ModItems {
             new MarineUniformArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.LEGGINGS, new FabricItemSettings().maxCount(1)));
     public static final Item MARINEUNIFORM_BOOTS = registerItem("marineuniform_boots",
             new MarineUniformArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.BOOTS, new FabricItemSettings().maxCount(1)));
+
+    // Cloaks
     public static final Item WHITE_CLOAK = registerItem("whitecloak",
             new WhiteCloak(new Item.Settings().maxCount(1)));
     public static final Item BLUE_CLOAK = registerItem("bluecloak",
             new BlueCloak(new Item.Settings().maxCount(1)));
-    public static final Item BLACK_CLOAK = registerItem("blackcloak",
-            new BlackCloak(new Item.Settings().maxCount(1)));
 
     public static final Item GOMU = registerItem("gomu",
             new DevilFruitItem(new FabricItemSettings().food(ModFoodComponents.DEVILFRUIT)));

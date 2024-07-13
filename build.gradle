@@ -38,7 +38,6 @@ repositories {
 	maven { url = "https://api.modrinth.com/maven" }
 	maven { url = "https://maven.terraformersmc.com/releases/" }
 	maven { url = "https://maven.ladysnake.org/releases" }
-	maven { url = "https://mvn.devos.one/releases/" }
 
 	maven {
 		name = "Curse Maven"
@@ -77,11 +76,11 @@ dependencies {
 	modImplementation("com.terraformersmc:modmenu:${project.mod_menu_version}") {
 		exclude group: "net.fabricmc.fabric-api"
 	}
-	modImplementation("software.bernie.geckolib:geckolib-fabric-${minecraft_version}:${geckolib_version}")
+	modImplementation include("software.bernie.geckolib:geckolib-fabric-${minecraft_version}:${geckolib_version}")
 	implementation("com.eliotlash.mclib:mclib:20")
 
 	// Trinkets
-	modImplementation "dev.emi:trinkets:${project.trinkets_version}"
+	modImplementation include ("dev.emi:trinkets:${project.trinkets_version}")
 	// LibGUI
 	modImplementation include("io.github.cottonmc:LibGui:8.1.1+1.20.1")
 }

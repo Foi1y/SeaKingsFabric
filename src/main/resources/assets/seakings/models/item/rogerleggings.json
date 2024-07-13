@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "seakings:item/rogerpants"
+    "layer0": "seakings:item/armoritems/roger/pretimeskip/pants"
   }
 }
