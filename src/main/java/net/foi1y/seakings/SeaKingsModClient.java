@@ -30,5 +30,7 @@ public class SeaKingsModClient implements ClientModInitializer {
                 "category.seakings.keys" // The translation key of the keybinding's category.
         ));
 
+
+
     }
 }
