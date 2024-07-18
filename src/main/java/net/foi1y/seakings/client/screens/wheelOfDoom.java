@@ -9,6 +9,9 @@ import net.minecraft.util.Identifier;
 
 
 public abstract class wheelOfDoom extends Screen {
+
+
+
     private final static Identifier wheel1 = new Identifier("wheel1","assets/seakings/textures/Gui/wheelofdoom/selection1.png");
     private final static Identifier wheel2 = new Identifier("wheel1","assets/seakings/textures/Gui/wheelofdoom/selection2.png");
     private final static Identifier wheel3 = new Identifier("wheel1","assets/seakings/textures/Gui/wheelofdoom/selection3.png");
@@ -41,6 +44,7 @@ public abstract class wheelOfDoom extends Screen {
         
     }
 
+
     @Override
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
 
@@ -62,6 +66,7 @@ public abstract class wheelOfDoom extends Screen {
 
 
         // Calculate the position to center the image
+        double clientScale =  client.getWindow().getScaleFactor();
         int scale = 4;
         int imageWidth = 64; // Replace with your image width
         int imageHeight = 64; // Replace with your image height
