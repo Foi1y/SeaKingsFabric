@@ -20,30 +20,31 @@ public abstract class wheelOfDoom extends Screen {
     private final static Identifier wheel6 = new Identifier("wheel1","assets/seakings/textures/Gui/wheelofdoom/selection6.png");
     private final static Identifier wheel7 = new Identifier("wheel1","assets/seakings/textures/Gui/wheelofdoom/selection7.png");
     private final static Identifier wheel8 = new Identifier("wheel1","assets/seakings/textures/Gui/wheelofdoom/selection8.png");
-    private final static Identifier wheel9 = new Identifier("wheel1","assets/seakings/textures/Gui/wheelofdoom/selection9.png");
-    private final static Identifier wheel10 = new Identifier("wheel1","assets/seakings/textures/Gui/wheelofdoom/selection10.png");
-    private final static Identifier wheel11 = new Identifier("wheel1","assets/seakings/textures/Gui/wheelofdoom/selection11.png");
-    private final static Identifier wheel12 = new Identifier("wheel1","assets/seakings/textures/Gui/wheelofdoom/selection12.png");
     private final static Identifier wheel0 = new Identifier("wheel1","assets/seakings/textures/Gui/wheelofdoom/wheel.png");
 
-    private final int imageWidth = 256; // Width of the image
-    private final int imageHeight = 256; // Height of the image
+    private final int imageWidth = 64; // Width of the image
+    private final int imageHeight = 64; // Height of the image
 
     protected wheelOfDoom(Text title) {
         super(title);
     }
-    public void releaseMouse(MinecraftClient client) {
-        if (client != null) {
-            client.mouse.unlockCursor();
-        }
+
+    @Override
+    public boolean shouldPause(){
+        return false;
     }
 
 
     public void init(){
-        releaseMouse(client);
+
         
     }
 
+    @Override
+    public void tick() {
+        super.tick();
+
+    }
 
     @Override
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
@@ -59,10 +60,7 @@ public abstract class wheelOfDoom extends Screen {
         this.client.getTextureManager().bindTexture(wheel6);
         this.client.getTextureManager().bindTexture(wheel7);
         this.client.getTextureManager().bindTexture(wheel8);
-        this.client.getTextureManager().bindTexture(wheel9);
-        this.client.getTextureManager().bindTexture(wheel10);
-        this.client.getTextureManager().bindTexture(wheel11);
-        this.client.getTextureManager().bindTexture(wheel12);
+
 
 
         // Calculate the position to center the image
@@ -73,34 +71,11 @@ public abstract class wheelOfDoom extends Screen {
         int x = (this.width - imageWidth) / 2;
         int y = (this.height - imageHeight) / 2;
 
+
         // Draw the texture
-        if(mouseX >= 100 && mouseX <= 200 && mouseY >= 100 && mouseY <= 200){
 
-        } else if(mouseX >= 100 && mouseX <= 2000 && mouseY >= 100 && mouseY <= 200){
 
-        }else if(mouseX >= 100 && mouseX <= 2000 && mouseY >= 100 && mouseY <= 200){
 
-        }else if(mouseX >= 100 && mouseX <= 2000 && mouseY >= 100 && mouseY <= 200){
-
-        }else if(mouseX >= 100 && mouseX <= 2000 && mouseY >= 100 && mouseY <= 200){
-
-        }else if(mouseX >= 100 && mouseX <= 2000 && mouseY >= 100 && mouseY <= 200){
-
-        }else if(mouseX >= 100 && mouseX <= 2000 && mouseY >= 100 && mouseY <= 200){
-
-        }else if(mouseX >= 100 && mouseX <= 2000 && mouseY >= 100 && mouseY <= 200){
-
-        }else if(mouseX >= 100 && mouseX <= 2000 && mouseY >= 100 && mouseY <= 200){
-
-        }else if(mouseX >= 100 && mouseX <= 2000 && mouseY >= 100 && mouseY <= 200){
-
-        }else if(mouseX >= 100 && mouseX <= 2000 && mouseY >= 100 && mouseY <= 200){
-
-        }else if(mouseX >= 100 && mouseX <= 2000 && mouseY >= 100 && mouseY <= 200){
-
-        } else {
-
-        }
     }
 
 
