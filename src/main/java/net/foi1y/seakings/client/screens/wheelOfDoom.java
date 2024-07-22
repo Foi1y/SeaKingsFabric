@@ -1,27 +1,75 @@
 package net.foi1y.seakings.client.screens;
 
 import java.lang.Math;
+
+import net.foi1y.seakings.Ability;
+import net.foi1y.seakings.IPlayerAbilityData;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
-import net.minecraft.client.gui.navigation.GuiNavigation;
-import net.minecraft.client.gui.navigation.GuiNavigationPath;
-import net.minecraft.client.gui.navigation.NavigationDirection;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.narration.NarrationMessageBuilder;
 import net.minecraft.client.gui.widget.ClickableWidget;
-import net.minecraft.client.render.RenderLayer;
-import net.minecraft.client.render.VertexConsumer;
-import net.minecraft.client.render.VertexConsumerProvider;
-import net.minecraft.client.util.math.MatrixStack;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
-import org.joml.Matrix4f;
-import org.lwjgl.glfw.GLFW;
 
 
 public abstract class wheelOfDoom extends Screen {
+
+    public static void setupIcons(DrawContext drawContext,int width, int height){
+        assert MinecraftClient.getInstance().player != null;
+         PlayerEntity player = MinecraftClient.getInstance().player;
+        IPlayerAbilityData playerAbilityData = (IPlayerAbilityData) player;
+        for (int i = 0; i < 8; i++) {
+
+
+            playerAbilityData.addAbility(new Ability("null", 0, new Identifier("seakings", "textures/gui/icons/null.png")) {
+                @Override
+                public void apply(ServerPlayerEntity player) {
+
+                }
+            });
+        }
+        Ability[] abilities = playerAbilityData.getAbilities();
+
+        int[][] iconPos = {
+                {59,24},
+                {24,59},
+                {-25,59},
+                {-59,24},
+                {-59,-24},
+                {-24,-59},
+                {24,-59},
+                {59,-24}
+        };
+        Identifier[] images = new Identifier[8];
+        ClickableWidget[] icons = new ClickableWidget[8];
+        for (int i = 0; i < 8; i++) {
+            icons[i] = new ClickableWidget(0, 0, 64, 64, Text.of("thisisaicon")) {
+                @Override
+                protected void renderButton(DrawContext context, int mouseX, int mouseY, float delta) {
+
+                }
+
+                @Override
+                protected void appendClickableNarrations(NarrationMessageBuilder builder) {
+
+                }
+            };
+        }
+
+        for (int i = 0; i < 8; i++) {
+            images[i] = abilities[i].getIcon();
+        }
+        for (int i = 0; i < 8; i++) {
+            icons[i].drawTexture(drawContext, images[i],iconPos[i][0]+width/2-28/2,iconPos[i][1]+height/2-28/2,0,0,0, (int) (48*0.6), (int) (48*0.6), (int) (48*0.6), (int) (48*0.6));
+        }
+        //iconPos[i][0]/2-width/2,iconPos[i][1]/2-height/2,
+
+    }
 
 
     protected wheelOfDoom(Text title) {
@@ -34,7 +82,7 @@ public abstract class wheelOfDoom extends Screen {
     }
 
 
-    private final static Identifier wheel = new Identifier("seakings","textures/image.png");
+    private final static Identifier wheel = new Identifier("seakings","wheel.png");
 
 
     private final int imageWidth = 64; // Width of the image
@@ -86,6 +134,7 @@ public abstract class wheelOfDoom extends Screen {
     }
 
 
+
     @Override
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
 
@@ -108,6 +157,8 @@ public abstract class wheelOfDoom extends Screen {
         int width = client.getWindow().getScaledWidth();
         // Draw the texture
         ClickableWidget wheel = new ClickableWidget(0,0,320,320,Text.of("itisawheel")) {
+
+
             @Override
             protected void renderButton(DrawContext context, int mouseX, int mouseY, float delta) {
 
@@ -118,8 +169,11 @@ public abstract class wheelOfDoom extends Screen {
 
             }
         };
+
+
         wheel.drawTexture(context, wheelOfDoom.wheel, width/2-528/6,height/2-528/6, 0,0,0,528/3,528/3,528/3,528/3);
 
+        setupIcons(context, width,height);
     }
 
 
