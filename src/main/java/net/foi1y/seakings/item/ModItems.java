@@ -70,7 +70,7 @@ public class ModItems {
             new BlueCloak(new Item.Settings().maxCount(1)));
 
     public static final Item GOMU = registerItem("gomu",
-            new DevilFruitItem(new FabricItemSettings().food(ModFoodComponents.DEVILFRUIT)));
+            new DevilFruitItem(new FabricItemSettings().food(ModFoodComponents.DEVILFRUIT).maxCount(1)));
 
 
     private static Item registerItem(String name, Item item) {
