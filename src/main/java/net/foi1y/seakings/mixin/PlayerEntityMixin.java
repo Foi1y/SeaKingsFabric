@@ -1,5 +1,6 @@
 package net.foi1y.seakings.mixin;
 import net.foi1y.seakings.Ability;
+import net.foi1y.seakings.IPlayerAbilityData;
 import net.minecraft.entity.player.PlayerEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
@@ -47,7 +48,7 @@ public class PlayerEntityMixin implements IPlayerAbilityData {
 
     @Override
     public void addAbility(Ability ability) {
-        if (abilities.size() < 10 && !abilities.contains(ability)) {
+        if (abilities.size() < 8 && !abilities.contains(ability)) {
             abilities.add(ability);
         }
     }
