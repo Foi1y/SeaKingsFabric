@@ -1,9 +1,11 @@
 {
   "item.seakings.donut": "Donut",
-  "item.seakings.blue_donut": "Blue Donut",
+  "item.seakings.blue_donut": "Blue Donut \uE1E8",
 
-  "item.seakings.whitecloak": "White Cloak",
-  "item.seakings.bluecloak": "Blue Cloak",
+  "item.seakings.whitecloak": "White Cloak \uE2E5",
+  "item.seakings.bluecloak": "Blue Cloak \uE2E5",
+
+  "item.seakings.gomu": "Gomu Gomu no Mi \uE2E1",
 
   "item.seakings.cutlass": "Cutlass",
   "item.seakings.wado_ichimonji": "Wado Ichimonji",
@@ -13,22 +15,22 @@
   "block.seakings.rawseaprisonstone": "Raw Sea Prison Stone",
   "block.seakings.marinebarrel": "Marine Barrel",
 
-  "item.seakings.prezorohelmet": "Zoros Earrings",
-  "item.seakings.prezorochestplate": "Zoros Shirt",
-  "item.seakings.prezoroleggings": "Zoros Pants",
-  "item.seakings.prezoroboots": "Zoros Boots",
-  "item.seakings.rogerhelmet": "Rogers Mustache",
-  "item.seakings.rogerchestplate": "Rogers Coat",
-  "item.seakings.rogerleggings": "Rogers Pants",
-  "item.seakings.rogerboots": "Rogers Boots",
-  "item.seakings.straw_hat": "Straw Hat",
-  "item.seakings.preluffychestplate": "Luffys Vest",
-  "item.seakings.preluffyleggings": "Luffys Shorts",
-  "item.seakings.preluffyboots": "Luffys Sandles",
+  "item.seakings.prezorohelmet": "Zoros Earrings \uE2E4",
+  "item.seakings.prezorochestplate": "Zoros Shirt \uE2E4",
+  "item.seakings.prezoroleggings": "Zoros Pants \uE2E4",
+  "item.seakings.prezoroboots": "Zoros Boots \uE2E4",
+  "item.seakings.rogerhelmet": "Rogers Mustache \uE2E4",
+  "item.seakings.rogerchestplate": "Rogers Coat \uE2E4",
+  "item.seakings.rogerleggings": "Rogers Pants \uE2E4",
+  "item.seakings.rogerboots": "Rogers Boots \uE2E4",
+  "item.seakings.straw_hat": "Straw Hat \uE2E4",
+  "item.seakings.preluffychestplate": "Luffys Vest \uE2E4",
+  "item.seakings.preluffyleggings": "Luffys Shorts \uE2E4",
+  "item.seakings.preluffyboots": "Luffys Sandles \uE2E4",
 
 
   "seakings.itemgroup.misc_group": "Sea Kings",
-  "seakings.itemgroup.foods_group": "Sea Kings Food",
+  "seakings.itemgroup.fruits_group": "Sea Kings Devil Fruits",
   "seakings.itemgroup.weapons_group": "Sea Kings Weapons",
   "seakings.itemgroup.armor_group": "Sea Kings Armor",
 

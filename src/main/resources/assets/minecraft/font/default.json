@@ -1,0 +1,93 @@
+{
+  "providers": [
+    // Devil Fruit Badges
+    {
+      "type": "bitmap",
+      "file": "seakings:badges/devilfruits/devilfruitcommon.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": [
+        "\uE1E8"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "seakings:badges/devilfruits/devilfruituncommon.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": [
+        "\uE1E9"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "seakings:badges/devilfruits/devilfruitrare.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": [
+        "\uE2E0"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "seakings:badges/devilfruits/devilfruitepic.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": [
+        "\uE2E1"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "seakings:badges/devilfruits/devilfruitlegendary.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": [
+        "\uE2E2"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "seakings:badges/devilfruits/devilfruitmythical.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": [
+        "\uE2E3"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "seakings:badges/armour/armour.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": [
+        "\uE2E4"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "seakings:badges/armour/trinket.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": [
+        "\uE2E5"
+      ]
+    },
+
+
+
+
+    {
+      "type": "reference",
+      "id": "minecraft:include/space"
+    },
+    {
+      "type": "reference",
+      "id": "minecraft:include/default"
+    },
+    {
+      "type": "reference",
+      "id": "minecraft:include/unifont"
+    }
+  ]
+}
