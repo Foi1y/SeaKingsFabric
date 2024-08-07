@@ -58,6 +58,12 @@ public abstract class wheelOfDoom extends Screen {
                 protected void appendClickableNarrations(NarrationMessageBuilder builder) {
 
                 }
+
+                @Override
+                public void onClick(double mouseX, double mouseY) {
+
+
+                }
             };
         }
 

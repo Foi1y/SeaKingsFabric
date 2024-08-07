@@ -64,6 +64,11 @@ public class PlayerEntityMixin implements IPlayerAbilityData {
     }
 
     @Override
+    public Ability getAbilityByNum(int number) {
+        return abilities.get(number);
+    }
+
+    @Override
     public void setAlignment(String alignment) {
         playerAlignment = alignment;
     }
