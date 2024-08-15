@@ -1,0 +1,35 @@
+{
+  "name": "Romance Dawn",
+  "icon": "minecraft:writable_book",
+  "category": "seakings:arcs_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Romance Dawn is the First Arc we are Introduced into with One Piece, It Introduces 4 Main Characters Monkey D. Luffy, Gol D. Roger, Roronoa Zoro, and Nami. The Content Romance Dawn Introduces for Sea Kings includes Different Fighting Styles Such as 0-3 Sword Styles, Brawler Fighting style and The Gomu Gomu no Mi"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:armor_stand{ArmorItems:[{Count:1,id:'seakings:preluffyboots'},{Count:1,id:'seakings:preluffyleggings'},{Count:1,id:'seakings:preluffychestplate'},{Count:1,id:'seakings:straw_hat'}],ShowArms:true,NoBasePlate:true,Pose:{Head:[5f,0f,0f],Body:[0f,0f,0f],LeftArm:[0f,0f,0f],RightArm:[0f,0f,0f],LeftLeg:[0f,0f,0f],RightLeg:[0f,0f,0f]}}",
+      "text": "This is one of the many Outfits Monkey D. Luffy has worn during the Series.",
+      "rotate": false,
+      "default_rotation": -25,
+      "name": "Luffys Appearance"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:armor_stand{ArmorItems:[{Count:1,id:'seakings:prezoroboots'},{Count:1,id:'seakings:prezoroleggings'},{Count:1,id:'seakings:prezorochestplate'},{Count:1,id:'seakings:prezorohelmet'}],ShowArms:true,NoBasePlate:true,Pose:{Head:[5f,0f,0f],Body:[0f,0f,0f],LeftArm:[0f,0f,0f],RightArm:[0f,0f,0f],LeftLeg:[0f,0f,0f],RightLeg:[0f,0f,0f]}}",
+      "text": "This is one of the many Outfits Roronoa Zoro has worn during the Series.",
+      "rotate": false,
+      "default_rotation": -25,
+      "name": "Zoros Appearance"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:armor_stand{ArmorItems:[{Count:1,id:'seakings:rogerboots'},{Count:1,id:'seakings:rogerleggings'},{Count:1,id:'seakings:rogerchestplate'},{Count:1,id:'seakings:rogerhelmet'}],ShowArms:true,NoBasePlate:true,Pose:{Head:[5f,0f,0f],Body:[0f,0f,0f],LeftArm:[0f,0f,0f],RightArm:[0f,0f,0f],LeftLeg:[0f,0f,0f],RightLeg:[0f,0f,0f]}}",
+      "text": "This is one of the few Outfits Gol D. Roger has worn during the Series",
+      "rotate": false,
+      "default_rotation": -25,
+      "name": "Rogers Appearance"
+    }
+  ]
+}

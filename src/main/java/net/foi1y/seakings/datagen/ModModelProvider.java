@@ -17,5 +17,14 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        // Luffy Armour
+        itemModelGenerator.register(ModItems.STRAW_HAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PRELUFFYCHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PRELUFFYLEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PRELUFFYBOOTS, Models.GENERATED);
+
+        // Templates
+        itemModelGenerator.register(ModItems.SWORD_TEMPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CUTLASSBLADETEMPLATE, Models.GENERATED);
     }
 }

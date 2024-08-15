@@ -1,0 +1,9 @@
+Customizable Swords would Include
+
+Cane Swords - Customizable Blade Types + Different Block Textures
+
+Katanas - Customizable Blade Types + Dyeable Hilts & Gemmed Guards
+
+Cutlasses - Customizable Blade Types + Dyeable Hilts & Gemmed Guards
+
+Sheathes - Different Block Textures + Different Amount for Sheath & Maybe Swords in Sheath when not Held (Very Maybe)

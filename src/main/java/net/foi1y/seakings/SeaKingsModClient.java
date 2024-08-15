@@ -5,8 +5,7 @@ import dev.emi.trinkets.api.client.TrinketRendererRegistry;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
-import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
-import net.foi1y.seakings.client.models.luffy;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.foi1y.seakings.client.screens.wheelOfDoom;
 import net.foi1y.seakings.item.ModItems;
 import net.minecraft.client.MinecraftClient;
@@ -24,6 +23,7 @@ public class SeaKingsModClient implements ClientModInitializer {
     public void onInitializeClient() {
         TrinketRendererRegistry.registerRenderer(ModItems.WHITE_CLOAK, (TrinketRenderer) ModItems.WHITE_CLOAK);
         TrinketRendererRegistry.registerRenderer(ModItems.BLUE_CLOAK, (TrinketRenderer) ModItems.BLUE_CLOAK);
+        TrinketRendererRegistry.registerRenderer(ModItems.ONESWORDSHEATH, (TrinketRenderer) ModItems.ONESWORDSHEATH);
 
 
 

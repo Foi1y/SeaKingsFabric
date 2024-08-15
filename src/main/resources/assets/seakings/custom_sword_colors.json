@@ -1,0 +1,17 @@
+{
+  "blade": {
+    "red": "#FF0000",
+    "blue": "#0000FF",
+    "green": "#00FF00"
+  },
+  "hilt": {
+    "gold": "#FFD700",
+    "silver": "#C0C0C0",
+    "bronze": "#CD7F32"
+  },
+  "wrap": {
+    "black": "#000000",
+    "white": "#FFFFFF",
+    "brown": "#8B4513"
+  }
+}

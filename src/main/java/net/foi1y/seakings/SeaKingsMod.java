@@ -8,6 +8,7 @@ import net.foi1y.seakings.block.ModBlocks;
 import net.foi1y.seakings.config.SeaKingsConfig;
 import net.foi1y.seakings.item.*;
 
+import net.foi1y.seakings.util.ModCustomTrades;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import org.slf4j.*;
@@ -33,6 +34,7 @@ public class SeaKingsMod implements ModInitializer {
 		ModItemGroup.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModCustomTrades.registerCustomTrades();
 
 		// Config
 		MidnightConfig.init(SeaKingsMod.MOD_ID, SeaKingsConfig.class);

@@ -2,5 +2,19 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "seakings:item/bluedonut"
-  }
+  },
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [16, 16, 0],
+      "faces": {
+        "north": {"uv": [0, 0, 16, 16], "texture": "#layer0"},
+        "east": {"uv": [0, 0, 16, 16], "texture": "#layer0"},
+        "south": {"uv": [0, 0, 16, 16], "texture": "#layer0"},
+        "west": {"uv": [0, 0, 16, 16], "texture": "#layer0"},
+        "up": {"uv": [0, 0, 16, 16], "texture": "#layer0"},
+        "down": {"uv": [0, 0, 16, 16], "texture": "#layer0"}
+      }
+    }
+  ]
 }

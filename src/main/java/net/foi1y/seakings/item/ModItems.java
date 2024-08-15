@@ -13,6 +13,7 @@ import net.foi1y.seakings.item.custom.trinkets.basiccloaks.BlueCloak;
 import net.foi1y.seakings.item.custom.trinkets.basiccloaks.WhiteCloak;
 import net.foi1y.seakings.item.custom.DevilFruitItem;
 
+import net.foi1y.seakings.item.custom.trinkets.sheaths.SheathOneSword;
 import net.minecraft.item.*;
 import net.minecraft.registry.*;
 import net.minecraft.util.Identifier;
@@ -22,13 +23,26 @@ public class ModItems {
             new Item(new FabricItemSettings()));
     public static final Item BLUE_DONUT = registerItem("blue_donut",
             new Item(new FabricItemSettings()));
+    // Templates
+    public static final Item SWORD_TEMPLATE = registerItem("sword_template",
+            new Item(new FabricItemSettings()));
+    public static final Item CUTLASSBLADETEMPLATE = registerItem("cutlassbladetemplate",
+            new Item(new FabricItemSettings()));
 
     public static final Item CUTLASS = registerItem("cutlass",
             new SwordItem(ModToolMaterial.KATANA, 2, -2.5f, new FabricItemSettings().maxCount(1)));
+    public static final Item ACE = registerItem("ace",
+            new SwordItem(ModToolMaterial.KATANA, 2, -2.5f, new FabricItemSettings().maxCount(1)));
+    public static final Item GRYPHON = registerItem("gryphon",
+            new SwordItem(ModToolMaterial.KATANA, 2, -2.5f, new FabricItemSettings().maxCount(1)));
     public static final Item KATANABASE = registerItem("katanabase",
             new SwordItem(ModToolMaterial.KATANA, 2, -2.5f, new FabricItemSettings().maxCount(1)));
+    public static final Item DIAMONDKATANA = registerItem("diamondkatana",
+            new SwordItem(ModToolMaterial.KATANA, 3, -2.5f, new FabricItemSettings().maxCount(1)));
     public static final Item WADO_ICHIMONJI = registerItem("wado_ichimonji",
             new SwordItem(ModToolMaterial.KATANA, 2, -2.5f, new FabricItemSettings().maxCount(1)));
+    public static final Item SCYTHE = registerItem("scythe",
+            new SwordItem(ModToolMaterial.KATANA, 3, -3f, new FabricItemSettings().maxCount(1)));
 
     public static final Item ZOROHELMET = registerItem("prezorohelmet",
             new PreFAZoroArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.HELMET, new FabricItemSettings().maxCount(1)));
@@ -69,8 +83,13 @@ public class ModItems {
     public static final Item BLUE_CLOAK = registerItem("bluecloak",
             new BlueCloak(new Item.Settings().maxCount(1)));
 
+    // Sheaths
+    public static final Item ONESWORDSHEATH = registerItem("oneswordsheath",
+            new SheathOneSword(new Item.Settings().maxCount(1)));
+    // Devil Fruits
     public static final Item GOMU = registerItem("gomu",
             new DevilFruitItem(new FabricItemSettings().food(ModFoodComponents.DEVILFRUIT).maxCount(1)));
+
 
 
     private static Item registerItem(String name, Item item) {

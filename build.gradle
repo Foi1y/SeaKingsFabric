@@ -54,6 +54,10 @@ repositories {
 			includeGroup("com.eliotlash.mclib")
 		}
 	}
+	maven {
+		name = 'TerraformersMC'
+		url = 'https://maven.terraformersmc.com/'
+	}
 }
 
 fabricApi {
@@ -70,10 +74,10 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	// Midnight Lib
-	modImplementation "maven.modrinth:midnightlib:${project.midnightlib_version}"
+	modImplementation include ("maven.modrinth:midnightlib:${project.midnightlib_version}")
 
 	// Mod menu
-	modImplementation("com.terraformersmc:modmenu:${project.mod_menu_version}") {
+	modImplementation include ("com.terraformersmc:modmenu:${project.mod_menu_version}") {
 		exclude group: "net.fabricmc.fabric-api"
 	}
 	modImplementation include("software.bernie.geckolib:geckolib-fabric-${minecraft_version}:${geckolib_version}")

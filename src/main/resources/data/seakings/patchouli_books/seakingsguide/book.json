@@ -1,0 +1,7 @@
+{
+  "name": "Sea Kings Guide Book",
+  "landing_text": "A Guide for all of the Sea Kings Mod!",
+  "version": 1,
+  "creative_tab": "seakings:misc_group",
+  "use_resource_pack": true
+}

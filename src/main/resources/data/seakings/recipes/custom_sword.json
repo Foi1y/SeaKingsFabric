@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "minecraft:iron_ingot" },
+    { "item": "minecraft:stick" },
+    { "item": "minecraft:red_dye" },
+    { "item": "minecraft:gold_ingot" },
+    { "item": "minecraft:black_dye" }
+  ],
+  "result": {
+    "item": "seakings:katanabase"
+  }
+}

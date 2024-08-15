@@ -1,0 +1,29 @@
+{
+  "name": "Straw Hat Pirates",
+  "icon": "seakings:straw_hat",
+  "category": "seakings:crews_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The Straw Hat Pirates are a Crew Formed by Monkey D. 'Straw Hat' Luffy. His Crew Includes $(li)Roronoa Zoro $(li)'Cat Burglar' Nami $(li)'Go D.' Usopp $(li)'Black Leg' Sanji $(li)Tony Tony Chopper $(li)Nico Robin $(li)Franky $(li)'Soul King' $(li)Brook $(li)Jinbe"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "title": "Monkey D. Luffy",
+      "item": "seakings:gomu",
+      "text": "Monkey D. Luffy can usually be seen wearing Shorts and a Vest or Long Sleeve Shirt as well as a Straw Hat. $(br)He is a Devil Fruit User who has the Hito Hito no Mi: Model Nika which gives him the Properties of Rubber, It is also a Mythical Zoan type Devil Fruit."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "title": "Roronoa Zoro",
+      "item": "seakings:wado_ichimonji",
+      "text": "Roronoa Zoro can be seen wearing a set of 3 Swords on his Waist. $(br)He is a Sword Main who Fights with the 3 Swords on his Waist, He has fought with $(li)Wado Ichimonji $(li)Yubishiri $(li)Sandai Kitetsu $(li)Shisui $(li)Enma $(li)Brooms"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "title": "'Cat Burglar' Nami",
+      "item": "minecraft:gold_ingot",
+      "text": "'Cat Burglar' Nami is a character with Bright Orange Hair and a Tattoo on her Left Arm. $(br) She Fights with a Clima-tact and uses Weather Balls to create Lighting Bases Abilities like the Goro Goro no Mi."
+    }
+  ]
+}
