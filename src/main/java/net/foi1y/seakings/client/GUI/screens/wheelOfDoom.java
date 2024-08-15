@@ -1,4 +1,4 @@
-package net.foi1y.seakings.client.screens;
+package net.foi1y.seakings.client.GUI.screens;
 
 import java.lang.Math;
 

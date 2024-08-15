@@ -5,15 +5,12 @@ import dev.emi.trinkets.api.client.TrinketRendererRegistry;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
-import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
-import net.foi1y.seakings.client.screens.wheelOfDoom;
+import net.foi1y.seakings.client.GUI.screens.wheelOfDoom;
 import net.foi1y.seakings.item.ModItems;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.option.KeyBinding;
-import net.minecraft.client.render.entity.model.EntityModelLayer;
 import net.minecraft.client.util.InputUtil;
 import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
 import org.lwjgl.glfw.GLFW;
 
 public class SeaKingsModClient implements ClientModInitializer {
