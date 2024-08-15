@@ -11,7 +11,7 @@ import net.minecraft.client.render.item.ItemRenderer;
 import net.minecraft.entity.player.PlayerAbilities;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.Identifier;
-import net.foi1y.seakings.
+
 
 public class abilityIndicator implements HudRenderCallback {
 
@@ -22,6 +22,6 @@ public class abilityIndicator implements HudRenderCallback {
         PlayerEntity player = MinecraftClient.getInstance().player;
         IPlayerAbilityData playerAbilityData = (IPlayerAbilityData) player;
         RenderSystem.setShaderTexture(0,playerAbilityData.getActiveAbility().getIcon());
-
+        MinecraftClient.getInstance().inGameHud.render(drawContext,tickDelta);
     }
 }
