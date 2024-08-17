@@ -129,13 +129,13 @@ public class ModItems {
             new PreFAZoroArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.LEGGINGS, new FabricItemSettings().maxCount(1)));
     public static final Item PREZOROBOOTS = registerItem("prezoroboots",
             new PreFAZoroArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.BOOTS, new FabricItemSettings().maxCount(1)));
-    public static final Item PREROGERHELMET = registerItem("rogerhelmet",
+    public static final Item PREROGERHELMET = registerItem("prerogerhelmet",
             new RogerFAArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.HELMET, new FabricItemSettings().maxCount(1)));
-    public static final Item PREROGERCHESTPLATE = registerItem("rogerchestplate",
+    public static final Item PREROGERCHESTPLATE = registerItem("prerogerchestplate",
             new RogerFAArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().maxCount(1)));
-    public static final Item PREROGERLEGGINGS = registerItem("rogerleggings",
+    public static final Item PREROGERLEGGINGS = registerItem("prerogerleggings",
             new RogerFAArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.LEGGINGS, new FabricItemSettings().maxCount(1)));
-    public static final Item PREROGERBOOTS = registerItem("rogerboots",
+    public static final Item PREROGERBOOTS = registerItem("prerogerboots",
             new RogerFAArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.BOOTS, new FabricItemSettings().maxCount(1)));
     public static final Item STRAW_HAT = registerItem("straw_hat",
             new PreLuffyArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.HELMET, new FabricItemSettings().maxCount(1)));
