@@ -23,6 +23,16 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PRELUFFYLEGGINGS, Models.GENERATED);
         itemModelGenerator.register(ModItems.PRELUFFYBOOTS, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.PREZOROHELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PREZOROCHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PREZOROLEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PREZOROBOOTS, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.PREROGERHELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PREROGERCHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PREROGERLEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PREROGERBOOTS, Models.GENERATED);
+
         // Templates
         itemModelGenerator.register(ModItems.SWORD_TEMPLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.CUTLASSBLADETEMPLATE, Models.GENERATED);

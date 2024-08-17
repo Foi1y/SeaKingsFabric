@@ -2,8 +2,9 @@
 	"credit": "Made by Foi1y",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "seakings:item/acehilt",
-		"1": "seakings:item/cutlasblade"
+		"0": "seakings:item/hilts/acehilt",
+		"1": "seakings:item/blades/aceblade",
+		"particle": "minecraft:items/gold_ingot"
 	},
 	"elements": [
 		{
@@ -85,7 +86,7 @@
 			"to": [7.5, 32, 9.5],
 			"faces": {
 				"north": {"uv": [0, 0, 0, 13], "texture": "#1"},
-				"east": {"uv": [3, 0, 0, 13], "texture": "#1"},
+				"east": {"uv": [2, 0, 1, 13], "texture": "#1"},
 				"south": {"uv": [0, 0, 0, 13], "texture": "#1"},
 				"west": {"uv": [1, 0, 2, 13], "texture": "#1"},
 				"up": {"uv": [0, 1, 0, 0], "texture": "#1"},

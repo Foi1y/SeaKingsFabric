@@ -1,6 +1,5 @@
 {
   "providers": [
-    // Devil Fruit Badges
     {
       "type": "bitmap",
       "file": "seakings:badges/devilfruits/devilfruitcommon.png",
@@ -71,6 +70,33 @@
       "height": 9,
       "chars": [
         "\uE2E5"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "seakings:badges/weapons/katana.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": [
+        "\uE2E6"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "seakings:badges/weapons/cutlass.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": [
+        "\uE2E7"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "seakings:badges/weapons/character.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": [
+        "\uE2E8"
       ]
     },
 

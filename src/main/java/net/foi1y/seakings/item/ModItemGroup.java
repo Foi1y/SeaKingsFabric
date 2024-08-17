@@ -39,26 +39,29 @@ public class ModItemGroup {
                         entries.add(ModItems.CUTLASS);
                         entries.add(ModItems.ACE);
                         entries.add(ModItems.GRYPHON);
-                        entries.add(ModItems.KATANABASE);
+                        entries.add(ModItems.YORU);
                         entries.add(ModItems.WADO_ICHIMONJI);
+                        entries.add(ModItems.IRONKATANA);
+                        entries.add(ModItems.GOLDKATANA);
                         entries.add(ModItems.DIAMONDKATANA);
+                        entries.add(ModItems.NETHERITEKATANA);
                     }).build());
 
     public static final ItemGroup ARMOR_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(SeaKingsMod.MOD_ID, "armor_group"),
             FabricItemGroup.builder().displayName(Text.translatable("seakings.itemgroup.armor_group"))
                     .icon(() -> new ItemStack(ModItems.STRAW_HAT)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.ZOROHELMET);
-                        entries.add(ModItems.ZOROCHESTPLATE);
-                        entries.add(ModItems.ZOROLEGGINGS);
-                        entries.add(ModItems.ZOROBOOTS);
+                        entries.add(ModItems.PREZOROHELMET);
+                        entries.add(ModItems.PREZOROCHESTPLATE);
+                        entries.add(ModItems.PREZOROLEGGINGS);
+                        entries.add(ModItems.PREZOROBOOTS);
 
                         entries.add(ModItems.WHITE_CLOAK);
 
-                        entries.add(ModItems.ROGERHELMET);
-                        entries.add(ModItems.ROGERCHESTPLATE);
-                        entries.add(ModItems.ROGERLEGGINGS);
-                        entries.add(ModItems.ROGERBOOTS);
+                        entries.add(ModItems.PREROGERHELMET);
+                        entries.add(ModItems.PREROGERCHESTPLATE);
+                        entries.add(ModItems.PREROGERLEGGINGS);
+                        entries.add(ModItems.PREROGERBOOTS);
 
                         entries.add(ModItems.STRAW_HAT);
                         entries.add(ModItems.PRELUFFYCHESTPLATE);

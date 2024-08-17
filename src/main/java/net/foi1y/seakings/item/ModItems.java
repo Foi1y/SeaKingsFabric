@@ -14,9 +14,15 @@ import net.foi1y.seakings.item.custom.trinkets.basiccloaks.WhiteCloak;
 import net.foi1y.seakings.item.custom.DevilFruitItem;
 
 import net.foi1y.seakings.item.custom.trinkets.sheaths.SheathOneSword;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.*;
 import net.minecraft.registry.*;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class ModItems {
     public static final Item DONUT = registerItem("donut",
@@ -29,36 +35,107 @@ public class ModItems {
     public static final Item CUTLASSBLADETEMPLATE = registerItem("cutlassbladetemplate",
             new Item(new FabricItemSettings()));
 
+    // Swords
+
     public static final Item CUTLASS = registerItem("cutlass",
-            new SwordItem(ModToolMaterial.KATANA, 2, -2.5f, new FabricItemSettings().maxCount(1)));
+            new SwordItem(ModToolMaterial.KATANA, 2, -2.4f, new FabricItemSettings().maxCount(1)));
     public static final Item ACE = registerItem("ace",
-            new SwordItem(ModToolMaterial.KATANA, 2, -2.5f, new FabricItemSettings().maxCount(1)));
+            new SwordItem(ModToolMaterial.KATANA, 3, -2.4f, new FabricItemSettings().maxCount(1)) {
+                @Override
+                public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+                    tooltip.add(Text.literal("§5§l§oThe Weapon of the King of the Pirates."));
+                    tooltip.add(Text.literal("§c§lSupreme Grade Blade"));
+                    tooltip.add(Text.literal("§8§l§oBlack Blade"));
+                }
+    });
     public static final Item GRYPHON = registerItem("gryphon",
-            new SwordItem(ModToolMaterial.KATANA, 2, -2.5f, new FabricItemSettings().maxCount(1)));
-    public static final Item KATANABASE = registerItem("katanabase",
-            new SwordItem(ModToolMaterial.KATANA, 2, -2.5f, new FabricItemSettings().maxCount(1)));
-    public static final Item DIAMONDKATANA = registerItem("diamondkatana",
-            new SwordItem(ModToolMaterial.KATANA, 3, -2.5f, new FabricItemSettings().maxCount(1)));
+            new SwordItem(ModToolMaterial.KATANA, 2, -2.4f, new FabricItemSettings().maxCount(1)) {
+                @Override
+                public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+                    tooltip.add(Text.literal("§5§l§oThe Weapon of the Captain of the Red Hair Pirates."));
+                    tooltip.add(Text.literal("§c§lSupreme Grade Blade"));
+                }
+            });
     public static final Item WADO_ICHIMONJI = registerItem("wado_ichimonji",
-            new SwordItem(ModToolMaterial.KATANA, 2, -2.5f, new FabricItemSettings().maxCount(1)));
+            new SwordItem(ModToolMaterial.KATANA, 2, -2.4f, new FabricItemSettings().maxCount(1)) {
+                @Override
+                public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+                    tooltip.add(Text.literal("§5§l§oA Weapon of Roronoa Zoro"));
+                    tooltip.add(Text.literal("§3§lGreat Grade Blade"));
+                }
+            });
+    public static final Item SHUSUI = registerItem("shusui",
+            new SwordItem(ModToolMaterial.KATANA, 3, -2.4f, new FabricItemSettings().maxCount(1)) {
+                @Override
+                public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+                    tooltip.add(Text.literal("§6§l§oThe Treasure of Wano"));
+                    tooltip.add(Text.literal("§3§lGreat Grade Blade"));
+                    tooltip.add(Text.literal("§8§l§oBlack Blade"));
+                }
+            });
+    public static final Item SANDAI_KITETSU = registerItem("sandai_kitetsu",
+            new SwordItem(ModToolMaterial.KATANA, 3, -2.4f, new FabricItemSettings().maxCount(1)) {
+                @Override
+                public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+                    tooltip.add(Text.literal("§5§l§oA Weapon of Roronoa Zoro"));
+                    tooltip.add(Text.literal("§9§lGrade Blade"));
+                    tooltip.add(Text.literal("§8§l§oCursed Blade"));
+                }
+            });
+    public static final Item YORU = registerItem("yoru",
+            new SwordItem(ModToolMaterial.KATANA, 3, -3.4f, new FabricItemSettings().maxCount(1)) {
+                @Override
+                public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+                    tooltip.add(Text.literal("§5§l§oMihawk's Great Sword"));
+                    tooltip.add(Text.literal("§c§lSupreme Grade Blade"));
+                    tooltip.add(Text.literal("§8§l§oBlack Blade"));
+                }
+            });
+    public static final Item MURAKUMOGIRI = registerItem("murakumogiri",
+            new SwordItem(ModToolMaterial.KATANA, 3, -3.4f, new FabricItemSettings().maxCount(1)) {
+                @Override
+                public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+                    tooltip.add(Text.literal("§5§l§oWhitebeards Naginata"));
+                    tooltip.add(Text.literal("§c§lSupreme Grade Blade"));
+                }
+            });
+    public static final Item SOULCANE = registerItem("soulcane",
+            new SwordItem(ModToolMaterial.KATANA, 2, -2f, new FabricItemSettings().maxCount(1)) {
+                @Override
+                public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+                    tooltip.add(Text.literal("§5§l§oBrooks Cane Blade"));
+                    tooltip.add(Text.literal("§3§lGreat Grade Blade"));
+                }
+            });
+
+    public static final Item IRONKATANA = registerItem("ironkatana",
+            new SwordItem(ModToolMaterial.KATANA, 2, -2.4f, new FabricItemSettings().maxCount(1)));
+    public static final Item GOLDKATANA = registerItem("goldkatana",
+            new SwordItem(ModToolMaterial.KATANA, 2, -2.4f, new FabricItemSettings().maxCount(1)));
+    public static final Item DIAMONDKATANA = registerItem("diamondkatana",
+            new SwordItem(ModToolMaterial.KATANA, 3, -2.4f, new FabricItemSettings().maxCount(1)));
+    public static final Item NETHERITEKATANA = registerItem("netheritekatana",
+            new SwordItem(ModToolMaterial.KATANA, 2, -2.4f, new FabricItemSettings().maxCount(1)));
     public static final Item SCYTHE = registerItem("scythe",
             new SwordItem(ModToolMaterial.KATANA, 3, -3f, new FabricItemSettings().maxCount(1)));
 
-    public static final Item ZOROHELMET = registerItem("prezorohelmet",
+    // Armours
+
+    public static final Item PREZOROHELMET = registerItem("prezorohelmet",
             new PreFAZoroArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.HELMET, new FabricItemSettings().maxCount(1)));
-    public static final Item ZOROCHESTPLATE = registerItem("prezorochestplate",
+    public static final Item PREZOROCHESTPLATE = registerItem("prezorochestplate",
             new PreFAZoroArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().maxCount(1)));
-    public static final Item ZOROLEGGINGS = registerItem("prezoroleggings",
+    public static final Item PREZOROLEGGINGS = registerItem("prezoroleggings",
             new PreFAZoroArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.LEGGINGS, new FabricItemSettings().maxCount(1)));
-    public static final Item ZOROBOOTS = registerItem("prezoroboots",
+    public static final Item PREZOROBOOTS = registerItem("prezoroboots",
             new PreFAZoroArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.BOOTS, new FabricItemSettings().maxCount(1)));
-    public static final Item ROGERHELMET = registerItem("rogerhelmet",
+    public static final Item PREROGERHELMET = registerItem("rogerhelmet",
             new RogerFAArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.HELMET, new FabricItemSettings().maxCount(1)));
-    public static final Item ROGERCHESTPLATE = registerItem("rogerchestplate",
+    public static final Item PREROGERCHESTPLATE = registerItem("rogerchestplate",
             new RogerFAArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().maxCount(1)));
-    public static final Item ROGERLEGGINGS = registerItem("rogerleggings",
+    public static final Item PREROGERLEGGINGS = registerItem("rogerleggings",
             new RogerFAArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.LEGGINGS, new FabricItemSettings().maxCount(1)));
-    public static final Item ROGERBOOTS = registerItem("rogerboots",
+    public static final Item PREROGERBOOTS = registerItem("rogerboots",
             new RogerFAArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.BOOTS, new FabricItemSettings().maxCount(1)));
     public static final Item STRAW_HAT = registerItem("straw_hat",
             new PreLuffyArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.HELMET, new FabricItemSettings().maxCount(1)));
@@ -113,7 +190,6 @@ public class ModItems {
     private static void combatGroupIngredients(FabricItemGroupEntries entries) {
         // Combat Tab
         entries.add(CUTLASS);
-        entries.add(KATANABASE);
         entries.add(WADO_ICHIMONJI);
     }
 

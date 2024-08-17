@@ -2,9 +2,9 @@
 	"credit": "Made by Foi1y",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "seakings:item/hilts/gryphonhilt",
-		"1": "seakings:item/blades/ironblade",
-		"particle": "minecraft:items/gold_ingot"
+		"0": "seakings:item/acehilt",
+		"1": "seakings:item/aceblade",
+		"particle": "seakings:item/acehilt"
 	},
 	"elements": [
 		{

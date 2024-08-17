@@ -5,7 +5,6 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.foi1y.seakings.item.ModItems;
 import net.foi1y.seakings.util.ModTags;
 import net.minecraft.registry.RegistryWrapper;
-import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -17,32 +16,32 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(ModTags.Items.SEAKING_ARMOR_TAG)
                 // Rogers Stuff
-                .add(ModItems.ROGERHELMET)
-                .add(ModItems.ROGERCHESTPLATE)
-                .add(ModItems.ROGERLEGGINGS)
-                .add(ModItems.ROGERBOOTS)
+                .add(ModItems.PREROGERHELMET)
+                .add(ModItems.PREROGERCHESTPLATE)
+                .add(ModItems.PREROGERLEGGINGS)
+                .add(ModItems.PREROGERBOOTS)
                 // Luffys Stuff
                 .add(ModItems.STRAW_HAT)
                 .add(ModItems.PRELUFFYCHESTPLATE)
                 .add(ModItems.PRELUFFYLEGGINGS)
                 .add(ModItems.PRELUFFYBOOTS)
                 // Zoros Stuff
-                .add(ModItems.ZOROHELMET)
-                .add(ModItems.ZOROCHESTPLATE)
-                .add(ModItems.ZOROLEGGINGS)
-                .add(ModItems.ZOROBOOTS);
+                .add(ModItems.PREZOROHELMET)
+                .add(ModItems.PREZOROCHESTPLATE)
+                .add(ModItems.PREZOROLEGGINGS)
+                .add(ModItems.PREZOROBOOTS);
 
         getOrCreateTagBuilder(ModTags.Items.ONE_SWORD_STYLE)
-                .add(ModItems.KATANABASE)
+                .add(ModItems.IRONKATANA)
                 .add(ModItems.CUTLASS)
                 .add(ModItems.WADO_ICHIMONJI);
 
         getOrCreateTagBuilder(ModTags.Items.TWO_SWORD_STYLE)
-                .add(ModItems.KATANABASE)
+                .add(ModItems.IRONKATANA)
                 .add(ModItems.CUTLASS)
                 .add(ModItems.WADO_ICHIMONJI);
         getOrCreateTagBuilder(ModTags.Items.THREE_SWORD_STYLE)
-                .add(ModItems.KATANABASE)
+                .add(ModItems.IRONKATANA)
                 .add(ModItems.WADO_ICHIMONJI);
     }
 }

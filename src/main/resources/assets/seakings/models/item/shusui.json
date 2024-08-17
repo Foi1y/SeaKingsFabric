@@ -1,9 +1,9 @@
 {
 	"credit": "Made by Foi1y",
 	"textures": {
-		"3": "seakings:item/blades/ironblade",
+		"3": "seakings:item/blades/shusuiblade",
 		"4": "seakings:item/guards/goldguard",
-		"5": "seakings:item/wraps/wadowrap"
+		"5": "seakings:item/wraps/shusuiwrap"
 	},
 	"elements": [
 		{

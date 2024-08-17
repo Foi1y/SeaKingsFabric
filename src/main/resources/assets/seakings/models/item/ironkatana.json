@@ -1,10 +1,10 @@
 {
 	"credit": "Made by Foi1y",
 	"textures": {
-		"0": "seakings:item/blades/diamondblade",
-		"1": "seakings:item/guards/diamondguard",
+		"0": "seakings:item/blades/ironblade",
+		"1": "seakings:item/guards/ironguard",
 		"2": "seakings:item/wraps/redwrap",
-		"particle": "seakings:blades/diamondblade"
+		"particle": "seakings:blades/ironblade"
 	},
 	"elements": [
 		{

@@ -7,9 +7,19 @@
 
   "item.seakings.gomu": "Gomu Gomu no Mi \uE2E1",
 
-  "item.seakings.cutlass": "Cutlass",
-  "item.seakings.wado_ichimonji": "Wado Ichimonji",
-  "item.seakings.katanabase": "Katana",
+  "item.seakings.cutlass": "Cutlass \uE2E7",
+  "item.seakings.wado_ichimonji": "§lWado Ichimonji \uE2E8",
+  "item.seakings.sandai_kitetsu": "§lSandai Kitetsu \uE2E8",
+  "item.seakings.shusui": "§lShusui \uE2E8",
+  "item.seakings.gryphon": "§lGryphon \uE2E8",
+  "item.seakings.yoru": "§lYoru \uE2E8",
+  "item.seakings.murakumogiri": "§lMurakumogiri \uE2E8",
+  "item.seakings.soulcane": "§lSoul Solid \uE2E8",
+  "item.seakings.ace": "§lAce \uE2E8",
+  "item.seakings.ironkatana": "Iron Katana\uE2E6",
+  "item.seakings.goldkatana": "Gold Katana\uE2E6",
+  "item.seakings.diamondkatana": "Diamond Katana\uE2E6",
+  "item.seakings.netheritekatana": "Netherite Katana\uE2E6",
 
   "block.seakings.seaprisonstone": "Sea Prison Stone",
   "block.seakings.rawseaprisonstone": "Raw Sea Prison Stone",

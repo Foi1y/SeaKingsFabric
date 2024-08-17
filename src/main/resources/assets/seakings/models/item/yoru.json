@@ -2,8 +2,8 @@
 	"credit": "Made by Foi1y",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "block/texture",
-		"particle": "block/texture"
+		"0": "seakings:item/yoru",
+		"particle": "seakings:item/yoru"
 	},
 	"elements": [
 		{
