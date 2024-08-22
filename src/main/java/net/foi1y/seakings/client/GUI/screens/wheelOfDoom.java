@@ -23,15 +23,7 @@ public abstract class wheelOfDoom extends Screen {
         assert MinecraftClient.getInstance().player != null;
          PlayerEntity player = MinecraftClient.getInstance().player;
         IPlayerAbilityData playerAbilityData = (IPlayerAbilityData) player;
-        for (int i = 0; i < 8; i++) {
 
-            playerAbilityData.addAbility(new Ability("null", 0, new Identifier("seakings", "textures/gui/icons/null.png")) {
-                @Override
-                public void apply(ServerPlayerEntity player) {
-
-                }
-            });
-        }
         Ability[] abilities = playerAbilityData.getAbilities();
 
         int[][] iconPos = {
