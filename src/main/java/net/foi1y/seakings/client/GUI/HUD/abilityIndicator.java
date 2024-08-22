@@ -21,7 +21,9 @@ public class abilityIndicator implements HudRenderCallback {
         assert MinecraftClient.getInstance().player != null;
         PlayerEntity player = MinecraftClient.getInstance().player;
         IPlayerAbilityData playerAbilityData = (IPlayerAbilityData) player;
-        RenderSystem.setShaderTexture(0,playerAbilityData.getActiveAbility().getIcon());
+        RenderSystem.setShaderTexture(0,new Identifier("seakings", "textures/gui/icons/null.png"));
+        
         MinecraftClient.getInstance().inGameHud.render(drawContext,tickDelta);
+
     }
 }
