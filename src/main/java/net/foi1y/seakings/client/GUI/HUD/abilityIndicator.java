@@ -11,19 +11,13 @@ import net.minecraft.client.render.item.ItemRenderer;
 import net.minecraft.entity.player.PlayerAbilities;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.Identifier;
+import org.joml.Matrix4f;
 
 
-public class abilityIndicator implements HudRenderCallback {
+public class abilityIndicator {
 
 
-    @Override
-    public void onHudRender(DrawContext drawContext, float tickDelta) {
-        assert MinecraftClient.getInstance().player != null;
-        PlayerEntity player = MinecraftClient.getInstance().player;
-        IPlayerAbilityData playerAbilityData = (IPlayerAbilityData) player;
-        RenderSystem.setShaderTexture(0,new Identifier("seakings", "textures/gui/icons/null.png"));
-        
-        MinecraftClient.getInstance().inGameHud.render(drawContext,tickDelta);
 
-    }
+
+
 }
