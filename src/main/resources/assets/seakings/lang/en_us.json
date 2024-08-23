@@ -1,6 +1,6 @@
 {
   "item.seakings.donut": "Donut",
-  "item.seakings.blue_donut": "Blue Donut \uE1E8",
+  "item.seakings.blue_donut": "Blue Donut",
 
   "item.seakings.whitecloak": "White Cloak \uE2E5",
   "item.seakings.bluecloak": "Blue Cloak \uE2E5",
@@ -37,6 +37,14 @@
   "item.seakings.preluffychestplate": "Luffys Vest \uE2E4",
   "item.seakings.preluffyleggings": "Luffys Shorts \uE2E4",
   "item.seakings.preluffyboots": "Luffys Sandles \uE2E4",
+
+  "item.seakings.buggy_helmet": "Buggys Hat \uE2E4",
+  "item.seakings.buggy_chestplate": "Buggys Shirt \uE2E4",
+  "item.seakings.buggy_leggings": "Buggys Pants \uE2E4",
+  "item.seakings.buggy_boots": "Buggys Boots \uE2E4",
+  "item.seakings.shanks_chestplate": "Shanks Shirt \uE2E4",
+  "item.seakings.shanks_leggings": "Shanks Pants \uE2E4",
+  "item.seakings.shanks_boots": "Shanks Sandeles \uE2E4",
 
 
   "seakings.itemgroup.misc_group": "Sea Kings Misc",

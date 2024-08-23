@@ -16,7 +16,6 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(ModTags.Items.SEAKING_ARMOR_TAG)
                 // Rogers Stuff
-                .add(ModItems.PREROGERHELMET)
                 .add(ModItems.PREROGERCHESTPLATE)
                 .add(ModItems.PREROGERLEGGINGS)
                 .add(ModItems.PREROGERBOOTS)
@@ -26,10 +25,18 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.PRELUFFYLEGGINGS)
                 .add(ModItems.PRELUFFYBOOTS)
                 // Zoros Stuff
-                .add(ModItems.PREZOROHELMET)
                 .add(ModItems.PREZOROCHESTPLATE)
                 .add(ModItems.PREZOROLEGGINGS)
-                .add(ModItems.PREZOROBOOTS);
+                .add(ModItems.PREZOROBOOTS)
+                // Shanks Stuff
+                .add(ModItems.SHANKS_CHESTPLATE)
+                .add(ModItems.SHANKS_LEGGINGS)
+                .add(ModItems.SHANKS_BOOTS)
+                // Buggy Stuff
+                .add(ModItems.BUGGY_HELMET)
+                .add(ModItems.BUGGY_CHESTPLATE)
+                .add(ModItems.BUGGY_LEGGINGS)
+                .add(ModItems.BUGGY_BOOTS);
 
         getOrCreateTagBuilder(ModTags.Items.ONE_SWORD_STYLE)
                 .add(ModItems.IRONKATANA)

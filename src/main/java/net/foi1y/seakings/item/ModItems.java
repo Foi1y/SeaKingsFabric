@@ -5,11 +5,9 @@ import net.fabricmc.fabric.api.itemgroup.v1.*;
 
 import net.foi1y.seakings.SeaKingsMod;
 import net.foi1y.seakings.block.ModBlocks;
-import net.foi1y.seakings.item.custom.ArmorItems.MarineUniformArmorItem;
-import net.foi1y.seakings.item.custom.ArmorItems.PreLuffyArmorItem;
-import net.foi1y.seakings.item.custom.ArmorItems.RogerFAArmorItem;
-import net.foi1y.seakings.item.custom.ArmorItems.PreFAZoroArmorItem;
+import net.foi1y.seakings.item.custom.ArmorItems.*;
 import net.foi1y.seakings.item.custom.trinkets.basiccloaks.BlueCloak;
+import net.foi1y.seakings.item.custom.trinkets.basiccloaks.BuggyCloak;
 import net.foi1y.seakings.item.custom.trinkets.basiccloaks.WhiteCloak;
 import net.foi1y.seakings.item.custom.DevilFruitItem;
 
@@ -153,12 +151,28 @@ public class ModItems {
             new MarineUniformArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.LEGGINGS, new FabricItemSettings().maxCount(1)));
     public static final Item MARINEUNIFORM_BOOTS = registerItem("marineuniform_boots",
             new MarineUniformArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.BOOTS, new FabricItemSettings().maxCount(1)));
+    public static final Item SHANKS_CHESTPLATE = registerItem("shanks_chestplate",
+            new ShanksArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().maxCount(1)));
+    public static final Item SHANKS_LEGGINGS = registerItem("shanks_leggings",
+            new ShanksArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.LEGGINGS, new FabricItemSettings().maxCount(1)));
+    public static final Item SHANKS_BOOTS = registerItem("shanks_boots",
+            new ShanksArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.BOOTS, new FabricItemSettings().maxCount(1)));
+    public static final Item BUGGY_HELMET = registerItem("buggy_helmet",
+            new BuggyArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.HELMET, new FabricItemSettings().maxCount(1)));
+    public static final Item BUGGY_CHESTPLATE = registerItem("buggy_chestplate",
+            new BuggyArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().maxCount(1)));
+    public static final Item BUGGY_LEGGINGS = registerItem("buggy_leggings",
+            new BuggyArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.LEGGINGS, new FabricItemSettings().maxCount(1)));
+    public static final Item BUGGY_BOOTS = registerItem("buggy_boots",
+            new BuggyArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.BOOTS, new FabricItemSettings().maxCount(1)));
 
     // Cloaks
     public static final Item WHITE_CLOAK = registerItem("whitecloak",
             new WhiteCloak(new Item.Settings().maxCount(1)));
     public static final Item BLUE_CLOAK = registerItem("bluecloak",
             new BlueCloak(new Item.Settings().maxCount(1)));
+    public static final Item BUGGY_CLOAK = registerItem("buggycloak",
+            new BuggyCloak(new Item.Settings().maxCount(1)));
 
     // Sheaths
     public static final Item ONESWORDSHEATH = registerItem("oneswordsheath",

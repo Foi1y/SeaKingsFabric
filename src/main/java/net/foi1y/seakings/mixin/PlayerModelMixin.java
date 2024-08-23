@@ -29,6 +29,8 @@ public class PlayerModelMixin<T extends LivingEntity> {
 
     @Shadow @Final public ModelPart rightPants;
 
+    @Shadow @Final private ModelPart cloak;
+
     @Inject(at = @At("TAIL"), method = "setAngles*")
     private void modifyModelScale(T livingEntity, float f, float g, float h, float i, float j, CallbackInfo info) {
         // Checks to see if the Item in the Equipment Slot is A part of the Sea Kings tag
@@ -44,6 +46,8 @@ public class PlayerModelMixin<T extends LivingEntity> {
             this.rightSleeve.xScale = 0.55F;
             this.rightSleeve.yScale = 0.55F;
             this.rightSleeve.zScale = 0.55F;
+
+            this.cloak.visible = false;
         }
             if (livingEntity != null && livingEntity.getEquippedStack(EquipmentSlot.LEGS).isIn(ModTags.Items.SEAKING_ARMOR_TAG)
                     || livingEntity != null && livingEntity.getEquippedStack(EquipmentSlot.FEET).isIn(ModTags.Items.SEAKING_ARMOR_TAG))   {

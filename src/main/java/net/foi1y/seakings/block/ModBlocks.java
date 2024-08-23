@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 
 import net.foi1y.seakings.SeaKingsMod;
 
+import net.foi1y.seakings.block.Custom.SwordStandBlock;
 import net.minecraft.block.*;
 import net.minecraft.item.*;
 import net.minecraft.registry.*;
@@ -20,6 +21,8 @@ public class ModBlocks {
 
     public static final Block MARINEBARREL = registerBlock("marinebarrel",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.BARREL), UniformIntProvider.create(3, 6)));
+    public static final Block SWORDSTANDBLOCK = registerBlock("swordstand",
+            new SwordStandBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

@@ -20,6 +20,7 @@ public class SeaKingsModClient implements ClientModInitializer {
     public void onInitializeClient() {
         TrinketRendererRegistry.registerRenderer(ModItems.WHITE_CLOAK, (TrinketRenderer) ModItems.WHITE_CLOAK);
         TrinketRendererRegistry.registerRenderer(ModItems.BLUE_CLOAK, (TrinketRenderer) ModItems.BLUE_CLOAK);
+        TrinketRendererRegistry.registerRenderer(ModItems.BUGGY_CLOAK, (TrinketRenderer) ModItems.BUGGY_CLOAK);
         TrinketRendererRegistry.registerRenderer(ModItems.ONESWORDSHEATH, (TrinketRenderer) ModItems.ONESWORDSHEATH);
 
 

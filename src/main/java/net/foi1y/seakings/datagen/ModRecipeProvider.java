@@ -31,15 +31,5 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         // offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.ORE_INGOT, RecipeCategory.DECORATIONS,
             // ModBlocks.INGOT_BLOCK);
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DIAMONDKATANA, 1)
-         .pattern("##D")
-         .pattern("#D#")
-         .pattern("S##")
-         .input('S', Items.STICK)
-         .input('D', Items.DIAMOND)
-         .criterion (hasItem(Items.STICK), conditionsFromItem(Items.STICK))
-         .criterion (hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
-         .offerTo(exporter, new Identifier(getRecipeName(ModItems.DIAMONDKATANA)));
     }
 }

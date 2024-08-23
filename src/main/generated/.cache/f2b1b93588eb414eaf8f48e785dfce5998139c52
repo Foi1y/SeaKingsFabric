@@ -1,7 +1,23 @@
-// 1.20.1	2024-08-14T19:08:24.6825994	Sea Kings/Model Definitions
-8aa0f715971a5b5da4fa5a51d50b6e59767cde18 assets\seakings\models\item\cutlassbladetemplate.json
+// 1.20.1	2024-08-19T01:34:26.9503208	Sea Kings/Model Definitions
+f4e66056b56fea08e2a768cb39cea2c902439917 assets\seakings\models\item\prerogerchestplate.json
+05db937b52f29be550e62f9faf7ae1d5ffabda75 assets\seakings\models\item\buggy_helmet.json
+e713e1142ef4a39a148e481a0f948a7b1050dd0d assets\seakings\models\item\prezoroleggings.json
+87aadbed81b4540b68f01781920e40968a8cf375 assets\seakings\models\item\buggy_chestplate.json
 423e34f62da3aee7a8af94d5cd1ef9477ab2eb75 assets\seakings\models\item\straw_hat.json
-2f74e8b289380061d65d2e37ac1a736aba595ed2 assets\seakings\models\item\sword_template.json
+1d1bf659a0dcb3990ebf2691fcd79e50c512536a assets\seakings\models\item\buggy_boots.json
 23a272745dfe91045a9d1b907517a3f9377c5d44 assets\seakings\models\item\preluffyleggings.json
+25ba32cdfc2e3b7be01656c461dbae7461ef0f5d assets\seakings\models\item\buggycloak.json
+2f74e8b289380061d65d2e37ac1a736aba595ed2 assets\seakings\models\item\sword_template.json
 d55f01b7b31cd2ffed18e9f614af6d51d62c5869 assets\seakings\models\item\preluffyboots.json
+0e5fdce14923e0efe9db2347c46062e958f67576 assets\seakings\models\item\prerogerhelmet.json
+6daa7d05286156e6c5380f154414d5de7f2e4912 assets\seakings\models\item\buggy_leggings.json
+fcdd7ce72da24c97b8e038b8ca4117b2d68588d4 assets\seakings\models\item\prezoroboots.json
+7af11207a8da14032f2aab4a560e3c74f8963860 assets\seakings\models\item\prerogerboots.json
+579b275eb56343a65093f0f49f1d9689bea3c374 assets\seakings\models\item\shanks_leggings.json
+87f205d21b1c7c1b0c09a55b7f597d684a9ea8e4 assets\seakings\models\item\shanks_chestplate.json
+8aa0f715971a5b5da4fa5a51d50b6e59767cde18 assets\seakings\models\item\cutlassbladetemplate.json
+8f1eaf9da055c1e79f29cb67ee4adf517df2a4db assets\seakings\models\item\prezorohelmet.json
+5e43f762aa120351fdda659107672ccda4288ef2 assets\seakings\models\item\shanks_boots.json
+9afa0d295a40fd8cab6150d1e79841d974dcf55a assets\seakings\models\item\prerogerleggings.json
+65bea380e4d5d4e3753505f28ff008b9b4e2b693 assets\seakings\models\item\prezorochestplate.json
 97ac1344c5a32f3d74e784e980d97d00cba2c70f assets\seakings\models\item\preluffychestplate.json

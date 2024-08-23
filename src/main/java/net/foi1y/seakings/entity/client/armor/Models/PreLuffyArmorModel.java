@@ -8,7 +8,7 @@ import software.bernie.geckolib.model.GeoModel;
 public class PreLuffyArmorModel extends GeoModel<PreLuffyArmorItem> {
     @Override
     public Identifier getModelResource(PreLuffyArmorItem animatable) {
-        return new Identifier(SeaKingsMod.MOD_ID, "geo/item/armor/luffy.geo.json");
+        return new Identifier(SeaKingsMod.MOD_ID, "geo/item/armor/preluffy.geo.json");
     }
 
     @Override
