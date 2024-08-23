@@ -16,6 +16,7 @@ import org.lwjgl.glfw.GLFW;
 public class SeaKingsModClient implements ClientModInitializer {
     private static KeyBinding openMenu;
     private static KeyBinding showWheel;
+
     @Override
     public void onInitializeClient() {
         TrinketRendererRegistry.registerRenderer(ModItems.WHITE_CLOAK, (TrinketRenderer) ModItems.WHITE_CLOAK);

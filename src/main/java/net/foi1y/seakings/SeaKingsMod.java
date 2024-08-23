@@ -1,16 +1,24 @@
 package net.foi1y.seakings;
 
+import com.mojang.blaze3d.systems.RenderSystem;
 import eu.midnightdust.lib.config.MidnightConfig;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.foi1y.seakings.block.ModBlocks;
 import net.foi1y.seakings.config.SeaKingsConfig;
 import net.foi1y.seakings.item.*;
 
 import net.foi1y.seakings.util.ModCustomTrades;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.gui.DrawContext;
+import net.minecraft.client.render.Tessellator;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.Identifier;
+import org.joml.Matrix4f;
 import org.slf4j.*;
 
 public class SeaKingsMod implements ModInitializer {
@@ -28,6 +36,27 @@ public class SeaKingsMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		assert MinecraftClient.getInstance().player != null;
+		PlayerEntity player = MinecraftClient.getInstance().player;
+		IPlayerAbilityData playerAbilityData = (IPlayerAbilityData) player;
+
+		for (int i = 0; i < 8; i++) {
+
+			playerAbilityData.addAbility(new Ability("null", 0, new Identifier("seakings", "textures/gui/icons/null.png")) {
+				@Override
+				public void apply(ServerPlayerEntity player) {
+
+				}
+			});
+		}
+		HudRenderCallback.EVENT.register((drawContext, tickDelta) ->{
+
+			int height = MinecraftClient.getInstance().getWindow().getScaledHeight();
+			int width = MinecraftClient.getInstance().getWindow().getScaledWidth();
+
+
+			drawContext.drawTexture(playerAbilityData.getActiveAbility().getIcon(),width/2-528/6,height/2-528/6, 0,0,0,528/3,528/3,528/3,528/3);
+		});
 
 		// Initializing classes.
 		SeaKingsMod.LOGGER.info(SeaKingsMod.NAME + " has registered its main class.");
@@ -40,4 +69,5 @@ public class SeaKingsMod implements ModInitializer {
 		MidnightConfig.init(SeaKingsMod.MOD_ID, SeaKingsConfig.class);
 
 	}
+	
 }

@@ -23,16 +23,7 @@ public abstract class wheelOfDoom extends Screen {
         assert MinecraftClient.getInstance().player != null;
          PlayerEntity player = MinecraftClient.getInstance().player;
         IPlayerAbilityData playerAbilityData = (IPlayerAbilityData) player;
-        for (int i = 0; i < 8; i++) {
 
-
-            playerAbilityData.addAbility(new Ability("null", 0, new Identifier("seakings", "textures/gui/icons/null.png")) {
-                @Override
-                public void apply(ServerPlayerEntity player) {
-
-                }
-            });
-        }
         Ability[] abilities = playerAbilityData.getAbilities();
 
         int[][] iconPos = {
@@ -61,7 +52,26 @@ public abstract class wheelOfDoom extends Screen {
 
                 @Override
                 public void onClick(double mouseX, double mouseY) {
-
+                    double[] polarQurds= getRad((long) mouseX,(long)mouseY);
+                    double mouseTheda = polarQurds[0];
+                    double mouseRaidius = polarQurds[1];
+                    if(mouseTheda>0 && mouseTheda<=45){
+                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilityByNum(0));
+                    }else if(mouseTheda>45 && mouseTheda<=90){
+                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilityByNum(1));
+                    }else if(mouseTheda>90 && mouseTheda<=135){
+                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilityByNum(2));
+                    }else if(mouseTheda>135 && mouseTheda<=180){
+                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilityByNum(3));
+                    }else if(mouseTheda>180 && mouseTheda<=225){
+                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilityByNum(4));
+                    }else if(mouseTheda>225 && mouseTheda<=270){
+                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilityByNum(5));
+                    }else if(mouseTheda>270 && mouseTheda<=315){
+                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilityByNum(6));
+                    }else if(mouseTheda>315 && mouseTheda<=360){
+                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilityByNum(7));
+                    }
 
                 }
             };
