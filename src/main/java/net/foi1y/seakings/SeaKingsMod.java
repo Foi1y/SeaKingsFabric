@@ -1,6 +1,5 @@
 package net.foi1y.seakings;
 
-import com.mojang.blaze3d.systems.RenderSystem;
 import eu.midnightdust.lib.config.MidnightConfig;
 
 import net.fabricmc.api.ModInitializer;
@@ -12,13 +11,10 @@ import net.foi1y.seakings.item.*;
 
 import net.foi1y.seakings.util.ModCustomTrades;
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.gui.DrawContext;
-import net.minecraft.client.render.Tessellator;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.Identifier;
-import org.joml.Matrix4f;
 import org.slf4j.*;
 
 public class SeaKingsMod implements ModInitializer {
