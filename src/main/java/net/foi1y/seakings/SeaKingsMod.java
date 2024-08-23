@@ -4,6 +4,7 @@ import eu.midnightdust.lib.config.MidnightConfig;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.foi1y.seakings.block.ModBlocks;
 import net.foi1y.seakings.config.SeaKingsConfig;
@@ -32,20 +33,28 @@ public class SeaKingsMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		assert MinecraftClient.getInstance().player != null;
-		PlayerEntity player = MinecraftClient.getInstance().player;
-		IPlayerAbilityData playerAbilityData = (IPlayerAbilityData) player;
 
-		for (int i = 0; i < 8; i++) {
+		ClientTickEvents.START_WORLD_TICK.register((world) ->{
+			assert MinecraftClient.getInstance().player != null;
+			PlayerEntity player = MinecraftClient.getInstance().player;
+			IPlayerAbilityData playerAbilityData = (IPlayerAbilityData) player;
 
-			playerAbilityData.addAbility(new Ability("null", 0, new Identifier("seakings", "textures/gui/icons/null.png")) {
-				@Override
-				public void apply(ServerPlayerEntity player) {
+			for (int i = 0; i < 8; i++) {
 
-				}
-			});
-		}
+				playerAbilityData.addAbility(new Ability("null", 0, new Identifier("seakings", "textures/gui/icons/null.png")) {
+					@Override
+					public void apply(ServerPlayerEntity player) {
+
+					}
+				});
+			}
+
+		});
+
 		HudRenderCallback.EVENT.register((drawContext, tickDelta) ->{
+			assert MinecraftClient.getInstance().player != null;
+			PlayerEntity player = MinecraftClient.getInstance().player;
+			IPlayerAbilityData playerAbilityData = (IPlayerAbilityData) player;
 
 			int height = MinecraftClient.getInstance().getWindow().getScaledHeight();
 			int width = MinecraftClient.getInstance().getWindow().getScaledWidth();
