@@ -2,7 +2,7 @@ package net.foi1y.seakings.client.GUI.screens;
 
 import java.lang.Math;
 
-import net.foi1y.seakings.Ability;
+import net.foi1y.seakings.Abilities.Ability;
 import net.foi1y.seakings.IPlayerAbilityData;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
@@ -10,7 +10,6 @@ import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.narration.NarrationMessageBuilder;
 import net.minecraft.client.gui.widget.ClickableWidget;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.Contract;

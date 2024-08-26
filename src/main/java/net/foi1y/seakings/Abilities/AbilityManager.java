@@ -1,4 +1,6 @@
-package net.foi1y.seakings;
+package net.foi1y.seakings.Abilities;
+
+import net.foi1y.seakings.Abilities.Sword.*;
 
 import java.util.HashMap;
 import java.util.Map;
