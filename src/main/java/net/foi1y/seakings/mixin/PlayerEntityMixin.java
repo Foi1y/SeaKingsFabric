@@ -1,17 +1,22 @@
 package net.foi1y.seakings.mixin;
 import net.foi1y.seakings.Abilities.Ability;
+import net.foi1y.seakings.Abilities.nullAbility;
 import net.foi1y.seakings.IPlayerAbilityData;
 import net.minecraft.entity.player.PlayerEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 @Mixin(PlayerEntity.class)
 public class PlayerEntityMixin implements IPlayerAbilityData {
+
     @Unique
-    private final List<Ability> abilities = new ArrayList<>();
+    private Ability nullAbility = new nullAbility();
+    @Unique
+    private final Ability[] abilities =  new Ability[]{nullAbility, nullAbility, nullAbility, nullAbility, nullAbility, nullAbility, nullAbility, nullAbility};
     @Unique
     private Ability activeAbility;
     @Unique
@@ -47,26 +52,10 @@ public class PlayerEntityMixin implements IPlayerAbilityData {
     }
 
     @Override
-    public void addAbility(Ability ability) {
-        if (abilities.size() < 8 && !abilities.contains(ability)) {
-            abilities.add(ability);
-        }
-    }
-
-    @Override
-    public void removeAbility(Ability ability) {
-        abilities.remove(ability);
-    }
-
-    @Override
     public Ability[] getAbilities() {
-        return abilities.toArray(new Ability[0]);
+        return abilities;
     }
 
-    @Override
-    public Ability getAbilityByNum(int number) {
-        return abilities.get(number);
-    }
 
     @Override
     public void setAlignment(String alignment) {

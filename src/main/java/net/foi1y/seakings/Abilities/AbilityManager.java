@@ -26,6 +26,7 @@ public class AbilityManager {
         abilities.put("Yaki_Oni_Giri", new Yaki_Oni_Giri());
         abilities.put("Toro_Nagashi", new Toro_Nagashi());
         abilities.put("Santoryu_Ogi", new Santoryu_Ogi());
+        abilities.put("NUll",new nullAbility());
     }
 
     public static Ability getAbility(String name) {
