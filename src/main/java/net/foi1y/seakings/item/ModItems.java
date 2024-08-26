@@ -17,10 +17,13 @@ import net.minecraft.item.*;
 import net.minecraft.registry.*;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
+
+import static net.foi1y.seakings.config.SeaKingsConfig.localizedNames;
 
 public class ModItems {
     public static final Item DONUT = registerItem("donut",
@@ -179,7 +182,15 @@ public class ModItems {
             new SheathOneSword(new Item.Settings().maxCount(1)));
     // Devil Fruits
     public static final Item GOMU = registerItem("gomu",
-            new DevilFruitItem(new FabricItemSettings().food(ModFoodComponents.DEVILFRUIT).maxCount(1)));
+            new DevilFruitItem(new FabricItemSettings().food(ModFoodComponents.DEVILFRUIT).maxCount(1)) {
+                @Override
+                public Text getName(ItemStack stack) {
+                    if (localizedNames) {
+                        return Text.translatable("gum.english");
+                    }
+                    return Text.translatable("gum.japanese");
+                }
+            });
 
 
 

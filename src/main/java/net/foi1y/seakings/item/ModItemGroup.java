@@ -41,6 +41,7 @@ public class ModItemGroup {
                         entries.add(ModItems.GRYPHON);
                         entries.add(ModItems.YORU);
                         entries.add(ModItems.WADO_ICHIMONJI);
+                        entries.add(ModItems.SANDAI_KITETSU);
                         entries.add(ModItems.IRONKATANA);
                         entries.add(ModItems.GOLDKATANA);
                         entries.add(ModItems.DIAMONDKATANA);

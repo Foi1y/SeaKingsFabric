@@ -5,7 +5,8 @@
   "item.seakings.whitecloak": "White Cloak \uE2E5",
   "item.seakings.bluecloak": "Blue Cloak \uE2E5",
 
-  "item.seakings.gomu": "Gomu Gomu no Mi \uE2E1",
+  "gum.japanese": "Gomu Gomu no Mi \uE2E1",
+  "gum.english": "Gum Gum Fruit \uE2E1",
 
   "item.seakings.cutlass": "Cutlass \uE2E7",
   "item.seakings.wado_ichimonji": "§lWado Ichimonji \uE2E8",
@@ -57,5 +58,7 @@
   "seakings.midnightconfig.showTooltips": "Show Item Tooltips",
 
   "category.seakings.keys": "Sea Kings Keybinds",
-  "key.seakings.menu": "Open Menu"
+  "key.seakings.menu": "Open Menu",
+  "seakings.midnightconfig.modeledFruits": "Modeled Fruits",
+  "seakings.midnightconfig.localizedNames": "Localized Names (English)"
 }
