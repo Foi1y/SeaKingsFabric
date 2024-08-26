@@ -24,7 +24,6 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 import static net.foi1y.seakings.config.SeaKingsConfig.localizedNames;
-import static net.foi1y.seakings.config.SeaKingsConfig.unfinishedContent;
 
 public class ModItems {
     public static final Item DONUT = registerItem("donut",
