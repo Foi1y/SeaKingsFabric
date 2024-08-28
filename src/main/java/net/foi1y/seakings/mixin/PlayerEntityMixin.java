@@ -6,10 +6,6 @@ import net.minecraft.entity.player.PlayerEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-
 @Mixin(PlayerEntity.class)
 public class PlayerEntityMixin implements IPlayerAbilityData {
 
@@ -66,5 +62,17 @@ public class PlayerEntityMixin implements IPlayerAbilityData {
     @Override
     public String getAlignment() {
         return playerAlignment;
+    }
+
+
+
+    public int[] getCooldowns() {
+        return cooldowns;
+    }
+    public void setCooldown(int index, int value){
+        cooldowns[index] = value;
+    }
+    public void decrementCooldown(int index, int amount){
+        cooldowns[index] -= amount;
     }
 }

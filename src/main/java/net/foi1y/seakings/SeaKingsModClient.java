@@ -45,14 +45,32 @@ public class SeaKingsModClient implements ClientModInitializer {
 
                 });
             }
+        });
+        ClientTickEvents.END_CLIENT_TICK.register(client -> {
             while (useAbility.wasPressed()) {
                 assert MinecraftClient.getInstance().player != null;
                 PlayerEntity player = MinecraftClient.getInstance().player;
                 IPlayerAbilityData playerAbilityData = (IPlayerAbilityData) player;
-
                 playerAbilityData.getActiveAbility().apply((ServerPlayerEntity) player);
+                int[] cooldowns = playerAbilityData.getCooldowns();
+                for(int i = 0; i <8; i++){
+                    if(cooldowns[i] > 0){
+                        playerAbilityData.decrementCooldown(i,1);
+                    }
+                }
 
 
+            }
+        });
+        ClientTickEvents.END_CLIENT_TICK.register(client -> {
+            assert MinecraftClient.getInstance().player != null;
+            PlayerEntity player = MinecraftClient.getInstance().player;
+            IPlayerAbilityData playerAbilityData = (IPlayerAbilityData) player;
+            int[] cooldowns = playerAbilityData.getCooldowns();
+            for(int i = 0; i <8; i++){
+                if(cooldowns[i] > 0){
+                    playerAbilityData.decrementCooldown(i,1);
+                }
             }
         });
 
