@@ -10,13 +10,15 @@ import net.foi1y.seakings.item.ModItems;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import org.lwjgl.glfw.GLFW;
 
 public class SeaKingsModClient implements ClientModInitializer {
     private static KeyBinding openMenu;
     private static KeyBinding showWheel;
-
+    private static KeyBinding useAbility;
     @Override
     public void onInitializeClient() {
         TrinketRendererRegistry.registerRenderer(ModItems.WHITE_CLOAK, (TrinketRenderer) ModItems.WHITE_CLOAK);
@@ -25,7 +27,12 @@ public class SeaKingsModClient implements ClientModInitializer {
         TrinketRendererRegistry.registerRenderer(ModItems.ONESWORDSHEATH, (TrinketRenderer) ModItems.ONESWORDSHEATH);
 
 
-
+        useAbility = KeyBindingHelper.registerKeyBinding(new KeyBinding(
+                "Activate Ability", // The translation key of the keybinding's name
+                InputUtil.Type.KEYSYM, // The type of the keybinding, KEYSYM for keyboard, MOUSE for mouse.
+                GLFW.GLFW_KEY_R, // The keycode of the key
+                "category.seakings.keys" // The translation key of the keybinding's category.
+        ));
         openMenu = KeyBindingHelper.registerKeyBinding(new KeyBinding(
                 "Wheel Of Doom", // The translation key of the keybinding's name
                 InputUtil.Type.KEYSYM, // The type of the keybinding, KEYSYM for keyboard, MOUSE for mouse.
@@ -37,6 +44,15 @@ public class SeaKingsModClient implements ClientModInitializer {
                 MinecraftClient.getInstance().setScreen(new wheelOfDoom(Text.of("wheel of doom")) {
 
                 });
+            }
+            while (useAbility.wasPressed()) {
+                assert MinecraftClient.getInstance().player != null;
+                PlayerEntity player = MinecraftClient.getInstance().player;
+                IPlayerAbilityData playerAbilityData = (IPlayerAbilityData) player;
+
+                playerAbilityData.getActiveAbility().apply((ServerPlayerEntity) player);
+
+
             }
         });
 

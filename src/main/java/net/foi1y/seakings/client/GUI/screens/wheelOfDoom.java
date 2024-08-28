@@ -55,21 +55,21 @@ public abstract class wheelOfDoom extends Screen {
                     double mouseTheda = polarQurds[0];
                     double mouseRaidius = polarQurds[1];
                     if(mouseTheda>0 && mouseTheda<=45){
-                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilityByNum(0));
+                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilities()[0],0);
                     }else if(mouseTheda>45 && mouseTheda<=90){
-                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilityByNum(1));
+                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilities()[1],1);
                     }else if(mouseTheda>90 && mouseTheda<=135){
-                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilityByNum(2));
+                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilities()[2], 2);
                     }else if(mouseTheda>135 && mouseTheda<=180){
-                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilityByNum(3));
+                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilities()[3], 3);
                     }else if(mouseTheda>180 && mouseTheda<=225){
-                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilityByNum(4));
+                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilities()[4], 4);
                     }else if(mouseTheda>225 && mouseTheda<=270){
-                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilityByNum(5));
+                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilities()[5], 5);
                     }else if(mouseTheda>270 && mouseTheda<=315){
-                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilityByNum(6));
+                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilities()[6], 6);
                     }else if(mouseTheda>315 && mouseTheda<=360){
-                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilityByNum(7));
+                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilities()[7], 7);
                     }
 
                 }

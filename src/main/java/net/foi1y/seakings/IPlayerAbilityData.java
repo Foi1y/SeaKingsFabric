@@ -4,10 +4,9 @@ import net.foi1y.seakings.Abilities.Ability;
 
 public interface IPlayerAbilityData {
     Ability getActiveAbility();
-    void setActiveAbility(Ability ability);
+    void setActiveAbility(Ability ability, int i);
 
-    int getAbilityCooldown();
-    void setAbilityCooldown(int cooldown);
+    int getAbilityCooldown(Ability ability);
     void decreaseAbilityCooldown();
 
 

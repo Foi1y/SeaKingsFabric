@@ -14,6 +14,10 @@ import java.util.List;
 public class PlayerEntityMixin implements IPlayerAbilityData {
 
     @Unique
+    private int activeAbilityNum = 0;
+    @Unique
+    private int[] cooldowns = new int[]{0,0,0,0,0,0,0,0};
+    @Unique
     private Ability nullAbility = new nullAbility();
     @Unique
     private final Ability[] abilities =  new Ability[]{nullAbility, nullAbility, nullAbility, nullAbility, nullAbility, nullAbility, nullAbility, nullAbility};
@@ -30,18 +34,15 @@ public class PlayerEntityMixin implements IPlayerAbilityData {
     }
 
     @Override
-    public void setActiveAbility(Ability ability) {
+    public void setActiveAbility(Ability ability, int abilityNum) {
         this.activeAbility = ability;
+        this.activeAbilityNum = abilityNum;
+
     }
 
     @Override
-    public int getAbilityCooldown() {
-        return abilityCooldown;
-    }
-
-    @Override
-    public void setAbilityCooldown(int cooldown) {
-        this.abilityCooldown = cooldown;
+    public int getAbilityCooldown(Ability ability) {
+        return ability.getCooldown();
     }
 
     @Override
