@@ -55,21 +55,21 @@ public abstract class wheelOfDoom extends Screen {
                     double mouseTheda = polarQurds[0];
                     double mouseRaidius = polarQurds[1];
                     if(mouseTheda>0 && mouseTheda<=45){
-                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilities()[0],0);
+                        playerAbilityData.setActiveAbility(0);
                     }else if(mouseTheda>45 && mouseTheda<=90){
-                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilities()[1],1);
+                        playerAbilityData.setActiveAbility(1);
                     }else if(mouseTheda>90 && mouseTheda<=135){
-                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilities()[2], 2);
+                        playerAbilityData.setActiveAbility(2);
                     }else if(mouseTheda>135 && mouseTheda<=180){
-                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilities()[3], 3);
+                        playerAbilityData.setActiveAbility(3);
                     }else if(mouseTheda>180 && mouseTheda<=225){
-                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilities()[4], 4);
+                        playerAbilityData.setActiveAbility(4);
                     }else if(mouseTheda>225 && mouseTheda<=270){
-                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilities()[5], 5);
+                        playerAbilityData.setActiveAbility(5);
                     }else if(mouseTheda>270 && mouseTheda<=315){
-                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilities()[6], 6);
+                        playerAbilityData.setActiveAbility(6);
                     }else if(mouseTheda>315 && mouseTheda<=360){
-                        playerAbilityData.setActiveAbility(playerAbilityData.getAbilities()[7], 7);
+                        playerAbilityData.setActiveAbility(7);
                     }
 
                 }

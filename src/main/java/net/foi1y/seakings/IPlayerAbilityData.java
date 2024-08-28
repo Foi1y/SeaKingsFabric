@@ -6,10 +6,11 @@ public interface IPlayerAbilityData {
 
     Ability getActiveAbility();
 
-    void setActiveAbility(Ability ability, int i);
+    void setActiveAbility(int i);
+    int getActiveAbilityNum();
 
     int getAbilityCooldown(Ability ability);
-
+    int getCurrentAbilityCooldown();
     void decreaseAbilityCooldown();
 
 

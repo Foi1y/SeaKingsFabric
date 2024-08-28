@@ -4,9 +4,7 @@ import eu.midnightdust.lib.config.MidnightConfig;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
-import net.foi1y.seakings.Abilities.Ability;
 import net.foi1y.seakings.block.ModBlocks;
 import net.foi1y.seakings.config.SeaKingsConfig;
 import net.foi1y.seakings.item.*;
@@ -14,9 +12,6 @@ import net.foi1y.seakings.item.*;
 import net.foi1y.seakings.util.ModCustomTrades;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
-import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.util.Identifier;
 import org.slf4j.*;
 
 public class SeaKingsMod implements ModInitializer {

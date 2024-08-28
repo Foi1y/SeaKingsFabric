@@ -7,10 +7,8 @@ package net.foi1y.seakings.entity.client;
 import net.foi1y.seakings.entity.custom.BasicNPCEntity;
 import net.minecraft.client.model.*;
 import net.minecraft.client.render.VertexConsumer;
-import net.minecraft.client.render.entity.model.EntityModel;
 import net.minecraft.client.render.entity.model.SinglePartEntityModel;
 import net.minecraft.client.util.math.MatrixStack;
-import net.minecraft.entity.Entity;
 
 public class basicnpcmodel<T extends BasicNPCEntity> extends SinglePartEntityModel<T> {
 	private final ModelPart Torso;

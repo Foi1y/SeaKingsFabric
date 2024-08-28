@@ -1,11 +1,7 @@
 package net.foi1y.seakings.entity.client.armor.Renders;
 
-import net.foi1y.seakings.SeaKingsMod;
 import net.foi1y.seakings.entity.client.armor.Models.FARogerArmorModel;
 import net.foi1y.seakings.item.custom.ArmorItems.RogerFAArmorItem;
-import net.minecraft.util.Identifier;
-import software.bernie.example.item.GeckoArmorItem;
-import software.bernie.geckolib.model.DefaultedItemGeoModel;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
 
 

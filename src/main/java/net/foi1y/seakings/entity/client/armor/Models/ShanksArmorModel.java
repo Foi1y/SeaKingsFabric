@@ -1,7 +1,6 @@
 package net.foi1y.seakings.entity.client.armor.Models;
 
 import net.foi1y.seakings.SeaKingsMod;
-import net.foi1y.seakings.item.custom.ArmorItems.PreLuffyArmorItem;
 import net.foi1y.seakings.item.custom.ArmorItems.ShanksArmorItem;
 import net.minecraft.util.Identifier;
 import software.bernie.geckolib.model.GeoModel;

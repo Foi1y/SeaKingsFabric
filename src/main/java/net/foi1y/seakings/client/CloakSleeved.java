@@ -1,6 +1,5 @@
 package net.foi1y.seakings.client;
 
-import com.terraformersmc.modmenu.util.mod.Mod;
 import net.fabricmc.api.*;
 
 import net.minecraft.client.model.*;

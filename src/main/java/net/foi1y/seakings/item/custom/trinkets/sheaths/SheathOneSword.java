@@ -6,7 +6,6 @@ import dev.emi.trinkets.api.client.TrinketRenderer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.foi1y.seakings.SeaKingsMod;
-import net.foi1y.seakings.client.CloakSleeved;
 import net.foi1y.seakings.client.sheath1sword;
 import net.minecraft.client.render.OverlayTexture;
 import net.minecraft.client.render.VertexConsumer;

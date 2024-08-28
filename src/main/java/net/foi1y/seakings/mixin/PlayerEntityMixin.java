@@ -30,10 +30,12 @@ public class PlayerEntityMixin implements IPlayerAbilityData {
     }
 
     @Override
-    public void setActiveAbility(Ability ability, int abilityNum) {
-        this.activeAbility = ability;
+    public void setActiveAbility(int abilityNum) {
+        this.activeAbility = abilities[abilityNum];
         this.activeAbilityNum = abilityNum;
-
+    }
+    public int getActiveAbilityNum(){
+        return activeAbilityNum;
     }
 
     @Override
@@ -74,5 +76,8 @@ public class PlayerEntityMixin implements IPlayerAbilityData {
     }
     public void decrementCooldown(int index, int amount){
         cooldowns[index] -= amount;
+    }
+    public int getCurrentAbilityCooldown(){
+        return activeAbility.getCooldown();
     }
 }
