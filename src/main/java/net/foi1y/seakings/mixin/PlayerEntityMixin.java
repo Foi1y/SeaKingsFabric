@@ -67,16 +67,19 @@ public class PlayerEntityMixin implements IPlayerAbilityData {
     }
 
 
-
+    @Override
     public int[] getCooldowns() {
         return cooldowns;
     }
+    @Override
     public void setCooldown(int index, int value){
         cooldowns[index] = value;
     }
+    @Override
     public void decrementCooldown(int index, int amount){
         cooldowns[index] -= amount;
     }
+    @Override
     public int getCurrentAbilityCooldown(){
         return activeAbility.getCooldown();
     }
