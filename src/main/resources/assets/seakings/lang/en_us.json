@@ -21,6 +21,7 @@
   "item.seakings.goldkatana": "Gold Katana\uE2E6",
   "item.seakings.diamondkatana": "Diamond Katana\uE2E6",
   "item.seakings.netheritekatana": "Netherite Katana\uE2E6",
+  "item.seakings.buggydagger": "Buggy Dagger\uE2E6",
 
   "block.seakings.seaprisonstone": "Sea Prison Stone",
   "block.seakings.rawseaprisonstone": "Raw Sea Prison Stone",
@@ -30,10 +31,12 @@
   "item.seakings.prezorochestplate": "Zoros Shirt \uE2E4",
   "item.seakings.prezoroleggings": "Zoros Pants \uE2E4",
   "item.seakings.prezoroboots": "Zoros Boots \uE2E4",
+
   "item.seakings.rogerhelmet": "Rogers Mustache \uE2E4",
   "item.seakings.rogerchestplate": "Rogers Coat \uE2E4",
   "item.seakings.rogerleggings": "Rogers Pants \uE2E4",
   "item.seakings.rogerboots": "Rogers Boots \uE2E4",
+
   "item.seakings.straw_hat": "Straw Hat \uE2E4",
   "item.seakings.preluffychestplate": "Luffys Vest \uE2E4",
   "item.seakings.preluffyleggings": "Luffys Shorts \uE2E4",
@@ -43,6 +46,7 @@
   "item.seakings.buggy_chestplate": "Buggys Shirt \uE2E4",
   "item.seakings.buggy_leggings": "Buggys Pants \uE2E4",
   "item.seakings.buggy_boots": "Buggys Boots \uE2E4",
+
   "item.seakings.shanks_chestplate": "Shanks Shirt \uE2E4",
   "item.seakings.shanks_leggings": "Shanks Pants \uE2E4",
   "item.seakings.shanks_boots": "Shanks Sandeles \uE2E4",

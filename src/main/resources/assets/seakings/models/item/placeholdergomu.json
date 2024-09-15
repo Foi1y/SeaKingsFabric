@@ -1,8 +1,8 @@
 {
 	"credit": "Made by Foi1y",
 	"textures": {
-		"0": "block/texture",
-		"particle": "block/texture"
+		"0": "seakings:item/placeholdergomu",
+		"particle": "seakings:item/placeholdergomu"
 	},
 	"elements": [
 		{

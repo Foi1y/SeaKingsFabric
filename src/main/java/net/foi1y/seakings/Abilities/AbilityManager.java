@@ -1,5 +1,6 @@
 package net.foi1y.seakings.Abilities;
 
+import net.foi1y.seakings.Abilities.Gomu.*;
 import net.foi1y.seakings.Abilities.Sword.*;
 
 import java.util.HashMap;
@@ -27,6 +28,15 @@ public class AbilityManager {
         abilities.put("Toro_Nagashi", new Toro_Nagashi());
         abilities.put("Santoryu_Ogi", new Santoryu_Ogi());
         abilities.put("NUll",new nullAbility());
+
+        // Gomu Abilities?
+        abilities.put("Pistol", new Pistol());
+        abilities.put("PistolShot", new PistolShot());
+        abilities.put("Rocket", new Rocket());
+        abilities.put("Bazooka", new Bazooka());
+        abilities.put("Gattling", new Gattling());
+        abilities.put("Rifle", new Rifle());
+        abilities.put("SwapGears", new SwapGears());
     }
 
     public static Ability getAbility(String name) {

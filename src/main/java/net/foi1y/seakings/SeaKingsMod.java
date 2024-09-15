@@ -26,7 +26,7 @@ public class SeaKingsMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
-
+		/*
 		HudRenderCallback.EVENT.register((drawContext, tickDelta) ->{
 			assert MinecraftClient.getInstance().player != null;
 			PlayerEntity player = MinecraftClient.getInstance().player;
@@ -38,6 +38,7 @@ public class SeaKingsMod implements ModInitializer {
 
 			drawContext.drawTexture(playerAbilityData.getActiveAbility().getIcon(),width/2-528/6,height/2-528/6, 0,0,0,528/3,528/3,528/3,528/3);
 		});
+		*/
 
 		// Initializing classes.
 		SeaKingsMod.LOGGER.info(SeaKingsMod.NAME + " has registered its main class.");

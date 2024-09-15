@@ -46,6 +46,7 @@ public class SeaKingsModClient implements ClientModInitializer {
                 });
             }
         });
+        /*
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             while (useAbility.wasPressed()) {
                 assert MinecraftClient.getInstance().player != null;
@@ -73,7 +74,7 @@ public class SeaKingsModClient implements ClientModInitializer {
                 }
             }
         });
-
+        */
 
 
     }

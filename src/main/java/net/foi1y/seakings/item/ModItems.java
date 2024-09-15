@@ -116,6 +116,8 @@ public class ModItems {
             new SwordItem(ModToolMaterial.KATANA, 3, -2.4f, new FabricItemSettings().maxCount(1)));
     public static final Item NETHERITEKATANA = registerItem("netheritekatana",
             new SwordItem(ModToolMaterial.KATANA, 2, -2.4f, new FabricItemSettings().maxCount(1)));
+    public static final Item BUGGYDAGGER = registerItem("buggydagger",
+            new SwordItem(ModToolMaterial.KATANA, 1, -2.4f, new FabricItemSettings().maxCount(1)));
     public static final Item SCYTHE = registerItem("scythe",
             new SwordItem(ModToolMaterial.KATANA, 3, -3f, new FabricItemSettings().maxCount(1)));
 

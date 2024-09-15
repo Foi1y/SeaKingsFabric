@@ -46,6 +46,7 @@ public class ModItemGroup {
                         entries.add(ModItems.GOLDKATANA);
                         entries.add(ModItems.DIAMONDKATANA);
                         entries.add(ModItems.NETHERITEKATANA);
+                        entries.add(ModItems.BUGGYDAGGER);
                     }).build());
 
     public static final ItemGroup ARMOR_GROUP = Registry.register(Registries.ITEM_GROUP,
