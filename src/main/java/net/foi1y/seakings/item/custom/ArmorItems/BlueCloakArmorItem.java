@@ -1,6 +1,7 @@
 package net.foi1y.seakings.item.custom.ArmorItems;
 
-import net.foi1y.seakings.entity.client.armor.MarineUniformArmorRenderer;
+import net.foi1y.seakings.entity.client.armor.Models.BuggyArmorModel;
+import net.foi1y.seakings.item.custom.trinkets.basiccloaks.BlueCloak;
 import net.minecraft.client.render.entity.model.BipedEntityModel;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
@@ -17,11 +18,11 @@ import software.bernie.geckolib.util.GeckoLibUtil;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
-public final class MarineUniformArmorItem extends ArmorItem implements GeoItem {
+public final class BlueCloakArmorItem extends ArmorItem implements GeoItem {
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
     private final Supplier<Object> renderProvider = GeoItem.makeRenderer(this);
 
-    public MarineUniformArmorItem(ArmorMaterial armorMaterial, Type type, Settings properties){
+    public BlueCloakArmorItem(ArmorMaterial armorMaterial, Type type, Settings properties){
         super(armorMaterial, type, properties);
     }
 
@@ -32,7 +33,7 @@ public final class MarineUniformArmorItem extends ArmorItem implements GeoItem {
 
             public GeoArmorRenderer<?> getHumanoidArmorModel(LivingEntity livingEntity, ItemStack itemStack, EquipmentSlot equipmentSlot, BipedEntityModel<LivingEntity> original) {
                 if(this.renderer == null)
-                    this.renderer = new MarineUniformArmorRenderer();
+                    this.renderer = new GeoArmorRenderer<>(new BlueCloak());
 
                 this.renderer.prepForRender(livingEntity, itemStack, equipmentSlot, original);
                 return this.renderer;

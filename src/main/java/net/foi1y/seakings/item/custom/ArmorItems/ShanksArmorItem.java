@@ -1,6 +1,7 @@
 package net.foi1y.seakings.item.custom.ArmorItems;
 
-import net.foi1y.seakings.entity.client.armor.Renders.ShanksArmorRenderer;
+import net.foi1y.seakings.entity.client.armor.Models.FARogerArmorModel;
+import net.foi1y.seakings.entity.client.armor.Models.ShanksArmorModel;
 import net.minecraft.client.render.entity.model.BipedEntityModel;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
@@ -32,7 +33,7 @@ public final class ShanksArmorItem extends ArmorItem implements GeoItem {
 
             public GeoArmorRenderer<?> getHumanoidArmorModel(LivingEntity livingEntity, ItemStack itemStack, EquipmentSlot equipmentSlot, BipedEntityModel<LivingEntity> original) {
                 if(this.renderer == null)
-                    this.renderer = new ShanksArmorRenderer();
+                    this.renderer = new GeoArmorRenderer<>(new ShanksArmorModel());
 
                 this.renderer.prepForRender(livingEntity, itemStack, equipmentSlot, original);
                 return this.renderer;

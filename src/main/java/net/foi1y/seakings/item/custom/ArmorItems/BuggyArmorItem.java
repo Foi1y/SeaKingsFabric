@@ -1,11 +1,12 @@
 package net.foi1y.seakings.item.custom.ArmorItems;
 
-import net.foi1y.seakings.entity.client.armor.Renders.BuggyArmorRenderer;
+import net.foi1y.seakings.entity.client.armor.Models.BuggyArmorModel;
 import net.minecraft.client.render.entity.model.BipedEntityModel;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.animatable.client.RenderProvider;
@@ -32,7 +33,7 @@ public final class BuggyArmorItem extends ArmorItem implements GeoItem {
 
             public GeoArmorRenderer<?> getHumanoidArmorModel(LivingEntity livingEntity, ItemStack itemStack, EquipmentSlot equipmentSlot, BipedEntityModel<LivingEntity> original) {
                 if(this.renderer == null)
-                    this.renderer = new BuggyArmorRenderer();
+                    this.renderer = new GeoArmorRenderer<>(new BuggyArmorModel());
 
                 this.renderer.prepForRender(livingEntity, itemStack, equipmentSlot, original);
                 return this.renderer;

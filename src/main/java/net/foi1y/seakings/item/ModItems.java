@@ -1,5 +1,6 @@
 package net.foi1y.seakings.item;
 
+import dev.emi.trinkets.TrinketSlot;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.*;
 
@@ -147,14 +148,6 @@ public class ModItems {
             new PreLuffyArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.LEGGINGS, new FabricItemSettings().maxCount(1)));
     public static final Item PRELUFFYBOOTS = registerItem("preluffyboots",
             new PreLuffyArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.BOOTS, new FabricItemSettings().maxCount(1)));
-    public static final Item MARINEUNIFORM_HELMET = registerItem("marineuniform_helmet",
-            new MarineUniformArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.HELMET, new FabricItemSettings().maxCount(1)));
-    public static final Item MARINEUNIFORM_CHESTPLATE = registerItem("marineuniform_chestplate",
-            new MarineUniformArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().maxCount(1)));
-    public static final Item MARINEUNIFORM_LEGGINGS = registerItem("marineuniform_leggings",
-            new MarineUniformArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.LEGGINGS, new FabricItemSettings().maxCount(1)));
-    public static final Item MARINEUNIFORM_BOOTS = registerItem("marineuniform_boots",
-            new MarineUniformArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.BOOTS, new FabricItemSettings().maxCount(1)));
     public static final Item SHANKS_CHESTPLATE = registerItem("shanks_chestplate",
             new ShanksArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().maxCount(1)));
     public static final Item SHANKS_LEGGINGS = registerItem("shanks_leggings",
@@ -174,7 +167,7 @@ public class ModItems {
     public static final Item WHITE_CLOAK = registerItem("whitecloak",
             new WhiteCloak(new Item.Settings().maxCount(1)));
     public static final Item BLUE_CLOAK = registerItem("bluecloak",
-            new BlueCloak(new Item.Settings().maxCount(1)));
+            new BlueCloakArmorItem(ModArmorMaterials.SK_ARMOR, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().maxCount(1)));
     public static final Item BUGGY_CLOAK = registerItem("buggycloak",
             new BuggyCloak(new Item.Settings().maxCount(1)));
 

@@ -72,11 +72,6 @@ public class ModItemGroup {
 
                         entries.add(ModItems.BLUE_CLOAK);
 
-                        entries.add(ModItems.MARINEUNIFORM_HELMET);
-                        entries.add(ModItems.MARINEUNIFORM_CHESTPLATE);
-                        entries.add(ModItems.MARINEUNIFORM_LEGGINGS);
-                        entries.add(ModItems.MARINEUNIFORM_BOOTS);
-
                         entries.add(ModItems.SHANKS_CHESTPLATE);
                         entries.add(ModItems.SHANKS_LEGGINGS);
                         entries.add(ModItems.SHANKS_BOOTS);

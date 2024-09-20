@@ -1,6 +1,7 @@
 package net.foi1y.seakings.item.custom.ArmorItems;
 
-import net.foi1y.seakings.entity.client.armor.Renders.RogerFAArmorRenderer;
+import net.foi1y.seakings.entity.client.armor.Models.FARogerArmorModel;
+import net.foi1y.seakings.entity.client.armor.Models.PreLuffyArmorModel;
 import net.minecraft.client.render.entity.model.BipedEntityModel;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
@@ -32,7 +33,7 @@ public final class RogerFAArmorItem extends ArmorItem implements GeoItem {
 
             public GeoArmorRenderer<?> getHumanoidArmorModel(LivingEntity livingEntity, ItemStack itemStack, EquipmentSlot equipmentSlot, BipedEntityModel<LivingEntity> original) {
                 if(this.renderer == null)
-                    this.renderer = new RogerFAArmorRenderer();
+                    this.renderer = new GeoArmorRenderer<>(new FARogerArmorModel());
 
                 this.renderer.prepForRender(livingEntity, itemStack, equipmentSlot, original);
                 return this.renderer;

@@ -15,6 +15,7 @@ public class FARogerArmorModel extends GeoModel<RogerFAArmorItem> {
     public Identifier getTextureResource(RogerFAArmorItem animatable) {
         return new Identifier(SeaKingsMod.MOD_ID, "textures/item/armor/prerogerfa.png");
     }
+
     @Override
     public Identifier getAnimationResource(RogerFAArmorItem animatable) {
         return null;
