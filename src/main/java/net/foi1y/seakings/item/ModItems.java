@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.*;
 import net.foi1y.seakings.SeaKingsMod;
 import net.foi1y.seakings.block.ModBlocks;
 import net.foi1y.seakings.item.custom.ArmorItems.*;
+import net.foi1y.seakings.item.custom.swordslashitem;
 import net.foi1y.seakings.item.custom.trinkets.basiccloaks.BlueCloak;
 import net.foi1y.seakings.item.custom.trinkets.basiccloaks.BuggyCloak;
 import net.foi1y.seakings.item.custom.trinkets.basiccloaks.WhiteCloak;
@@ -27,7 +28,7 @@ import static net.foi1y.seakings.config.SeaKingsConfig.localizedNames;
 
 public class ModItems {
     public static final Item DONUT = registerItem("donut",
-            new Item(new FabricItemSettings()));
+            new swordslashitem(new FabricItemSettings()));
     public static final Item BLUE_DONUT = registerItem("blue_donut",
             new Item(new FabricItemSettings()));
     // Templates
