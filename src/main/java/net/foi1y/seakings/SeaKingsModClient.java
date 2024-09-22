@@ -5,9 +5,10 @@ import dev.emi.trinkets.api.client.TrinketRendererRegistry;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
+import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
+import net.foi1y.seakings.client.GUI.HUD.abilityIndicator;
 import net.foi1y.seakings.client.GUI.screens.wheelOfDoom;
 import net.foi1y.seakings.item.ModItems;
-import net.foi1y.seakings.item.custom.trinkets.basiccloaks.BlueCloak;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
@@ -46,6 +47,8 @@ public class SeaKingsModClient implements ClientModInitializer {
                 });
             }
         });
+
+        HudRenderCallback.EVENT.register(new abilityIndicator());
         /*
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             while (useAbility.wasPressed()) {
