@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.Unique;
 public class PlayerEntityMixin implements IPlayerAbilityData {
 
     @Unique
-    private int activeAbilityNum = 0;
+    private int activeAbilityNum = 4;
     @Unique
     private int[] cooldowns = new int[]{0,0,0,0,0,0,0,0};
 
@@ -19,7 +19,7 @@ public class PlayerEntityMixin implements IPlayerAbilityData {
     @Unique
     private final Ability[] abilities =  new Ability[]{nullAbility, nullAbility, nullAbility, nullAbility, nullAbility, nullAbility, nullAbility, nullAbility};
     @Unique
-    private Ability activeAbility;
+    private Ability activeAbility = new nullAbility();
     @Unique
     private int abilityCooldown;
     @Unique

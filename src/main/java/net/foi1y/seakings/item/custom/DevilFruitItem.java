@@ -1,5 +1,10 @@
 package net.foi1y.seakings.item.custom;
 
+import eu.midnightdust.lib.config.MidnightConfig;
+import net.fabricmc.loader.api.FabricLoader;
+import net.fabricmc.loader.impl.util.log.Log;
+import net.foi1y.seakings.SeaKingsMod;
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.*;
 import net.minecraft.world.World;
@@ -14,7 +19,7 @@ public class DevilFruitItem extends Item {
         if (this.isFood()) {
             boolean fruit = true;
             String fruitname = "gomu";
-            System.out.println(fruitname);
+
             return user.eatFood(world, stack);
         }
         return stack;

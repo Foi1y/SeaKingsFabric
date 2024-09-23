@@ -18,6 +18,8 @@ import org.jetbrains.annotations.NotNull;
 
 public abstract class wheelOfDoom extends Screen {
 
+
+
     public static void setupIcons(DrawContext drawContext,int width, int height){
         assert MinecraftClient.getInstance().player != null;
          PlayerEntity player = MinecraftClient.getInstance().player;
@@ -71,6 +73,7 @@ public abstract class wheelOfDoom extends Screen {
                     }else if(mouseTheda>315 && mouseTheda<=360){
                         playerAbilityData.setActiveAbility(7);
                     }
+                    MinecraftClient.getInstance().setScreen((Screen)null);
 
                 }
             };
