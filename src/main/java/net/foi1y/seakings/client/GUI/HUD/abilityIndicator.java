@@ -75,9 +75,26 @@ public class abilityIndicator implements HudRenderCallback {
         };
 
         // Only display the first 3 abilities
-        for (int i = 0; i < Math.min(3, abilities.length); i++) {
-            Identifier iconTexture = abilities[i].getIcon();
+        if (playerAbilityData.getActiveAbilityNum() != 7 && playerAbilityData.getActiveAbilityNum() != 0) {
+            for (int i = 0; i < 3; i++) {
+                Identifier iconTexture = abilities[i + playerAbilityData.getActiveAbilityNum() - 1].getIcon();
+                drawContext.drawTexture(iconTexture, x + 103, y - 19, 0, 0, 17, 17, 17, 17);
+            }
+        } else if (playerAbilityData.getActiveAbilityNum() == 7) {
+            for (int i = 0; i < 2; i++) {
+                Identifier iconTexture = abilities[i + playerAbilityData.getActiveAbilityNum() - 1].getIcon();
+                drawContext.drawTexture(iconTexture, x + 103, y - 19, 0, 0, 17, 17, 17, 17);
+            }
+            Identifier iconTexture = abilities[0].getIcon();
             drawContext.drawTexture(iconTexture, x + 103, y - 19, 0, 0, 17, 17, 17, 17);
+        } else if (playerAbilityData.getActiveAbilityNum() == 0) {
+            Identifier iconTexture = abilities[7].getIcon();
+            drawContext.drawTexture(iconTexture, x + 103, y - 19, 0, 0, 17, 17, 17, 17);
+            for(int i = 0; i <2; i++){
+                iconTexture = abilities[i + playerAbilityData.getActiveAbilityNum() - 1].getIcon();
+                drawContext.drawTexture(iconTexture, x + 103, y - 19, 0, 0, 17, 17, 17, 17);
+            }
         }
     }
 }
+

@@ -13,6 +13,7 @@ public class PlayerEntityMixin implements IPlayerAbilityData {
     private int activeAbilityNum = 0;
     @Unique
     private int[] cooldowns = new int[]{0,0,0,0,0,0,0,0};
+
     @Unique
     private Ability nullAbility = new nullAbility();
     @Unique
