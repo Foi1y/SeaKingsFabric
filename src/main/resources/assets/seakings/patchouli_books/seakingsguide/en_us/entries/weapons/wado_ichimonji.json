@@ -1,0 +1,19 @@
+{
+  "name": "Zoros Swords",
+  "icon": "seakings:straw_hat",
+  "category": "seakings:weapons_category",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Wado Ichimonji",
+      "item": "seakings:wado_ichimonji",
+      "text": "Wado Ichimonji is a Sword Belonging to the Swordsman Roronoa Zoro, Wado Ichimonji can be Obtained as a Boss Drop from Roronoa Zoro or Bought from a Wandering Trader for 48 Emeralds."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "title": "Sandai Kitetsu",
+      "item": "seakings:sandai_kietsu",
+      "text": "Sandai Kietsu is a Sword Belonging to the Swordsman Roronoa Zoro, Sandai Kietsu can be Obtained as a Boss Drop from Roronoa Zoro or Bought from a Wandering Trader for 16 Emeralds & 8 Diamonds."
+    }
+  ]
+}

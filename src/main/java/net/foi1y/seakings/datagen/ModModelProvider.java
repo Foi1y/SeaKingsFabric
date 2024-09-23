@@ -48,5 +48,24 @@ public class ModModelProvider extends FabricModelProvider {
 
         // Cloaks
         itemModelGenerator.register(ModItems.BUGGY_CLOAK, Models.GENERATED);
+
+        // Fabrics
+
+        itemModelGenerator.register(ModItems.WHITEFABRIC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BLUEFABRIC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LIGHTBLUEFABRIC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MAGENTAFABRIC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PURPLEFABRIC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PINKFABRIC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.REDFABRIC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BLACKFABRIC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GREENFABRIC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LIMEFABRIC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GREYFABRIC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LIGHTGREYFABRIC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ORANGEFABRIC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BROWNFABRIC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.YELLOWFABRIC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CYANFABRIC, Models.GENERATED);
     }
 }

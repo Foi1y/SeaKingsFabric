@@ -37,6 +37,42 @@ public class ModItems {
     public static final Item CUTLASSBLADETEMPLATE = registerItem("cutlassbladetemplate",
             new Item(new FabricItemSettings()));
 
+    // Fabrics
+
+    public static final Item WHITEFABRIC = registerItem("whitefabric",
+            new Item(new FabricItemSettings()));
+    public static final Item BLUEFABRIC = registerItem("bluefabric",
+            new Item(new FabricItemSettings()));
+    public static final Item LIGHTBLUEFABRIC = registerItem("lightbluefabric",
+            new Item(new FabricItemSettings()));
+    public static final Item CYANFABRIC = registerItem("cyanfabric",
+            new Item(new FabricItemSettings()));
+    public static final Item PINKFABRIC = registerItem("pinkfabric",
+            new Item(new FabricItemSettings()));
+    public static final Item PURPLEFABRIC = registerItem("purplefabric",
+            new Item(new FabricItemSettings()));
+    public static final Item MAGENTAFABRIC = registerItem("magentafabric",
+            new Item(new FabricItemSettings()));
+    public static final Item YELLOWFABRIC = registerItem("yellowfabric",
+            new Item(new FabricItemSettings()));
+    public static final Item REDFABRIC = registerItem("redfabric",
+            new Item(new FabricItemSettings()));
+    public static final Item GREENFABRIC = registerItem("greenfabric",
+            new Item(new FabricItemSettings()));
+    public static final Item ORANGEFABRIC = registerItem("orangefabric",
+            new Item(new FabricItemSettings()));
+    public static final Item LIMEFABRIC = registerItem("limefabric",
+            new Item(new FabricItemSettings()));
+    public static final Item LIGHTGREYFABRIC = registerItem("lightgreyfabric",
+            new Item(new FabricItemSettings()));
+    public static final Item GREYFABRIC = registerItem("greyfabric",
+            new Item(new FabricItemSettings()));
+    public static final Item BLACKFABRIC = registerItem("blackfabric",
+            new Item(new FabricItemSettings()));
+    public static final Item BROWNFABRIC = registerItem("brownfabric",
+            new Item(new FabricItemSettings()));
+
+
     // Swords
 
     public static final Item CUTLASS = registerItem("cutlass",

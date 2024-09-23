@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "seakings:whitefabric",
+    "seakings:bluefabric",
+    "seakings:lightbluefabric",
+    "seakings:cyanfabric",
+    "seakings:brownfabric",
+    "seakings:orangefabric",
+    "seakings:yellowfabric",
+    "seakings:greenfabric",
+    "seakings:limefabric",
+    "seakings:pinkfabric",
+    "seakings:magentafabric",
+    "seakings:purplefabric",
+    "seakings:blackfabric",
+    "seakings:lightgreyfabric",
+    "seakings:greyfabric"
+  ]
+}

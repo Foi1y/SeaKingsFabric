@@ -24,6 +24,8 @@ public class ModTags {
                     createTag("2ss");
             public static final TagKey<Item> THREE_SWORD_STYLE =
                     createTag("3ss");
+            public static final TagKey<Item> FABRICS =
+                    createTag("fabrics");
 
             private static TagKey<Item> createTag(String name) {
                 return TagKey.of(RegistryKeys.ITEM, new Identifier(SeaKingsMod.MOD_ID, name));

@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.foi1y.seakings.SeaKingsMod;
 import net.foi1y.seakings.block.ModBlocks;
 
+import net.minecraft.data.client.Models;
 import net.minecraft.item.*;
 import net.minecraft.registry.*;
 import net.minecraft.text.Text;
@@ -21,6 +22,22 @@ public class ModItemGroup {
                     entries.add(ModBlocks.RAWSEAPRISONSTONE);
                     entries.add(ModBlocks.SEAPRISONSTONE);
                     entries.add(ModBlocks.MARINEBARREL);
+                    entries.add(ModItems.WHITEFABRIC);
+                    entries.add(ModItems.BLUEFABRIC);
+                    entries.add(ModItems.LIGHTBLUEFABRIC);
+                    entries.add(ModItems.MAGENTAFABRIC);
+                    entries.add(ModItems.PURPLEFABRIC);
+                    entries.add(ModItems.PINKFABRIC);
+                    entries.add(ModItems.REDFABRIC);
+                    entries.add(ModItems.BLACKFABRIC);
+                    entries.add(ModItems.GREENFABRIC);
+                    entries.add(ModItems.LIMEFABRIC);
+                    entries.add(ModItems.GREYFABRIC);
+                    entries.add(ModItems.LIGHTGREYFABRIC);
+                    entries.add(ModItems.ORANGEFABRIC);
+                    entries.add(ModItems.BROWNFABRIC);
+                    entries.add(ModItems.YELLOWFABRIC);
+                    entries.add(ModItems.CYANFABRIC);
 
                     }).build());
 
@@ -81,6 +98,8 @@ public class ModItemGroup {
                         entries.add(ModItems.BUGGY_LEGGINGS);
                         entries.add(ModItems.BUGGY_BOOTS);
                         entries.add(ModItems.BUGGY_CLOAK);
+
+
                     }).build());
     public static void registerItemGroups(){
         SeaKingsMod.LOGGER.info(SeaKingsMod.NAME + " has registered its itemgroups.");

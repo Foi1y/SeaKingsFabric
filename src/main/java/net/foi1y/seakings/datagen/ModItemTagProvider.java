@@ -50,5 +50,21 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ModTags.Items.THREE_SWORD_STYLE)
                 .add(ModItems.IRONKATANA)
                 .add(ModItems.WADO_ICHIMONJI);
+        getOrCreateTagBuilder(ModTags.Items.FABRICS)
+                .add(ModItems.WHITEFABRIC)
+                .add(ModItems.BLUEFABRIC)
+                .add(ModItems.LIGHTBLUEFABRIC)
+                .add(ModItems.CYANFABRIC)
+                .add(ModItems.BROWNFABRIC)
+                .add(ModItems.ORANGEFABRIC)
+                .add(ModItems.YELLOWFABRIC)
+                .add(ModItems.GREENFABRIC)
+                .add(ModItems.LIMEFABRIC)
+                .add(ModItems.PINKFABRIC)
+                .add(ModItems.MAGENTAFABRIC)
+                .add(ModItems.PURPLEFABRIC)
+                .add(ModItems.BLACKFABRIC)
+                .add(ModItems.LIGHTGREYFABRIC)
+                .add(ModItems.GREYFABRIC);
     }
 }
