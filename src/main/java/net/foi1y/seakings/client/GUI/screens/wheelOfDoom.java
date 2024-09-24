@@ -103,11 +103,6 @@ public abstract class wheelOfDoom extends Screen {
     private final static Identifier wheel = new Identifier("seakings","wheel.png");
 
 
-    private final int imageWidth = 64; // Width of the image
-    private final int imageHeight = 64; // Height of the image
-
-
-
     @Override
     public boolean shouldPause(){
         return false;
@@ -166,7 +161,11 @@ public abstract class wheelOfDoom extends Screen {
         // Calculate the position to center the image
         double clientScale =  client.getWindow().getScaleFactor();
         int scale = 4;
+        // Width of the image
+        int imageWidth = 64;
         int x = (this.width - imageWidth) / 2;
+        // Height of the image
+        int imageHeight = 64;
         int y = (this.height - imageHeight) / 2;
         double[] radQurds = getRad(mouseX,mouseY);
         double radius = radQurds[0];
