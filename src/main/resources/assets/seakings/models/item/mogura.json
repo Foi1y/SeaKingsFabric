@@ -2,7 +2,7 @@
 	"credit": "Made by Foi1y",
 	"texture_size": [64, 64],
 	"textures": {
-		"1": "seakings:item/mogura"
+		"1": "seakings:item/swords/mogura"
 	},
 	"elements": [
 		{

@@ -15,7 +15,10 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 import net.minecraft.client.util.InputUtil;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.server.command.CommandManager;
 import net.minecraft.text.Text;
+import net.minecraft.world.World;
 import org.lwjgl.glfw.GLFW;
 
 public class SeaKingsModClient implements ClientModInitializer {
@@ -30,7 +33,6 @@ public class SeaKingsModClient implements ClientModInitializer {
         TrinketRendererRegistry.registerRenderer(ModItems.ONESWORDSHEATH, (TrinketRenderer) ModItems.ONESWORDSHEATH);
 
         EntityRendererRegistry.register(ModEntities.SWORD_SLASH_GREEN_PROJECTILE, FlyingItemEntityRenderer::new);
-
 
 
         useAbility = KeyBindingHelper.registerKeyBinding(new KeyBinding(
@@ -52,6 +54,7 @@ public class SeaKingsModClient implements ClientModInitializer {
                 });
             }
         });
+
 
         HudRenderCallback.EVENT.register(new abilityIndicator());
         /*

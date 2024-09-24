@@ -2,9 +2,9 @@
 	"credit": "Made by Foi1y",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "block/texture",
-		"1": "block/texture",
-		"particle": "block/texture"
+		"0": "seakings:item/hilts/napoleonhilt",
+		"1": "seakings:item/blades/napoleonblade",
+		"particle": "seakings:item/hilts/napoleonhilt"
 	},
 	"elements": [
 		{
@@ -569,10 +569,24 @@
 	],
 	"display": {
 		"thirdperson_righthand": {
-			"translation": [0, 11.5, 0]
+			"translation": [0, 11.5, 0.75]
 		},
 		"thirdperson_lefthand": {
-			"translation": [0, 11.5, 0]
+			"translation": [0, 11.5, 0.75]
+		},
+		"firstperson_righthand": {
+			"rotation": [-14, 24, -7]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-14, 24, -7]
+		},
+		"ground": {
+			"translation": [0, 13, 0]
+		},
+		"gui": {
+			"rotation": [67, 45, -63],
+			"translation": [-1.25, -0.75, 0],
+			"scale": [0.5, 0.5, 0.5]
 		}
 	},
 	"groups": [

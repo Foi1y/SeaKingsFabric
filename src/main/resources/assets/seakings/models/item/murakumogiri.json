@@ -2,7 +2,7 @@
 	"credit": "Made by Foi1y",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "seakings:item/murakumogiri",
+		"0": "seakings:item/swords/murakumogiri",
 		"particle": "seakings:item/murakumogiri"
 	},
 	"elements": [
