@@ -18,6 +18,8 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE)));
     public static final Block RAWSEAPRISONSTONE = registerBlock("rawseaprisonstone",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE)));
+    public static final Block PONEGLYPH = registerBlock("poneglyph",
+            new Block(FabricBlockSettings.copyOf(Blocks.BEDROCK)));
 
     public static final Block MARINEBARREL = registerBlock("marinebarrel",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.BARREL), UniformIntProvider.create(3, 6)));

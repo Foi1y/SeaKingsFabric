@@ -18,6 +18,7 @@ public class ModItemGroup {
                     .icon(() -> new ItemStack(ModItems.DONUT)).entries((displayContext, entries) -> {
                     entries.add(ModItems.BLUE_DONUT);
                     entries.add(ModItems.DONUT);
+                    entries.add(ModBlocks.PONEGLYPH);
 
                     entries.add(ModBlocks.RAWSEAPRISONSTONE);
                     entries.add(ModBlocks.SEAPRISONSTONE);
@@ -59,6 +60,7 @@ public class ModItemGroup {
                         entries.add(ModItems.YORU);
                         entries.add(ModItems.WADO_ICHIMONJI);
                         entries.add(ModItems.SANDAI_KITETSU);
+                        entries.add(ModItems.YUBASHIRI);
                         entries.add(ModItems.IRONKATANA);
                         entries.add(ModItems.GOLDKATANA);
                         entries.add(ModItems.DIAMONDKATANA);
