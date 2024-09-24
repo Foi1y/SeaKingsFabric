@@ -70,36 +70,36 @@ public class abilityIndicator implements HudRenderCallback {
         // Define positions for the 3 icons
         int[][] iconPos = {
                 {150, 115},
-                {24, 59},
+                {160, 115},
                 {59, 59}
         };
 
         // Only display the first 3 abilities
         if (playerAbilityData.getActiveAbilityNum() != 7 && playerAbilityData.getActiveAbilityNum() != 0) {
             for (int i = 0; i < 3; i++) {
-                x+=100;
+                x+=19;
                 Identifier iconTexture = abilities[i + playerAbilityData.getActiveAbilityNum()].getIcon();
-                drawContext.drawTexture(iconTexture, x + 103, y - 19, 0, 0, 17, 17, 17, 17);
+                drawContext.drawTexture(iconTexture, x + 83, y - 19, 0, 0, 17, 17, 17, 17); // Also Moves Middle X & Y
             }
         } else if (playerAbilityData.getActiveAbilityNum() == 7) {
             for (int i = 0; i < 2; i++) {
 
                 Identifier iconTexture = abilities[i + playerAbilityData.getActiveAbilityNum()-1].getIcon();
-                drawContext.drawTexture(iconTexture, x + 103, y - 19, 0, 0, 17, 17, 17, 17);
-                x+=100;
+                drawContext.drawTexture(iconTexture, x + 5, y - 19, 0, 0, 17, 17, 17, 17);
+                x+=5;
             }
 
             Identifier iconTexture = abilities[0].getIcon();
-            drawContext.drawTexture(iconTexture, x + 103, y - 19, 0, 0, 17, 17, 17, 17);
+            drawContext.drawTexture(iconTexture, x + 5, y - 19, 0, 0, 17, 17, 17, 17);
         } else if (playerAbilityData.getActiveAbilityNum() == 0) {
 
             Identifier iconTexture = abilities[7].getIcon();
-            drawContext.drawTexture(iconTexture, x + 103, y - 19, 0, 0, 17, 17, 17, 17);
-            x+=100;
+            drawContext.drawTexture(iconTexture, x + 5, y - 19, 0, 0, 17, 17, 17, 17);
+            x+=5; // Moves Middle Texture on X & Y?
             for(int i = 0; i <2; i++){
                 iconTexture = abilities[i + playerAbilityData.getActiveAbilityNum() - 1].getIcon();
-                drawContext.drawTexture(iconTexture, x + 103, y - 19, 0, 0, 17, 17, 17, 17);
-                x+=100;
+                drawContext.drawTexture(iconTexture, x + 5, y - 10, 0, 0, 17, 17, 17, 17);
+                x+=5;
             }
         }
     }
