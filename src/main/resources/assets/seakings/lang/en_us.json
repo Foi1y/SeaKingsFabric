@@ -53,7 +53,9 @@
 
 
   "seakings.itemgroup.misc_group": "Sea Kings Misc",
-  "seakings.itemgroup.fruits_group": "Sea Kings Devil Fruits",
+  "itemGroup.seakings.devilfruits": "Sea Kings Devil Fruits",
+  "itemGroup.seakings.devilfruits.tab.Mythical Zoan": "Mythical Zoan",
+  "itemGroup.seakings.devilfruits.tab.Paramecia": "Paramecia",
   "seakings.itemgroup.weapons_group": "Sea Kings Weapons",
   "seakings.itemgroup.armor_group": "Sea Kings Armor",
 

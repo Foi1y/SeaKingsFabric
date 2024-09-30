@@ -4,8 +4,8 @@ import eu.midnightdust.lib.config.MidnightConfig;
 import net.fabricmc.api.ModInitializer;
 
 import net.foi1y.seakings.block.ModBlocks;
-import net.foi1y.seakings.config.SeaKingsConfig;
 
+import net.foi1y.seakings.config.SeaKingsConfig;
 import net.foi1y.seakings.item.*;
 
 import net.foi1y.seakings.util.ModCustomTrades;
@@ -22,7 +22,7 @@ public class SeaKingsMod implements ModInitializer {
 	public static final String NAME = "Sea Kings";
 
     public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
-//	public static final seakingsconfig CONFIG = seakingsconfig.createAndLoad();
+	public static final SeaKingsConfig CONFIG = SeaKingsConfig.createAndLoad();
 
 
 	@Override
