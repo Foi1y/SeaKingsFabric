@@ -6,7 +6,6 @@ import net.fabricmc.api.ModInitializer;
 import net.foi1y.seakings.block.ModBlocks;
 import net.foi1y.seakings.config.SeaKingsConfig;
 
-import net.foi1y.seakings.config.seakingsconfig;
 import net.foi1y.seakings.item.*;
 
 import net.foi1y.seakings.util.ModCustomTrades;

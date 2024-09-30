@@ -9,4 +9,7 @@ public class SeaKingsConfig {
     public int anIntOption = 16;
     public boolean aBooleanToggle = false;
 
+    public boolean localizedNames = false;
+    public boolean modeledFruits = false;
+
 }
