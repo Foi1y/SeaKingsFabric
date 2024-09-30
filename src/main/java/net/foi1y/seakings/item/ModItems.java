@@ -24,7 +24,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-import static net.foi1y.seakings.config.SeaKingsConfig.localizedNames;
+
 
 public class ModItems {
     public static final Item DONUT = registerItem("donut",
@@ -243,9 +243,6 @@ public class ModItems {
             new DevilFruitItem(new FabricItemSettings().food(ModFoodComponents.DEVILFRUIT).maxCount(1)) {
                 @Override
                 public Text getName(ItemStack stack) {
-                    if (localizedNames) {
-                        return Text.translatable("gum.english");
-                    }
                     return Text.translatable("gum.japanese");
                 }
             });
