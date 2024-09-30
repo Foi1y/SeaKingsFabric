@@ -1,6 +1,8 @@
 package net.foi1y.seakings.item;
 
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import com.terraformersmc.modmenu.util.mod.Mod;
+import io.wispforest.owo.itemgroup.Icon;
+import io.wispforest.owo.itemgroup.OwoItemGroup;
 
 import net.foi1y.seakings.SeaKingsMod;
 import net.foi1y.seakings.block.ModBlocks;
@@ -12,7 +14,29 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroup {
-    public static final ItemGroup MISC_GROUP = Registry.register(Registries.ITEM_GROUP,
+
+    public static final OwoItemGroup DEVILFRUITS = OwoItemGroup
+            .builder(new Identifier(SeaKingsMod.MOD_ID, "devilfruits"), () -> Icon.of(ModItems.GOMU))
+            .initializer(owoItemGroup -> {
+                // Sub-tab 1: Mythical Zoans
+                owoItemGroup.addCustomTab(Icon.of(ModItems.GOMU), "Mythical Zoan", (context, entries) -> {
+                    entries.add(ModItems.GOMU); // Add Gomu item
+                    // Add more items to this sub-tab if needed
+                }, true); // Change to your actual icon path
+
+                // Sub-tab 2: Paramecia
+                owoItemGroup.addCustomTab(Icon.of(ModItems.DONUT), "Paramecia", (context, entries) -> {
+                    entries.add(ModItems.DONUT); // Add Gomu item
+                    // Add more items to this sub-tab if needed
+                }, true); // Change to your actual icon path
+            })
+            .customTexture(new Identifier(SeaKingsMod.MOD_ID, "textures/gui/tabs/group.png")) // Custom texture for the item group
+            .tabStackHeight(4) // Set the tab stacking height
+            .buttonStackHeight(4) // Set the button stacking height
+            .disableDynamicTitle() // Make the title static
+            .build();
+
+ /*   public static final ItemGroup MISC_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(SeaKingsMod.MOD_ID, "misc_group"),
             FabricItemGroup.builder().displayName(Text.translatable("seakings.itemgroup.misc_group"))
                     .icon(() -> new ItemStack(ModItems.DONUT)).entries((displayContext, entries) -> {
@@ -45,8 +69,8 @@ public class ModItemGroup {
     public static final ItemGroup FRUITS_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(SeaKingsMod.MOD_ID, "foods_group"),
             FabricItemGroup.builder().displayName(Text.translatable("seakings.itemgroup.fruits_group"))
-                    .icon(() -> new ItemStack(ModItems.GOMU)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.GOMU);
+                    .icon(() -> new ItemStack(GOMU)).entries((displayContext, entries) -> {
+                        entries.add(GOMU);
 
                     }).build());
 
@@ -103,6 +127,12 @@ public class ModItemGroup {
 
 
                     }).build());
+  */
+
+    public static void initialize() {
+        DEVILFRUITS.initialize();
+    }
+
     public static void registerItemGroups(){
         SeaKingsMod.LOGGER.info(SeaKingsMod.NAME + " has registered its itemgroups.");
     }

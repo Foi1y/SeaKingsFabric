@@ -48,6 +48,8 @@ public class SeaKingsMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModCustomTrades.registerCustomTrades();
+		ModItemGroup.initialize();
+
 
 
 		// Config
