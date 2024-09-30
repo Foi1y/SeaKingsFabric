@@ -8,7 +8,7 @@ public class Sanjuroku_Pound_Ho extends Ability {
 //    Player Clicks Ability Keybind
 //    Play Animation
 //    Wait 10 Ticks (Or Sync Up to Animation)
-//    Shoot Sword Slash Projectile (Or how ever you want to do the Slash)
+//    Shoot Sword Slash Projectile (Or however you want to do the Slash)
 //    Deal 6 Damage to Entity when hit
 //    Apply 15 Second Cooldown
     public Sanjuroku_Pound_Ho() {
