@@ -1,13 +1,12 @@
 package net.foi1y.seakings.config;
 
-import eu.midnightdust.lib.config.MidnightConfig;
+import io.wispforest.owo.config.annotation.Config;
+import io.wispforest.owo.config.annotation.Modmenu;
 
-public class SeaKingsConfig extends MidnightConfig {
+//@Modmenu(modId = "seakings")
+@Config(name = "seakings-config", wrapperName = "seakingsconfig")
+public class SeaKingsConfig {
+    public int anIntOption = 16;
+    public boolean aBooleanToggle = false;
 
-    @Comment(category = "settings", centered = true) public static Comment comment_1;
-
-    @Entry(category = "settings")
-    public static boolean modeledFruits = false;
-    @Entry(category = "settings")
-    public static boolean localizedNames = false;
 }
