@@ -24,11 +24,12 @@ public class SeaKingsMod implements ModInitializer {
 	public static final String NAME = "Sea Kings";
 
     public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
-	public static final SeaKings CONFIG = SeaKings.createAndLoad();
+	public static SeaKings CONFIG;
 
 
 	@Override
 	public void onInitialize() {
+		CONFIG = SeaKings.createAndLoad();
 
 		/*
 		HudRenderCallback.EVENT.register((drawContext, tickDelta) ->{

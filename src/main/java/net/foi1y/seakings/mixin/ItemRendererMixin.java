@@ -2,6 +2,7 @@ package net.foi1y.seakings.mixin;
 
 import net.foi1y.seakings.SeaKingsMod;
 import net.foi1y.seakings.config.SeaKings;
+import net.foi1y.seakings.config.SeaKingsConfigModel;
 import net.foi1y.seakings.item.ModItems;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.item.ItemRenderer;
@@ -14,13 +15,16 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyVariable;
 
+import static net.foi1y.seakings.SeaKingsMod.CONFIG;
+
 @Mixin(ItemRenderer.class)
 public abstract class ItemRendererMixin {
 
+    boolean modeledFruits = CONFIG.modeledFruits();
+
     @ModifyVariable(method = "renderItem", at = @At(value = "HEAD"), argsOnly = true)
     public BakedModel gomumodel(BakedModel value, ItemStack stack, ModelTransformationMode renderMode, boolean leftHanded, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, int overlay) {
-        boolean modledFruits = false;
-        if ((stack.isOf(ModItems.GOMU) && modledFruits)) {
+        if ((stack.isOf(ModItems.GOMU) && modeledFruits)) {
             return ((ItemRendererAccessor) this).seakings$getModels().getModelManager().getModel(new ModelIdentifier(SeaKingsMod.MOD_ID, "placeholdergomu", "inventory"));
         }
         return value;
