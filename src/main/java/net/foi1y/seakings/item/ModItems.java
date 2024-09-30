@@ -6,6 +6,8 @@ import net.fabricmc.fabric.api.itemgroup.v1.*;
 
 import net.foi1y.seakings.SeaKingsMod;
 import net.foi1y.seakings.block.ModBlocks;
+import net.foi1y.seakings.config.SeaKings;
+import net.foi1y.seakings.config.SeaKingsConfigModel;
 import net.foi1y.seakings.item.custom.ArmorItems.*;
 import net.foi1y.seakings.item.custom.swordslashitem;
 import net.foi1y.seakings.item.custom.trinkets.basiccloaks.BlueCloak;
@@ -23,8 +25,6 @@ import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
-
-import static net.foi1y.seakings.config.SeaKingsConfigModel.localizedNames;
 
 
 public class ModItems {
@@ -244,13 +244,13 @@ public class ModItems {
             new DevilFruitItem(new FabricItemSettings().food(ModFoodComponents.DEVILFRUIT).maxCount(1)) {
                 @Override
                 public Text getName(ItemStack stack) {
+                    boolean localizedNames = false;
                     if (localizedNames) {
                         return Text.translatable("gum.english");
                     }
                     return Text.translatable("gum.japanese");
                 }
             });
-
 
 
     private static Item registerItem(String name, Item item) {

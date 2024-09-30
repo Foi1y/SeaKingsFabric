@@ -5,9 +5,11 @@ import net.fabricmc.api.ModInitializer;
 
 import net.foi1y.seakings.block.ModBlocks;
 
-import net.foi1y.seakings.config.SeaKingsConfig;
+import net.foi1y.seakings.config.SeaKings;
+import net.foi1y.seakings.config.SeaKingsConfigModel;
 import net.foi1y.seakings.item.*;
 
+import net.foi1y.seakings.mixin.ItemRendererMixin;
 import net.foi1y.seakings.util.ModCustomTrades;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
@@ -22,7 +24,7 @@ public class SeaKingsMod implements ModInitializer {
 	public static final String NAME = "Sea Kings";
 
     public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
-	public static final SeaKingsConfig CONFIG = SeaKingsConfig.createAndLoad();
+	public static final SeaKings CONFIG = SeaKings.createAndLoad();
 
 
 	@Override
