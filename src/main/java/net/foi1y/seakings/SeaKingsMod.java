@@ -22,7 +22,7 @@ public class SeaKingsMod implements ModInitializer {
 	public static final String NAME = "Sea Kings";
 
     public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
-	public static final seakingsconfig CONFIG = seakingsconfig.createAndLoad();
+//	public static final seakingsconfig CONFIG = seakingsconfig.createAndLoad();
 
 
 	@Override
