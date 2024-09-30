@@ -5,6 +5,12 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.Identifier;
 
 public class Nitoryu_Iai extends Ability {
+//    Player Clicks Ability Keybind
+//    Teleport the Player 3 Blocks in the Direction they are looking
+//    Wait 10 Ticks
+//    Play Animation
+//    Wait 20 Ticks
+//    Deal 3 Damage to Entity if in path of player when starting ability
     public Nitoryu_Iai() {
         super("Nitoryu_Iai", 100, new Identifier("seakings", "change this"));
     }
