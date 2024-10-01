@@ -103,6 +103,8 @@ public class ModItemGroup {
                     entries.add(ACE);
                     entries.add(GRYPHON);
                     entries.add(NAPOLEAN);
+                    entries.add(HADES);
+                    entries.add(SHODAI_KITETSU);
                 }, true); // Change to your actual icon path
                 owoItemGroup.addCustomTab(Icon.of(WADO_ICHIMONJI), "great", (context, entries) -> {
                     entries.add(WADO_ICHIMONJI);
@@ -112,6 +114,15 @@ public class ModItemGroup {
                     entries.add(ENMA);
                     entries.add(AMENOHABAKIRI);
                     entries.add(RAIU);
+                    entries.add(MINAKANUSHI);
+                    entries.add(PUNISHERS);
+                    entries.add(DURANDAL);
+                    entries.add(SHIRAUO);
+                    entries.add(PRETZEL);
+                    entries.add(ATHENA);
+                    entries.add(FLOWERSWORDS);
+                    entries.add(SUKESAN);
+                    entries.add(NINDAI_KITETSU);
                 }, true); // Change to your actual icon path
                 owoItemGroup.addCustomTab(Icon.of(YUBASHIRI), "skillful", (context, entries) -> {
                     entries.add(YUBASHIRI);
