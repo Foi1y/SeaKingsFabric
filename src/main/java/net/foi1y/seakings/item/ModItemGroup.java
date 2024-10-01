@@ -4,6 +4,7 @@ import com.terraformersmc.modmenu.util.mod.Mod;
 import io.wispforest.owo.itemgroup.Icon;
 import io.wispforest.owo.itemgroup.OwoItemGroup;
 
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.foi1y.seakings.SeaKingsMod;
 import net.foi1y.seakings.block.ModBlocks;
 
@@ -13,20 +14,23 @@ import net.minecraft.registry.*;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
+import static net.foi1y.seakings.block.ModBlocks.*;
+import static net.foi1y.seakings.item.ModItems.*;
+
 public class ModItemGroup {
 
     public static final OwoItemGroup DEVILFRUITS = OwoItemGroup
-            .builder(new Identifier(SeaKingsMod.MOD_ID, "devilfruits"), () -> Icon.of(ModItems.GOMU))
+            .builder(new Identifier(SeaKingsMod.MOD_ID, "devilfruits"), () -> Icon.of(GOMU))
             .initializer(owoItemGroup -> {
                 // Sub-tab 1: Mythical Zoans
-                owoItemGroup.addCustomTab(Icon.of(ModItems.GOMU), "Mythical Zoan", (context, entries) -> {
-                    entries.add(ModItems.GOMU); // Add Gomu item
+                owoItemGroup.addCustomTab(Icon.of(GOMU), "Mythical Zoan", (context, entries) -> {
+                    entries.add(GOMU); // Add Gomu item
                     // Add more items to this sub-tab if needed
                 }, true); // Change to your actual icon path
 
                 // Sub-tab 2: Paramecia
-                owoItemGroup.addCustomTab(Icon.of(ModItems.DONUT), "Paramecia", (context, entries) -> {
-                    entries.add(ModItems.DONUT); // Add Gomu item
+                owoItemGroup.addCustomTab(Icon.of(DONUT), "Paramecia", (context, entries) -> {
+                    entries.add(DONUT); // Add Gomu item
                     // Add more items to this sub-tab if needed
                 }, true); // Change to your actual icon path
             })
@@ -36,62 +40,82 @@ public class ModItemGroup {
             .disableDynamicTitle() // Make the title static
             .build();
 
- /*   public static final ItemGroup MISC_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(SeaKingsMod.MOD_ID, "misc_group"),
-            FabricItemGroup.builder().displayName(Text.translatable("seakings.itemgroup.misc_group"))
-                    .icon(() -> new ItemStack(ModItems.DONUT)).entries((displayContext, entries) -> {
-                    entries.add(ModItems.BLUE_DONUT);
-                    entries.add(ModItems.DONUT);
-                    entries.add(ModBlocks.PONEGLYPH);
+    public static final OwoItemGroup MISC = OwoItemGroup
+            .builder(new Identifier(SeaKingsMod.MOD_ID, "misc"), () -> Icon.of(PONEGLYPH))
+            .initializer(owoItemGroup -> {
+                owoItemGroup.addCustomTab(Icon.of(PONEGLYPH), "generalmisc", (context, entries) -> {
+                    entries.add(BLUE_DONUT);
+                    entries.add(DONUT);
+                    entries.add(PONEGLYPH);
 
-                    entries.add(ModBlocks.RAWSEAPRISONSTONE);
-                    entries.add(ModBlocks.SEAPRISONSTONE);
-                    entries.add(ModBlocks.MARINEBARREL);
-                    entries.add(ModItems.WHITEFABRIC);
-                    entries.add(ModItems.BLUEFABRIC);
-                    entries.add(ModItems.LIGHTBLUEFABRIC);
-                    entries.add(ModItems.MAGENTAFABRIC);
-                    entries.add(ModItems.PURPLEFABRIC);
-                    entries.add(ModItems.PINKFABRIC);
-                    entries.add(ModItems.REDFABRIC);
-                    entries.add(ModItems.BLACKFABRIC);
-                    entries.add(ModItems.GREENFABRIC);
-                    entries.add(ModItems.LIMEFABRIC);
-                    entries.add(ModItems.GREYFABRIC);
-                    entries.add(ModItems.LIGHTGREYFABRIC);
-                    entries.add(ModItems.ORANGEFABRIC);
-                    entries.add(ModItems.BROWNFABRIC);
-                    entries.add(ModItems.YELLOWFABRIC);
-                    entries.add(ModItems.CYANFABRIC);
+                    entries.add(RAWSEAPRISONSTONE);
+                    entries.add(SEAPRISONSTONE);
+                    entries.add(MARINEBARREL);
+                    // Add more items to this sub-tab if needed
+                }, true); // Change to your actual icon path
 
-                    }).build());
+                owoItemGroup.addCustomTab(Icon.of(WHITEFABRIC), "fabrics", (context, entries) -> {
+                    entries.add(WHITEFABRIC);
+                    entries.add(BLUEFABRIC);
+                    entries.add(LIGHTBLUEFABRIC);
+                    entries.add(MAGENTAFABRIC);
+                    entries.add(PURPLEFABRIC);
+                    entries.add(PINKFABRIC);
+                    entries.add(REDFABRIC);
+                    entries.add(BLACKFABRIC);
+                    entries.add(GREENFABRIC);
+                    entries.add(LIMEFABRIC);
+                    entries.add(GREYFABRIC);
+                    entries.add(LIGHTGREYFABRIC);
+                    entries.add(ORANGEFABRIC);
+                    entries.add(BROWNFABRIC);
+                    entries.add(YELLOWFABRIC);
+                    entries.add(CYANFABRIC);
+                    // Add more items to this sub-tab if needed
+                }, true); // Change to your actual icon path
+            })
+            .customTexture(new Identifier(SeaKingsMod.MOD_ID, "textures/gui/tabs/group.png")) // Custom texture for the item group
+            .tabStackHeight(4) // Set the tab stacking height
+            .buttonStackHeight(4) // Set the button stacking height
+            .disableDynamicTitle() // Make the title static
+            .build();
 
-    public static final ItemGroup FRUITS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(SeaKingsMod.MOD_ID, "foods_group"),
-            FabricItemGroup.builder().displayName(Text.translatable("seakings.itemgroup.fruits_group"))
-                    .icon(() -> new ItemStack(GOMU)).entries((displayContext, entries) -> {
-                        entries.add(GOMU);
-
-                    }).build());
-
-    public static final ItemGroup WEAPONS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(SeaKingsMod.MOD_ID, "weapons_group"),
-            FabricItemGroup.builder().displayName(Text.translatable("seakings.itemgroup.weapons_group"))
-                    .icon(() -> new ItemStack(ModItems.CUTLASS)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.CUTLASS);
-                        entries.add(ModItems.ACE);
-                        entries.add(ModItems.GRYPHON);
-                        entries.add(ModItems.YORU);
-                        entries.add(ModItems.WADO_ICHIMONJI);
-                        entries.add(ModItems.SANDAI_KITETSU);
-                        entries.add(ModItems.YUBASHIRI);
-                        entries.add(ModItems.IRONKATANA);
-                        entries.add(ModItems.GOLDKATANA);
-                        entries.add(ModItems.DIAMONDKATANA);
-                        entries.add(ModItems.NETHERITEKATANA);
-                        entries.add(ModItems.BUGGYDAGGER);
-                    }).build());
-
+    public static final OwoItemGroup WEAPONS = OwoItemGroup
+            .builder(new Identifier(SeaKingsMod.MOD_ID, "weapons"), () -> Icon.of(GOMU))
+            .initializer(owoItemGroup -> {
+                owoItemGroup.addCustomTab(Icon.of(SCYTHE), "ungraded", (context, entries) -> {
+                    entries.add(SCYTHE);
+                    entries.add(CUTLASS);
+                    entries.add(IRONKATANA);
+                    entries.add(GOLDKATANA);
+                    entries.add(DIAMONDKATANA);
+                    entries.add(NETHERITEKATANA);
+                }, true); // Change to your actual icon path
+                owoItemGroup.addCustomTab(Icon.of(YORU), "supreme", (context, entries) -> {
+                    entries.add(YORU);
+                    entries.add(MURAKUMOGIRI);
+                    entries.add(ACE);
+                    entries.add(GRYPHON);
+                    entries.add(NAPOLEAN);
+                }, true); // Change to your actual icon path
+                owoItemGroup.addCustomTab(Icon.of(WADO_ICHIMONJI), "great", (context, entries) -> {
+                    entries.add(WADO_ICHIMONJI);
+                    entries.add(SHUSUI);
+                    entries.add(SOULCANE);
+                    entries.add(MOGURA);
+                }, true); // Change to your actual icon path
+                owoItemGroup.addCustomTab(Icon.of(YUBASHIRI), "skillful", (context, entries) -> {
+                    entries.add(YUBASHIRI);
+                }, true); // Change to your actual icon path
+                owoItemGroup.addCustomTab(Icon.of(SANDAI_KITETSU), "grade", (context, entries) -> {
+                    entries.add(SANDAI_KITETSU);
+                }, true); // Change to your actual icon path
+            })
+            .customTexture(new Identifier(SeaKingsMod.MOD_ID, "textures/gui/tabs/group.png")) // Custom texture for the item group
+            .tabStackHeight(4) // Set the tab stacking height
+            .buttonStackHeight(4) // Set the button stacking height
+            .disableDynamicTitle() // Make the title static
+            .build();
     public static final ItemGroup ARMOR_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(SeaKingsMod.MOD_ID, "armor_group"),
             FabricItemGroup.builder().displayName(Text.translatable("seakings.itemgroup.armor_group"))
@@ -127,10 +151,11 @@ public class ModItemGroup {
 
 
                     }).build());
-  */
 
     public static void initialize() {
         DEVILFRUITS.initialize();
+        MISC.initialize();
+        WEAPONS.initialize();
     }
 
     public static void registerItemGroups(){

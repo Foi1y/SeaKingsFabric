@@ -8,19 +8,21 @@
   "gum.japanese": "Gomu Gomu no Mi \uE2E1",
   "gum.english": "Gum Gum Fruit \uE2E1",
 
-  "item.seakings.cutlass": "Cutlass \uE2E7",
+  "item.seakings.cutlass": "Cutlass",
+  "item.seakings.ironkatana": "Iron Katana",
+  "item.seakings.goldkatana": "Gold Katana",
+  "item.seakings.diamondkatana": "Diamond Katana",
+  "item.seakings.netheritekatana": "Netherite Katana",
+  "item.seakings.scythe": "Scythe",
   "item.seakings.wado_ichimonji": "§lWado Ichimonji \uE2E8",
   "item.seakings.sandai_kitetsu": "§lSandai Kitetsu \uE2E8",
   "item.seakings.shusui": "§lShusui \uE2E8",
   "item.seakings.gryphon": "§lGryphon \uE2E8",
   "item.seakings.yoru": "§lYoru \uE2E8",
+  "item.seakings.mogura": "§lMogura \uE2E8",
   "item.seakings.murakumogiri": "§lMurakumogiri \uE2E8",
   "item.seakings.soulcane": "§lSoul Solid \uE2E8",
   "item.seakings.ace": "§lAce \uE2E8",
-  "item.seakings.ironkatana": "Iron Katana \uE2E6",
-  "item.seakings.goldkatana": "Gold Katana \uE2E6",
-  "item.seakings.diamondkatana": "Diamond Katana \uE2E6",
-  "item.seakings.netheritekatana": "Netherite Katana \uE2E6",
   "item.seakings.buggydagger": "Buggy Dagger \uE2E8",
 
   "block.seakings.seaprisonstone": "Sea Prison Stone",
@@ -52,11 +54,21 @@
   "item.seakings.shanks_boots": "Shanks Sandeles \uE2E4",
 
 
-  "seakings.itemgroup.misc_group": "Sea Kings Misc",
+  "itemGroup.seakings.misc": "Sea Kings Misc",
+  "itemGroup.seakings.misc.tab.fabrics": "Fabrics",
+  "itemGroup.seakings.misc.tab.generalmisc": "General Misc",
+
   "itemGroup.seakings.devilfruits": "Sea Kings Devil Fruits",
-  "itemGroup.seakings.devilfruits.tab.Mythical Zoan": "Mythical Zoan",
-  "itemGroup.seakings.devilfruits.tab.Paramecia": "Paramecia",
-  "seakings.itemgroup.weapons_group": "Sea Kings Weapons",
+  "itemGroup.seakings.devilfruits.tab.Mythical Zoan": "§6§lMythical Zoan",
+  "itemGroup.seakings.devilfruits.tab.Paramecia": "§c§lParamecia",
+
+  "itemGroup.seakings.weapons": "Sea Kings Weapons",
+  "itemGroup.seakings.weapons.tab.ungraded": "§6§lUngraded",
+  "itemGroup.seakings.weapons.tab.supreme": "§c§lSupreme Grade",
+  "itemGroup.seakings.weapons.tab.great": "§3§lGreat Grade",
+  "itemGroup.seakings.weapons.tab.skillful": "§9§lSkillful Grade",
+  "itemGroup.seakings.weapons.tab.grade": "§7§lGrade",
+
   "seakings.itemgroup.armor_group": "Sea Kings Armor",
 
   "seakings.midnightconfig.title": "Sea Kings Settings",
@@ -66,5 +78,22 @@
   "category.seakings.keys": "Sea Kings Keybinds",
   "key.seakings.menu": "Open Menu",
   "seakings.midnightconfig.modeledFruits": "Modeled Fruits",
-  "seakings.midnightconfig.localizedNames": "Localized Names (English)"
+  "seakings.midnightconfig.localizedNames": "Localized Names (English)",
+
+  "item.seakings.whitefabric": "White Fabric",
+  "item.seakings.bluefabric": "Blue Fabric",
+  "item.seakings.cyanfabric": "Cyan Fabric",
+  "item.seakings.magentafabric": "Magenta Fabric",
+  "item.seakings.purplefabric": "Purple Fabric",
+  "item.seakings.pinkfabric": "Pink Fabric",
+  "item.seakings.redfabric": "Red Fabric",
+  "item.seakings.blackfabric": "Black Fabric",
+  "item.seakings.limefabric": "Lime Fabric",
+  "item.seakings.greenfabric": "Green Fabric",
+  "item.seakings.greyfabric": "Gray Fabric",
+  "item.seakings.lightgreyfabric": "Light Gray Fabric",
+  "item.seakings.yellowfabric": "Yellow Fabric",
+  "item.seakings.orangefabric": "Orange Fabric",
+  "item.seakings.brownfabric": "Brown Fabric",
+  "item.seakings.lightbluefabric": "Light Blue Fabric"
 }
