@@ -41,17 +41,12 @@ public class ModItems {
             new Item(new FabricItemSettings()));
 
     // Ancient Books
-    public static final Item ANCIENT_BOOK1 = registerItem("ancient_book1", new Item(new Item.Settings()));
-    public static final Item ANCIENT_BOOK2 = registerItem("ancient_book2", new Item(new Item.Settings()));
-    public static final Item ANCIENT_BOOK3 = registerItem("ancient_book3", new Item(new Item.Settings()));
-
-
-
-
-
-
-
-
+    public static final Item ANCIENT_BOOK1 = registerItem("ancient_book1",
+            new Item(new FabricItemSettings()));
+    public static final Item ANCIENT_BOOK2 = registerItem("ancient_book2",
+            new Item(new FabricItemSettings()));
+    public static final Item ANCIENT_BOOK3 = registerItem("ancient_book3",
+            new Item(new FabricItemSettings()));
 
     // Fabrics
 
@@ -110,38 +105,12 @@ public class ModItems {
                     tooltip.add(Text.literal("§c§lSupreme Grade Blade"));
                 }
             });
-    public static final Item WADO_ICHIMONJI = registerItem("wado_ichimonji",
-            new SwordItem(ModToolMaterial.KATANA, 2, -2.4f, new FabricItemSettings().maxCount(1)) {
-                @Override
-                public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-                    tooltip.add(Text.literal("§5§l§oA Weapon of Roronoa Zoro"));
-                    tooltip.add(Text.literal("§3§lGreat Grade Blade"));
-                }
-            });
-
     public static final Item YUBASHIRI = registerItem("yubashiri",
             new SwordItem(ModToolMaterial.KATANA, 2, -2.4f, new FabricItemSettings().maxCount(1)) {
                 @Override
                 public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
                     tooltip.add(Text.literal("§5§l§oA Weapon of Roronoa Zoro"));
                     tooltip.add(Text.literal("§9§lSkillful Grade Blade"));
-                }
-            });
-    public static final Item SHUSUI = registerItem("shusui",
-            new SwordItem(ModToolMaterial.KATANA, 3, -2.4f, new FabricItemSettings().maxCount(1)) {
-                @Override
-                public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-                    tooltip.add(Text.literal("§6§l§oThe Treasure of Wano"));
-                    tooltip.add(Text.literal("§3§lGreat Grade Blade"));
-                    tooltip.add(Text.literal("§8§l§oBlack Blade"));
-                }
-            });
-    public static final Item MOGURA = registerItem("mogura",
-            new SwordItem(ModToolMaterial.KATANA, 3, -2.4f, new FabricItemSettings().maxCount(1)) {
-                @Override
-                public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-                    tooltip.add(Text.literal("§d§l§oKatakuri's Trident"));
-                    tooltip.add(Text.literal("§3§lGreat Grade Blade"));
                 }
             });
     public static final Item SANDAI_KITETSU = registerItem("sandai_kitetsu",
@@ -180,11 +149,62 @@ public class ModItems {
                     tooltip.add(Text.literal("§c§lSupreme Grade Blade"));
                 }
             });
+
+    // Great Grade Blades
+    public static final Item AMENOHABAKIRI = registerItem("amenohabakiri",
+            new SwordItem(ModToolMaterial.KATANA, 2, -2f, new FabricItemSettings().maxCount(1)) {
+                @Override
+                public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+                    tooltip.add(Text.literal("§5§l§oLord Odens Legendary Sword"));
+                    tooltip.add(Text.literal("§3§lGreat Grade Blade"));
+                }
+            });
+    public static final Item ENMA = registerItem("enma",
+            new SwordItem(ModToolMaterial.KATANA, 2, -2f, new FabricItemSettings().maxCount(1)) {
+                @Override
+                public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+                    tooltip.add(Text.literal("§5§l§oLord Odens Legendary Sword"));
+                    tooltip.add(Text.literal("§3§lGreat Grade Blade"));
+                }
+            });
     public static final Item SOULCANE = registerItem("soulcane",
             new SwordItem(ModToolMaterial.KATANA, 2, -2f, new FabricItemSettings().maxCount(1)) {
                 @Override
                 public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
                     tooltip.add(Text.literal("§5§l§oBrooks Cane Blade"));
+                    tooltip.add(Text.literal("§3§lGreat Grade Blade"));
+                }
+            });
+    public static final Item SHUSUI = registerItem("shusui",
+            new SwordItem(ModToolMaterial.KATANA, 3, -2.4f, new FabricItemSettings().maxCount(1)) {
+                @Override
+                public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+                    tooltip.add(Text.literal("§6§l§oThe Treasure of Wano"));
+                    tooltip.add(Text.literal("§3§lGreat Grade Blade"));
+                    tooltip.add(Text.literal("§8§l§oBlack Blade"));
+                }
+            });
+    public static final Item MOGURA = registerItem("mogura",
+            new SwordItem(ModToolMaterial.KATANA, 3, -2.4f, new FabricItemSettings().maxCount(1)) {
+                @Override
+                public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+                    tooltip.add(Text.literal("§d§l§oKatakuri's Trident"));
+                    tooltip.add(Text.literal("§3§lGreat Grade Blade"));
+                }
+            });
+    public static final Item WADO_ICHIMONJI = registerItem("wado_ichimonji",
+            new SwordItem(ModToolMaterial.KATANA, 2, -2.4f, new FabricItemSettings().maxCount(1)) {
+                @Override
+                public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+                    tooltip.add(Text.literal("§5§l§oA Weapon of Roronoa Zoro"));
+                    tooltip.add(Text.literal("§3§lGreat Grade Blade"));
+                }
+            });
+    public static final Item RAIU = registerItem("raiu",
+            new SwordItem(ModToolMaterial.KATANA, 2, -2.4f, new FabricItemSettings().maxCount(1)) {
+                @Override
+                public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+                    tooltip.add(Text.literal("§5§l§oShiryus Sword"));
                     tooltip.add(Text.literal("§3§lGreat Grade Blade"));
                 }
             });

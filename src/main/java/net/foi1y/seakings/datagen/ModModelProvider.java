@@ -45,6 +45,9 @@ public class ModModelProvider extends FabricModelProvider {
         // Templates
         itemModelGenerator.register(ModItems.SWORD_TEMPLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.CUTLASSBLADETEMPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ANCIENT_BOOK1, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ANCIENT_BOOK2, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ANCIENT_BOOK3, Models.GENERATED);
 
         // Cloaks
         itemModelGenerator.register(ModItems.BUGGY_CLOAK, Models.GENERATED);

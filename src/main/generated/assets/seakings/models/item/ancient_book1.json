@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "seakings:item/AncientBook1"
+    "layer0": "seakings:item/ancient_book1"
   }
 }

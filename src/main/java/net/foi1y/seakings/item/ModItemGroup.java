@@ -51,6 +51,9 @@ public class ModItemGroup {
                     entries.add(RAWSEAPRISONSTONE);
                     entries.add(SEAPRISONSTONE);
                     entries.add(MARINEBARREL);
+                    entries.add(ANCIENT_BOOK1);
+                    entries.add(ANCIENT_BOOK2);
+                    entries.add(ANCIENT_BOOK3);
                     // Add more items to this sub-tab if needed
                 }, true); // Change to your actual icon path
 
@@ -106,6 +109,9 @@ public class ModItemGroup {
                     entries.add(SHUSUI);
                     entries.add(SOULCANE);
                     entries.add(MOGURA);
+                    entries.add(ENMA);
+                    entries.add(AMENOHABAKIRI);
+                    entries.add(RAIU);
                 }, true); // Change to your actual icon path
                 owoItemGroup.addCustomTab(Icon.of(YUBASHIRI), "skillful", (context, entries) -> {
                     entries.add(YUBASHIRI);
