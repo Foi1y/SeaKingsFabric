@@ -95,5 +95,8 @@
   "item.seakings.yellowfabric": "Yellow Fabric",
   "item.seakings.orangefabric": "Orange Fabric",
   "item.seakings.brownfabric": "Brown Fabric",
-  "item.seakings.lightbluefabric": "Light Blue Fabric"
+  "item.seakings.lightbluefabric": "Light Blue Fabric",
+  "item.seakings.ancient_book1": "Ancient Book(Haki)",
+  "item.seakings.ancient_book2": "Ancient Book(Race)",
+  "item.seakings.ancient_book3": "Ancient Book(Ability)"
 }

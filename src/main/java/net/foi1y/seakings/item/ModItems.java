@@ -40,6 +40,19 @@ public class ModItems {
     public static final Item CUTLASSBLADETEMPLATE = registerItem("cutlassbladetemplate",
             new Item(new FabricItemSettings()));
 
+    // Ancient Books
+    public static final Item ANCIENT_BOOK1 = registerItem("ancient_book1", new Item(new Item.Settings()));
+    public static final Item ANCIENT_BOOK2 = registerItem("ancient_book2", new Item(new Item.Settings()));
+    public static final Item ANCIENT_BOOK3 = registerItem("ancient_book3", new Item(new Item.Settings()));
+
+
+
+
+
+
+
+
+
     // Fabrics
 
     public static final Item WHITEFABRIC = registerItem("whitefabric",
