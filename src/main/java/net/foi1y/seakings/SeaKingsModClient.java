@@ -9,6 +9,7 @@ import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.foi1y.seakings.client.GUI.HUD.abilityIndicator;
 import net.foi1y.seakings.client.GUI.screens.wheelOfDoom;
+import net.foi1y.seakings.entity.client.CivilianRenderer;
 import net.foi1y.seakings.entity.custom.ModEntities;
 import net.foi1y.seakings.item.ModItems;
 import net.minecraft.client.MinecraftClient;
@@ -33,6 +34,7 @@ public class SeaKingsModClient implements ClientModInitializer {
         TrinketRendererRegistry.registerRenderer(ModItems.ONESWORDSHEATH, (TrinketRenderer) ModItems.ONESWORDSHEATH);
 
         EntityRendererRegistry.register(ModEntities.SWORD_SLASH_GREEN_PROJECTILE, FlyingItemEntityRenderer::new);
+        EntityRendererRegistry.register(ModEntities.CIVILIAN, CivilianRenderer::new);
 
 
         useAbility = KeyBindingHelper.registerKeyBinding(new KeyBinding(

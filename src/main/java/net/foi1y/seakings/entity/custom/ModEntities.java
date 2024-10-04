@@ -15,4 +15,11 @@ public class ModEntities {
             new Identifier(SeaKingsMod.MOD_ID, "sword_slash_green_projectile"),
             FabricEntityTypeBuilder.<SwordSlashGreenProjectileEntity>create(SpawnGroup.MISC, SwordSlashGreenProjectileEntity::new)
                     .dimensions(EntityDimensions.fixed(0.25f, 0.25f)).build());
+
+    public static final EntityType<CivilianEntity> CIVILIAN = Registry.register(
+            Registries.ENTITY_TYPE, new Identifier(SeaKingsMod.MOD_ID, "civilian"),
+            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, CivilianEntity::new)
+                    .dimensions(EntityDimensions.fixed(2.5f, 2.75f)).build());
 }
+
+

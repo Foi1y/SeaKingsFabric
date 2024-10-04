@@ -3,10 +3,13 @@ package net.foi1y.seakings;
 import eu.midnightdust.lib.config.MidnightConfig;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.foi1y.seakings.block.ModBlocks;
 
 import net.foi1y.seakings.config.SeaKings;
 import net.foi1y.seakings.config.SeaKingsConfigModel;
+import net.foi1y.seakings.entity.custom.CivilianEntity;
+import net.foi1y.seakings.entity.custom.ModEntities;
 import net.foi1y.seakings.item.*;
 
 import net.foi1y.seakings.mixin.ItemRendererMixin;
@@ -52,6 +55,8 @@ public class SeaKingsMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModCustomTrades.registerCustomTrades();
 		ModItemGroup.initialize();
+
+		FabricDefaultAttributeRegistry.register(ModEntities.CIVILIAN, CivilianEntity.setAttributes());
 
 
 
