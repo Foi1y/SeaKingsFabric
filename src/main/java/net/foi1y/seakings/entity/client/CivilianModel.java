@@ -13,7 +13,7 @@ import software.bernie.geckolib.model.data.EntityModelData;
 public class CivilianModel extends GeoModel<CivilianEntity> {
     @Override
     public Identifier getModelResource(CivilianEntity animatable) {
-        return new Identifier(SeaKingsMod.MOD_ID,"geo.entity/npc.geo.json");
+        return new Identifier(SeaKingsMod.MOD_ID,"geo/entity/npc.geo.json");
     }
 
     @Override

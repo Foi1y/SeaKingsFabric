@@ -56,7 +56,6 @@ public class ModItemGroup {
                     entries.add(ANCIENT_BOOK3);
                     // Add more items to this sub-tab if needed
                 }, true); // Change to your actual icon path
-
                 owoItemGroup.addCustomTab(Icon.of(WHITEFABRIC), "fabrics", (context, entries) -> {
                     entries.add(WHITEFABRIC);
                     entries.add(BLUEFABRIC);
@@ -74,9 +73,6 @@ public class ModItemGroup {
                     entries.add(BROWNFABRIC);
                     entries.add(YELLOWFABRIC);
                     entries.add(CYANFABRIC);
-                    entries.add(ANCIENT_BOOK1);
-                    entries.add(ANCIENT_BOOK2);
-                    entries.add(ANCIENT_BOOK3);
                     // Add more items to this sub-tab if needed
                 }, true); // Change to your actual icon path
             })
