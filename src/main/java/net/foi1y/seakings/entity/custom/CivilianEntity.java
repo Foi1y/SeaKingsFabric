@@ -18,9 +18,10 @@ import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache
 import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInstanceCache;
 import software.bernie.geckolib.core.animation.*;
 import software.bernie.geckolib.core.object.PlayState;
+import software.bernie.geckolib.util.GeckoLibUtil;
 
 public class CivilianEntity extends AnimalEntity implements GeoEntity {
-    private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
+    private AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 
     public CivilianEntity(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
@@ -38,13 +39,10 @@ public class CivilianEntity extends AnimalEntity implements GeoEntity {
     protected void initGoals() {
         this.goalSelector.add(1, new SwimGoal(this));
         this.goalSelector.add(4, new MeleeAttackGoal(this, 1.2D, false));
-        this.goalSelector.add(3, new WanderAroundFarGoal(this, 0.75f, 1));
+        this.goalSelector.add(2, new WanderAroundFarGoal(this, 0.75f, 1));
 
-        this.goalSelector.add(2, new LookAroundGoal(this));
-
-        this.targetSelector.add(2, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
-        this.targetSelector.add(2, new ActiveTargetGoal<>(this, MerchantEntity.class, true));
-        this.targetSelector.add(3, new ActiveTargetGoal<>(this, ChickenEntity.class, true));
+        this.goalSelector.add(3, new LookAroundGoal(this));
+        
     }
 
     @Override
@@ -61,6 +59,7 @@ public class CivilianEntity extends AnimalEntity implements GeoEntity {
     private <T extends GeoAnimatable> PlayState predicate(AnimationState<T> tAnimationState) {
         if (tAnimationState.isMoving()) {
             tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.model.Walk", Animation.LoopType.LOOP));
+            return PlayState.CONTINUE;
         }
 
         tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.model.Idle", Animation.LoopType.LOOP));

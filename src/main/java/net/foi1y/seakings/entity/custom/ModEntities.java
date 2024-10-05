@@ -19,7 +19,7 @@ public class ModEntities {
     public static final EntityType<CivilianEntity> CIVILIAN = Registry.register(
             Registries.ENTITY_TYPE, new Identifier(SeaKingsMod.MOD_ID, "civilian"),
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, CivilianEntity::new)
-                    .dimensions(EntityDimensions.fixed(2.5f, 2.75f)).build());
+                    .dimensions(EntityDimensions.fixed(1.5f, 1.75f)).build());
 }
 
 

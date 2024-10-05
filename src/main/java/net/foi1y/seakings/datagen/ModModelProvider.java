@@ -13,6 +13,10 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        // Entity Eggs
+        blockStateModelGenerator.registerParentedItemModel(ModItems.CIVILIAN_SPAWN_EGG, ModelIds.getMinecraftNamespacedItem("template_spawn_egg"));
+
+
     }
 
     @Override
@@ -70,5 +74,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BROWNFABRIC, Models.GENERATED);
         itemModelGenerator.register(ModItems.YELLOWFABRIC, Models.GENERATED);
         itemModelGenerator.register(ModItems.CYANFABRIC, Models.GENERATED);
+        // Entity Eggs
+
+
     }
 }

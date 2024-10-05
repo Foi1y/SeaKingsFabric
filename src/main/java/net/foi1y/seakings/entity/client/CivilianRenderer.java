@@ -21,6 +21,7 @@ public class CivilianRenderer extends GeoEntityRenderer<CivilianEntity> {
     @Override
     public void render(CivilianEntity entity, float entityYaw, float partialTick, MatrixStack poseStack,
                        VertexConsumerProvider bufferSource, int packedLight) {
+
         super.render(entity, entityYaw, partialTick, poseStack, bufferSource, packedLight);
     }
 }

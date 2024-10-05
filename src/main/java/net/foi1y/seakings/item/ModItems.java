@@ -1,5 +1,6 @@
 package net.foi1y.seakings.item;
 
+import com.terraformersmc.modmenu.util.mod.Mod;
 import dev.emi.trinkets.TrinketSlot;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.*;
@@ -8,6 +9,7 @@ import net.foi1y.seakings.SeaKingsMod;
 import net.foi1y.seakings.block.ModBlocks;
 import net.foi1y.seakings.config.SeaKings;
 import net.foi1y.seakings.config.SeaKingsConfigModel;
+import net.foi1y.seakings.entity.custom.ModEntities;
 import net.foi1y.seakings.item.custom.ArmorItems.*;
 import net.foi1y.seakings.item.custom.swordslashitem;
 import net.foi1y.seakings.item.custom.trinkets.basiccloaks.BlueCloak;
@@ -39,6 +41,10 @@ public class ModItems {
             new Item(new FabricItemSettings()));
     public static final Item CUTLASSBLADETEMPLATE = registerItem("cutlassbladetemplate",
             new Item(new FabricItemSettings()));
+
+    // Entity Eggs
+    public static final Item CIVILIAN_SPAWN_EGG = registerItem("civilian_spawn_egg",
+            new SpawnEggItem(ModEntities.CIVILIAN, 0xD57536, 0x1D0D00, new FabricItemSettings()));
 
     // Ancient Books
     public static final Item ANCIENT_BOOK1 = registerItem("ancient_book1",
