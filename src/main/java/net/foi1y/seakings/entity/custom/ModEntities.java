@@ -20,6 +20,11 @@ public class ModEntities {
             Registries.ENTITY_TYPE, new Identifier(SeaKingsMod.MOD_ID, "civilian"),
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, CivilianEntity::new)
                     .dimensions(EntityDimensions.fixed(1.5f, 1.75f)).build());
+
+    public static final EntityType<PirateEntity> PIRATE = Registry.register(
+            Registries.ENTITY_TYPE, new Identifier(SeaKingsMod.MOD_ID, "pirate"),
+            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, PirateEntity::new)
+                    .dimensions(EntityDimensions.fixed(1.5f, 1.75f)).build());
 }
 
 

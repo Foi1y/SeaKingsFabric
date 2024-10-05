@@ -4,26 +4,20 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
-import net.minecraft.entity.passive.AnimalEntity;
-import net.minecraft.entity.passive.ChickenEntity;
-import net.minecraft.entity.passive.MerchantEntity;
-import net.minecraft.entity.passive.PassiveEntity;
-import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.passive.*;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.world.World;
-import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.core.animatable.GeoAnimatable;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
-import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInstanceCache;
 import software.bernie.geckolib.core.animation.*;
 import software.bernie.geckolib.core.object.PlayState;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
-public class CivilianEntity extends AnimalEntity implements GeoEntity {
+public class CivilianEntity extends VillagerEntity implements GeoEntity {
     private AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 
-    public CivilianEntity(EntityType<? extends AnimalEntity> entityType, World world) {
+    public CivilianEntity(EntityType<? extends VillagerEntity> entityType, World world) {
         super(entityType, world);
     }
 
@@ -46,7 +40,7 @@ public class CivilianEntity extends AnimalEntity implements GeoEntity {
     }
 
     @Override
-    public @Nullable PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
+    public VillagerEntity createChild(ServerWorld world, PassiveEntity entity) {
         return ModEntities.CIVILIAN.create(world);
     }
 

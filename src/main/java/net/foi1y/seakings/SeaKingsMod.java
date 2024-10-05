@@ -10,6 +10,7 @@ import net.foi1y.seakings.config.SeaKings;
 import net.foi1y.seakings.config.SeaKingsConfigModel;
 import net.foi1y.seakings.entity.custom.CivilianEntity;
 import net.foi1y.seakings.entity.custom.ModEntities;
+import net.foi1y.seakings.entity.custom.PirateEntity;
 import net.foi1y.seakings.item.*;
 
 import net.foi1y.seakings.mixin.ItemRendererMixin;
@@ -57,6 +58,7 @@ public class SeaKingsMod implements ModInitializer {
 		ModItemGroup.initialize();
 
 		FabricDefaultAttributeRegistry.register(ModEntities.CIVILIAN, CivilianEntity.setAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.PIRATE, PirateEntity.setAttributes());
 
 
 
