@@ -16,7 +16,7 @@ public class PirateRenderer extends GeoEntityRenderer<PirateEntity> {
 
     @Override
     public Identifier getTextureLocation(PirateEntity animatable) {
-        return new Identifier(SeaKingsMod.MOD_ID, "textures/entity/pirate.png");
+        return new Identifier(SeaKingsMod.MOD_ID, "textures/entity/pirates/male1.png");
     }
 
     @Override

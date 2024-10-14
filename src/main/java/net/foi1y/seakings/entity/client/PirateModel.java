@@ -19,7 +19,7 @@ public class PirateModel extends GeoModel<PirateEntity> {
 
     @Override
     public Identifier getTextureResource(PirateEntity animatable) {
-        return new Identifier(SeaKingsMod.MOD_ID, "textures/entity/pirate.png");
+        return new Identifier(SeaKingsMod.MOD_ID, "textures/entity/pirates/male1.png");
     }
 
     @Override

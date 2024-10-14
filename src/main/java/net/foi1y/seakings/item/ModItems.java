@@ -11,11 +11,9 @@ import net.foi1y.seakings.config.SeaKings;
 import net.foi1y.seakings.config.SeaKingsConfigModel;
 import net.foi1y.seakings.entity.custom.ModEntities;
 import net.foi1y.seakings.item.custom.ArmorItems.*;
+import net.foi1y.seakings.item.custom.devilFruits.*;
 import net.foi1y.seakings.item.custom.swordslashitem;
-import net.foi1y.seakings.item.custom.trinkets.basiccloaks.BlueCloak;
-import net.foi1y.seakings.item.custom.trinkets.basiccloaks.BuggyCloak;
-import net.foi1y.seakings.item.custom.trinkets.basiccloaks.WhiteCloak;
-import net.foi1y.seakings.item.custom.DevilFruitItem;
+import net.foi1y.seakings.item.custom.trinkets.basiccloaks.*;
 
 import net.foi1y.seakings.item.custom.trinkets.sheaths.SheathOneSword;
 import net.minecraft.client.item.TooltipContext;
@@ -371,7 +369,7 @@ public class ModItems {
             new SheathOneSword(new Item.Settings().maxCount(1)));
     // Devil Fruits
     public static final Item GOMU = registerItem("gomu",
-            new DevilFruitItem(new FabricItemSettings().food(ModFoodComponents.DEVILFRUIT).maxCount(1)) {
+            new gomuFruit(new FabricItemSettings().food(ModFoodComponents.DEVILFRUIT).maxCount(1)) {
                 @Override
                 public Text getName(ItemStack stack) {
                     if (localizedNames) {

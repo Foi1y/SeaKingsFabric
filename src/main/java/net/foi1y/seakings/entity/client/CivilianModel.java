@@ -18,7 +18,7 @@ public class CivilianModel extends GeoModel<CivilianEntity> {
 
     @Override
     public Identifier getTextureResource(CivilianEntity animatable) {
-        return new Identifier(SeaKingsMod.MOD_ID,"textures/entity/civilian.png");
+        return new Identifier(SeaKingsMod.MOD_ID,"textures/entity/civilian/male1.png");
     }
 
     @Override

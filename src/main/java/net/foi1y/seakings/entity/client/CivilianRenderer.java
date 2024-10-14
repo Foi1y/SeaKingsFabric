@@ -15,7 +15,7 @@ public class CivilianRenderer extends GeoEntityRenderer<CivilianEntity> {
     }
 
     @Override
-    public Identifier getTextureLocation(CivilianEntity animatable) {return new Identifier(SeaKingsMod.MOD_ID,"textures/entity/civilian.png");
+    public Identifier getTextureLocation(CivilianEntity animatable) {return new Identifier(SeaKingsMod.MOD_ID,"textures/entity/civilian/male1.png");
     }
 
     @Override
