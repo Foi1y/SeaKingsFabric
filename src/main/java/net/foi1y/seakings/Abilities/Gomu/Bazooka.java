@@ -6,7 +6,7 @@ import net.minecraft.util.Identifier;
 
 public class Bazooka extends Ability {
     public Bazooka(){
-        super("Bazooka", 100, new Identifier("seakings", "this must be changed"));
+        super("Bazooka", 100, new Identifier("seakings", "textures/item/placeholdergomu.png"));
     }
 
     @Override

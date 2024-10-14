@@ -6,7 +6,7 @@ import net.minecraft.util.Identifier;
 
 public class Gattling extends Ability {
     public Gattling(){
-        super("Gattling", 100, new Identifier("seakings", "this must be changed"));
+        super("Gattling", 100, new Identifier("seakings", "textures/item/placeholdergomu.png"));
     }
 
     @Override

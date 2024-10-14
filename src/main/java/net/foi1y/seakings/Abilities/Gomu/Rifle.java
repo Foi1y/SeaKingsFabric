@@ -6,7 +6,7 @@ import net.minecraft.util.Identifier;
 
 public class Rifle extends Ability {
     public Rifle(){
-        super("Rifle", 100, new Identifier("seakings", "this must be changed"));
+        super("Rifle", 100, new Identifier("seakings", "textures/item/placeholdergomu.png"));
     }
 
     @Override

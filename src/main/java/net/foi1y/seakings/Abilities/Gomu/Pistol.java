@@ -6,7 +6,7 @@ import net.minecraft.util.Identifier;
 
 public class Pistol extends Ability {
     public Pistol(){
-        super("Gomu_Pistol", 100, new Identifier("seakings", "this must be changed"));
+        super("Gomu_Pistol", 100, new Identifier("seakings", "textures/item/placeholdergomu.png"));
     }
 
     @Override

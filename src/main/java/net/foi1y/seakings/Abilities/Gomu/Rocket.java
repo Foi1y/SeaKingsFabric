@@ -6,7 +6,7 @@ import net.minecraft.util.Identifier;
 
 public class Rocket extends Ability {
     public Rocket(){
-        super("Rocket", 100, new Identifier("seakings", "this must be changed"));
+        super("Rocket", 100, new Identifier("seakings", "textures/item/placeholdergomu.png"));
     }
 
     @Override

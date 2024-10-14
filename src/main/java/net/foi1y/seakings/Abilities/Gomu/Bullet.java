@@ -6,7 +6,7 @@ import net.minecraft.util.Identifier;
 
 public class Bullet extends Ability {
     public Bullet(){
-        super("Bullet", 100, new Identifier("seakings", "this must be changed"));
+        super("Bullet", 100, new Identifier("seakings", "textures/item/placeholdergomu.png"));
     }
 
     @Override
