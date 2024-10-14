@@ -2,6 +2,8 @@ package net.foi1y.seakings;
 
 import net.foi1y.seakings.Abilities.Ability;
 
+import java.util.Vector;
+
 public interface IPlayerAbilityData {
 
     Ability getActiveAbility();
@@ -13,7 +15,10 @@ public interface IPlayerAbilityData {
     int getCurrentAbilityCooldown();
     void decreaseAbilityCooldown();
 
-
+    Vector<Ability> getUnlockedAblilities();
+    void setUnlockedAbilities(Vector<Ability> abilities);
+    void addAblilityUnlock(Ability ability);
+    void removeAblilityUnlock(Ability ability);
     Ability[] getAbilities();
 
     void setAlignment(String alignment);

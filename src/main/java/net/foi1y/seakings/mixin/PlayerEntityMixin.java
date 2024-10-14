@@ -3,19 +3,28 @@ import net.foi1y.seakings.Abilities.Ability;
 import net.foi1y.seakings.Abilities.nullAbility;
 import net.foi1y.seakings.IPlayerAbilityData;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.util.Identifier;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
 
-@Mixin(PlayerEntity.class)
-public class PlayerEntityMixin implements IPlayerAbilityData {
+import java.util.Collection;
+import java.util.Vector;
 
+@Mixin(PlayerEntity.class)
+public abstract class PlayerEntityMixin implements IPlayerAbilityData {
+    @Shadow public abstract void unlockRecipes(Identifier[] ids);
+
+    @Unique
+    private Ability nullAbility = new nullAbility();
+    @Unique
+    private Vector<Ability> unlockedAbilities = new Vector<Ability>();
     @Unique
     private int activeAbilityNum = 4;
     @Unique
     private int[] cooldowns = new int[]{0,0,0,0,0,0,0,0};
 
-    @Unique
-    private Ability nullAbility = new nullAbility();
+
     @Unique
     private final Ability[] abilities =  new Ability[]{nullAbility, nullAbility, nullAbility, nullAbility, nullAbility, nullAbility, nullAbility, nullAbility};
     @Unique
@@ -49,6 +58,26 @@ public class PlayerEntityMixin implements IPlayerAbilityData {
         if (abilityCooldown > 0) {
             abilityCooldown--;
         }
+    }
+
+    @Override
+    public Vector<Ability> getUnlockedAblilities() {
+        return unlockedAbilities;
+    }
+
+    @Override
+    public void setUnlockedAbilities(Vector<Ability> abilities) {
+        unlockedAbilities = abilities;
+    }
+
+    @Override
+    public void addAblilityUnlock(Ability ability) {
+        unlockedAbilities.addElement(ability);
+    }
+
+    @Override
+    public void removeAblilityUnlock(Ability ability) {
+        unlockedAbilities.remove(ability);
     }
 
     @Override
