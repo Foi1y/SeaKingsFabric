@@ -43,6 +43,10 @@ public class ModItems {
     // Entity Eggs
     public static final Item CIVILIAN_SPAWN_EGG = registerItem("civilian_spawn_egg",
             new SpawnEggItem(ModEntities.CIVILIAN, 0xD57536, 0x1D0D00, new FabricItemSettings()));
+    // # = 0x
+    // Anything past 0x is Hexcode
+    // First is Main
+    // Second is Extra
 
     // Ancient Books
     public static final Item ANCIENT_BOOK1 = registerItem("ancient_book1",

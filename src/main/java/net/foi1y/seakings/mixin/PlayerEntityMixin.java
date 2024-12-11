@@ -1,5 +1,6 @@
 package net.foi1y.seakings.mixin;
 import net.foi1y.seakings.Abilities.Ability;
+import net.foi1y.seakings.Abilities.Gomu.Pistol;
 import net.foi1y.seakings.Abilities.nullAbility;
 import net.foi1y.seakings.IPlayerAbilityData;
 import net.minecraft.entity.player.PlayerEntity;
@@ -25,8 +26,21 @@ public abstract class PlayerEntityMixin implements IPlayerAbilityData {
     private int[] cooldowns = new int[]{0,0,0,0,0,0,0,0};
 
 
+
     @Unique
-    private final Ability[] abilities =  new Ability[]{nullAbility, nullAbility, nullAbility, nullAbility, nullAbility, nullAbility, nullAbility, nullAbility};
+    private Ability[] abilities = new Ability[]{nullAbility, nullAbility, nullAbility, nullAbility, nullAbility, nullAbility, nullAbility, nullAbility};
+
+    @Override
+    public void setUnlockedAbilities(Vector<Ability> abilities) {
+        unlockedAbilities = abilities;
+        for (int i = 0; i < this.abilities.length; i++) {
+            if (i < abilities.size()) {
+                this.abilities[i] = abilities.get(i);
+            } else {
+                this.abilities[i] = nullAbility;
+            }
+        }
+    }
     @Unique
     private Ability activeAbility = new nullAbility();
     @Unique
@@ -65,10 +79,6 @@ public abstract class PlayerEntityMixin implements IPlayerAbilityData {
         return unlockedAbilities;
     }
 
-    @Override
-    public void setUnlockedAbilities(Vector<Ability> abilities) {
-        unlockedAbilities = abilities;
-    }
 
     @Override
     public void addAblilityUnlock(Ability ability) {

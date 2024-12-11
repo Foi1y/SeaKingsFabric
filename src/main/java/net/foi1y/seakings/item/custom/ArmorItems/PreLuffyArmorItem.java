@@ -8,6 +8,7 @@ import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.registry.tag.TagKey;
 import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.animatable.client.RenderProvider;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
@@ -56,6 +57,9 @@ public final class PreLuffyArmorItem extends ArmorItem implements GeoItem {
         return this.cache;
     }
 
+    public boolean isIn(TagKey<Item> posttimeskip) {
+        return this.getDefaultStack().isIn(posttimeskip);
+    }
 
 }
 

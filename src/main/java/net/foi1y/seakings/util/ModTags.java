@@ -18,6 +18,8 @@ public class ModTags {
         public static class Items {
             public static final TagKey<Item> SEAKING_ARMOR_TAG =
                     createTag("seakingarmortag");
+            public static final TagKey<Item> POST_TIME_SKIP =
+                    createTag("posttimeskip");
             public static final TagKey<Item> ONE_SWORD_STYLE =
                     createTag("1ss");
             public static final TagKey<Item> TWO_SWORD_STYLE =

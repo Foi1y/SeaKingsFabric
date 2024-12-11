@@ -38,6 +38,12 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.BUGGY_LEGGINGS)
                 .add(ModItems.BUGGY_BOOTS);
 
+        getOrCreateTagBuilder(ModTags.Items.POST_TIME_SKIP)
+                .add(ModItems.STRAW_HAT)
+                .add(ModItems.PRELUFFYCHESTPLATE)
+                .add(ModItems.PRELUFFYLEGGINGS)
+                .add(ModItems.PRELUFFYBOOTS);
+
         getOrCreateTagBuilder(ModTags.Items.ONE_SWORD_STYLE)
                 .add(ModItems.IRONKATANA)
                 .add(ModItems.CUTLASS)

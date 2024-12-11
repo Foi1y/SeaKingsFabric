@@ -8,6 +8,7 @@ import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.registry.tag.TagKey;
 import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.animatable.client.RenderProvider;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
@@ -57,4 +58,7 @@ public final class BuggyArmorItem extends ArmorItem implements GeoItem {
     }
 
 
+    public boolean isIn(TagKey<Item> seakingArmorTag) {
+        return this.getDefaultStack().isIn(seakingArmorTag);
+    }
 }
